@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./output.css" />
+  <title>Explore Saudi Arabia</title>
+  <script>
+    function changemode() {
+      document.documentElement.classList.toggle("dark");
+      if (el.className == "dark") {
+        document.getElementById("root").className = "light";
+      } else {
+        document.getElementById("root").className = "dark";
+      }
+    }
+
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("translate-x-full");
+    }
+  </script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+    };
+  </script>
+</head>
+
+<body>
+  <section class="bg-[url('/image/banner.png')] bg-cover bg-center w-full min-h-screen">
+    <header class="py-5">
+      <div class="max-w-[1240px] mx-auto flex justify-between items-center px-4 md:px-10 pt-2">
+        <figure>
+          <img src="/image/logo.png" alt="" class="w-16 md:w-auto" />
+        </figure>
+        <nav class="flex items-center gap-4">
+          <button onclick="changemode()"
+            class="font-bold text-white dark:text-gray-400 text-[12px] md:text-[15px] uppercase hover:text-gray-400 border border-white rounded-full px-2 py-1 md:px-3 md:py-1 transition-transform duration-150 hover:scale-105 cursor-pointer">
+            Dark
+          </button>
+
+          <ul class="hidden md:flex gap-8 md:pr-20 px-2 items-center">
+            <li>
+              <a class="text-white dark:text-gray-500 text-[15px] uppercase hover:text-gray-400"
+                href="/src/Destination.html">Destinations</a>
+            </li>
+            <li>
+              <a class="text-white dark:text-gray-500 text-[15px] uppercase hover:text-gray-400"
+                href="/src/About.html">About</a>
+            </li>
+            <li>
+              <a class="text-white dark:text-gray-500 text-[15px] uppercase hover:text-gray-400" href="">Gallery</a>
+            </li>
+          </ul>
+
+          <button onclick="toggleMenu()" class="md:hidden text-white dark:text-gray-400 focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Mobile Popup Menu -->
+      <div id="mobileMenu"
+        class="fixed inset-y-0 right-0 w-full sm:w-[400px] bg-gradient-to-b from-black/95 to-gray-900/95 z-[999] flex flex-col items-center justify-center transition-transform duration-500 cubic-bezier([0.4, 0, 0.2, 1]) transform translate-x-full backdrop-blur-xl border-l border-white/10 shadow-[-10px_0_30px_rgba(0,0,0,0.5)]">
+        <button onclick="toggleMenu()"
+          class="absolute top-8 right-8 text-white dark:text-gray-400 focus:outline-none hover:rotate-90 hover:scale-110 hover:text-red-400 transition-all duration-300 bg-white/10 rounded-full p-2">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <ul class="flex flex-col gap-10 items-center text-center w-full px-10 mt-10">
+          <li class="w-full">
+            <a class="block text-white dark:text-gray-400 text-3xl uppercase font-black tracking-[0.1em] hover:tracking-[0.2em] hover:text-[#11ad11] transition-all duration-300 border-b border-white/10 pb-4"
+              href="/src/Destination.html" onclick="toggleMenu()">Destinations</a>
+          </li>
+          <li class="w-full">
+            <a class="block text-white dark:text-gray-400 text-3xl uppercase font-black tracking-[0.1em] hover:tracking-[0.2em] hover:text-[#11ad11] transition-all duration-300 border-b border-white/10 pb-4"
+              href="/src/About.html" onclick="toggleMenu()">About</a>
+          </li>
+          <li class="w-full">
+            <a class="block text-white dark:text-gray-400 text-3xl uppercase font-black tracking-[0.1em] hover:tracking-[0.2em] hover:text-[#11ad11] transition-all duration-300 border-b border-white/10 pb-4"
+              href="" onclick="toggleMenu()">Gallery</a>
+          </li>
+        </ul>
+      </div>
+      <div class="text-center mt-10 md:mt-0">
+        <h1 class="text-white dark:text-gray-500 text-[35px] md:text-[50px] font-bold">
+          Explore<br />Saudi Arabia
+        </h1>
+        <p class="text-white dark:text-gray-500 text-[12px] px-4 md:px-0">
+          Saudi Arabia is rich in heritage and history. The country is<br class="hidden md:block" />home to hundreds of
+          historically important sites.
+        </p>
+      </div>
+      <div class="flex flex-col md:flex-row justify-between px-6 md:px-10 gap-6 md:gap-0 mt-8 md:mt-0">
+        <div class="text-white dark:text-gray-500 py-4 md:py-10 md:pr-50 text-center md:text-left">
+          <h1 class="text-[24px] md:text-[30px]">History and Heritage</h1>
+          <p class="text-[14px]">
+            Saudi Arabia has long occupied an important role at the center of
+            the islamic and Arab worlds. Located at the heart of three
+            continents.
+          </p>
+        </div>
+        <div class="text-white dark:text-gray-500 py-4 md:py-10 md:pl-50 text-center md:text-left">
+          <h1 class="text-[24px] md:text-[30px]">People and Culture</h1>
+          <p class="text-[14px]">
+            Saudi Arabia has a rich Culture Shaped by the diversity of its
+            people.which has formed the basis of its cultural identity.
+          </p>
+        </div>
+      </div>
+    </header>
+  </section>
+  <section class="bg-black dark:bg-gray-950 py-[30px]">
+    <div class="flex flex-nowrap justify-between px-4 md:px-10 gap-4 md:gap-20 items-center">
+      <figure class="w-1/4 flex justify-center">
+        <img src="/image/5d27f623b05ec8c02af412e2bb97495a.png" alt=""
+          class="w-full h-auto object-contain max-w-[100px] md:max-w-full" />
+      </figure>
+      <figure class="w-1/4 flex justify-center">
+        <img src="/image/Al_Rajhi_Bank_Logo.png" alt=""
+          class="w-full h-auto object-contain max-w-[100px] md:max-w-full" />
+      </figure>
+      <figure class="w-1/4 flex justify-center">
+        <img src="/image/STC-01 1.png" alt="" class="w-full h-auto object-contain max-w-[100px] md:max-w-full" />
+      </figure>
+      <figure class="w-1/4 flex justify-center">
+        <img src="/image/Almarai-Logo 1.png" alt="" class="w-full h-auto object-contain max-w-[100px] md:max-w-full" />
+      </figure>
+    </div>
+    <div class="text-white dark:text-gray-400 text-center py-10 px-4 md:px-0">
+      <h1 class="text-[25px] md:text-[35px] font-black">Best Destinations</h1>
+      <p class="text-[15px]">
+        Explore the enchanting landscapes of saudi Arabia,from<br class="hidden md:block" />the breathtaking deserts to
+        the stunning coastal shores.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-10 auto-rows-[380px]">
+      <div
+        class="relative lg:row-span-2 rounded-3xl overflow-hidden bg-cover bg-center flex flex-col justify-between p-6 text-white dark:text-gray-400 bg-[url('/image/hismadesert.png')] transition-transform duration-300 hover:scale-105 cursor-pointer">
+        <div class="relative z-10 text-white dark:text-gray-400">
+          <h1 class="text-[24px] md:text-[30px] font-bold">Hisma Desert</h1>
+          <p class="text-[15px]">
+            The hisma desert is a true marvel of<br />
+            nature, and several desert oasis.
+          </p>
+        </div>
+        <div class="relative z-10 flex items-center gap-3">
+          <img src="/image/Middle eastern.png" class="w-16 h-16 rounded-full" />
+          <div class="text-white dark:text-gray-400">
+            <p class="font-bold text-[16px]">Wazeem Al Mulk</p>
+            <p class="text-[14px]">Traveler</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative rounded-3xl overflow-hidden bg-cover bg-center flex flex-col justify-between p-6 text-white bg-[url(/image/kafda.png)] transition-transform duration-300 hover:scale-105 cursor-pointer">
+        <div class="relative z-10 text-white dark:text-gray-400">
+          <h1 class="text-[24px] md:text-[30px] font-bold">
+            Kafd World Trade Centre, Riyadh.
+          </h1>
+          <p class="text-[15px]">
+            The Towering Structure stands as a testament to Saudi Arabia’s
+            vision fora thriving business hub.
+          </p>
+        </div>
+        <div class="relative z-10 flex items-center gap-3">
+          <img src="/image/Studio.png" class="w-16 h-16 rounded-full" />
+          <div class="text-white dark:text-gray-400">
+            <p class="font-bold text-[16px]">Benjamin Voros</p>
+            <p class="text-[14px]">Traveler</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative lg:row-span-2 rounded-3xl overflow-hidden bg-cover bg-center flex flex-col justify-between p-6 text-white bg-[url('/image/qarah.png')] transition-transform duration-300 hover:scale-105 cursor-pointer">
+        <div class="relative z-10 text-white dark:text-gray-400">
+          <h1 class="text-[24px] md:text-[30px] font-bold">
+            Al Qarah Mountain
+          </h1>
+          <p class="text-[15px]">
+            The Mountain’s distractive rocks formations inviting adventures to
+            explore its hidden treasure.
+          </p>
+        </div>
+
+        <div class="relative z-10 flex items-center gap-3">
+          <img src="/image/Young man posing casually over white wall..png" class="w-16 h-16 rounded-full" />
+          <div class="text-white dark:text-gray-400">
+            <p class="font-bold text-[16px]">John Towner</p>
+            <p class="text-[14px]">Traveler</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative lg:row-span-2 rounded-3xl overflow-hidden bg-cover bg-center flex flex-col justify-between p-6 text-white bg-[url(/image/saleh.png)] transition-transform duration-300 hover:scale-105 cursor-pointer">
+        <div class="relative z-10 text-white dark:text-gray-400">
+          <h1 class="text-[24px] md:text-[30px] font-bold">AlUIa</h1>
+          <p class="text-[15px]">
+            AIUIa is located deep in the desert in the northwest of Saudi
+            Arabia
+          </p>
+        </div>
+        <div class="relative z-10 flex items-center gap-3">
+          <img src="/image/Man isolated showing emotions end gestures.png" class="w-16 h-16 rounded-full" />
+          <div class="text-white dark:text-gray-400">
+            <p class="font-bold text-[16px]">garrett parker</p>
+            <p class="text-[14px]">Traveler</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative rounded-3xl overflow-hidden bg-cover bg-center flex flex-col justify-between p-6 text-white bg-[url(/image/pawel.png)] transition-transform duration-300 hover:scale-105 cursor-pointer">
+        <div class="relative z-10 text-white dark:text-gray-400">
+          <h1 class="text-[24px] md:text-[30px] font-bold">
+            The best of Tabuk
+          </h1>
+          <p class="text-[15px]">
+            Tabuk also spelled Tabouk, the capital city of the Tabuk Region in
+            northwestern Saudi Arabia.
+          </p>
+        </div>
+        <div class="relative z-10 flex items-center gap-3">
+          <img src="/image/sunglasses.png" class="w-16 h-16 rounded-full" />
+          <div class="text-white dark:text-gray-400">
+            <p class="font-bold text-[16px]">Jonatan Pie</p>
+            <p class="text-[14px]">Influencer</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative rounded-3xl overflow-hidden bg-cover bg-center flex flex-col justify-between p-6 text-white bg-[url('/image/Al-Hada.png')] transition-transform duration-300 hover:scale-105 cursor-pointer">
+        <div class="relative z-10 text-white dark:text-gray-400">
+          <h1 class="text-[24px] md:text-[30px] font-bold">
+            The best things<br />To do in Taif
+          </h1>
+          <p class="text-[15px]">
+            Taif is a city and governorate in the Makkah Region of Saudi
+            Arabia.
+          </p>
+        </div>
+
+        <div class="relative z-10 flex items-center gap-3">
+          <img src="/image/Young woman in shirt standing with crossed arms and looking confident.png"
+            class="w-16 h-16 rounded-full" />
+          <div class="text-white dark:text-gray-400">
+            <p class="font-bold text-[16px]">Cristina Gottardi</p>
+            <p class="text-[14px]">Traveler</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-white dark:text-gray-400 flex justify-center md:justify-end pr-0 md:pr-[50px] pt-10 md:pt-5">
+      <a class="underline cursor-pointer hover:text-blue-400" href="">See More</a>
+    </div>
+  </section>
+  <section class="relative w-full h-screen bg-black dark:bg-gray-950 overflow-hidden group">
+    <div class="absolute inset-0 z-0">
+      <img src="/image/splas.png" alt="Hisma Desert"
+        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-black/20 to-transparent h-1/2 opacity-90"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent h-full"></div>
+    </div>
+    <div class="relative z-10 h-full flex flex-col justify-end px-4 md:px-9 pb-10 mt-10 md:mt-0">
+      <div class="mb-5 md:mb-10">
+        <h1 class="font-serif italic text-[40px] md:text-[70px] text-white dark:text-gray-400">
+          Hisma
+        </h1>
+        <h1
+          class="text-white dark:text-gray-400 text-[60px] md:text-[140px] font-extrabold tracking-tighter leading-[0.8] uppercase">
+          Desert
+        </h1>
+      </div>
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 md:gap-10">
+        <p
+          class="max-w-xl text-[16px] md:text-[20px] text-white dark:text-gray-300 font-bold leading-relaxed font-light tracking-wide m-0">
+          The Hisma Desert in Saudi Arabia is a realm of ethereal beauty that
+          captivates the senses. Its vast expanse of golden sand dunes,
+          sculpted by the winds of time, creates a mesmerizing landscape that
+          stretches as far as the eye can see.
+        </p>
+        <div class="flex items-center gap-4 pr-0 md:pr-10">
+          <div class="relative">
+            <img src="/image/Middle eastern.png" alt="Wazeem Al Mulk"
+              class="w-16 h-16 rounded-full object-cover overflow-hidden" />
+          </div>
+          <div>
+            <p class="text-sm font-bold text-white dark:text-gray-400 tracking-tight">
+              Wazeem Al Mulk
+            </p>
+            <p class="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-medium">
+              Traveler
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-black dark:bg-gray-950 w-full py-10 md:py-20">
+    <div class="w-full px-4 md:px-20">
+      <div class="relative w-full rounded-3xl md:rounded-4xl overflow-hidden flex items-center justify-center">
+        <img src="/image/footer.png" class="w-full h-auto min-h-[200px] object-cover block" alt="Explore Banner" />
+
+        <div
+          class="absolute inset-0 z-10 w-full h-full flex flex-col md:flex-row justify-center md:justify-between px-6 md:pl-15 md:pr-30 items-center text-center md:text-left gap-4 md:gap-0">
+          <div
+            class="text-white dark:text-gray-400 text-[24px] sm:text-[32px] md:text-[50px] font-bold leading-tight drop-shadow-md">
+            <h1>Explore</h1>
+            <h1>Saudi Arabia</h1>
+          </div>
+          <div>
+            <a class="cursor-pointer flex justify-center md:block" href="">
+              <img src="/image/errow.png" alt="" class="w-10 sm:w-14 md:w-auto" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-[#222222] dark:bg-gray-950 w-full h-auto md:h-60 pt-10 pb-16 md:py-0">
+    <div
+      class="flex flex-col md:flex-row justify-between px-6 md:px-0 md:p-15 items-center md:items-start text-left gap-10 md:gap-0 w-full">
+      <figure class="w-full md:w-auto flex justify-center md:block">
+        <img src="/image/logo.png" alt="" />
+      </figure>
+      <div
+        class="grid grid-cols-2 md:flex md:flex-row gap-8 md:gap-10 md:pr-20 text-white dark:text-gray-400 text-[15px] md:text-[16px] w-full md:w-auto">
+        <div class="w-full">
+          <ul class="space-y-3 md:space-y-0">
+            <li class="font-bold hover:text-gray-500 mb-3 md:mb-0">
+              <a href="">About</a>
+            </li>
+            <li class="hover:text-gray-500"><a href="">About us</a></li>
+            <li class="hover:text-gray-500"><a href="">Features</a></li>
+            <li class="hover:text-gray-500"><a href="">News & Blogs</a></li>
+          </ul>
+        </div>
+        <div class="w-full">
+          <ul class="space-y-3 md:space-y-0">
+            <li class="font-bold hover:text-gray-500 mb-3 md:mb-0">
+              <a href="">Contact</a>
+            </li>
+            <li class="hover:text-gray-500"><a href="">Instagram</a></li>
+            <li class="hover:text-gray-500"><a href="">Twitter</a></li>
+            <li class="hover:text-gray-500"><a href="">Facebook</a></li>
+          </ul>
+        </div>
+        <div
+          class="w-full col-span-2 sm:col-span-1 mt-2 md:mt-0 flex flex-col md:block items-center md:items-start text-center md:text-left">
+          <ul class="space-y-3 md:space-y-0">
+            <li class="font-bold hover:text-gray-500 mb-3 md:mb-0">
+              <a href="">Support</a>
+            </li>
+            <li class="hover:text-gray-500"><a href="">FAQs</a></li>
+            <li class="hover:text-gray-500"><a href="">Support Centre</a></li>
+            <li class="hover:text-gray-500"><a href="">Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

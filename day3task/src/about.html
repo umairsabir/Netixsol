@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./output.css" />
+    <title>About</title>
+    <script>
+      function changemode() {
+        document.documentElement.classList.toggle("dark");
+        if (el.className == "dark") {
+          document.getElementById("root").className = "light";
+        } else {
+          document.getElementById("root").className = "dark";
+        }
+      }
+
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("translate-x-full");
+      }
+    </script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+
+  <body>
+    <section
+      class="bg-[url('/image/about.png')] bg-cover bg-center w-full h-screen md:h-[700px]"
+    >
+      <header class="py-5">
+        <div
+          class="max-w-[1240px] mx-auto flex justify-between items-center px-4 md:px-10 pt-5"
+        >
+          <figure>
+            <img src="/image/logo.png" alt="" class="w-16 md:w-auto" />
+          </figure>
+          <nav class="flex items-center gap-4">
+            <button
+              onclick="changemode()"
+              class="font-bold text-white dark:text-gray-400 text-[12px] md:text-[15px] uppercase hover:text-gray-400 dark:hover:text-gray-800 border border-white rounded-full px-2 py-1 md:px-3 md:py-1 transition-transform duration-150 hover:scale-105 cursor-pointer"
+            >
+              Dark
+            </button>
+            <ul class="hidden md:flex gap-8 md:pr-20 px-2 items-center">
+              <li>
+                <a
+                  class="text-white dark:text-gray-400 text-[15px] uppercase hover:text-gray-400"
+                  href="/src/index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white dark:text-gray-400 text-[15px] uppercase hover:text-gray-400"
+                  href=""
+                  >Members</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white dark:text-gray-400 text-[15px] uppercase hover:text-gray-400"
+                  href=""
+                  >Gallery</a
+                >
+              </li>
+            </ul>
+            <button
+              onclick="toggleMenu()"
+              class="md:hidden text-white dark:text-gray-400 focus:outline-none"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </nav>
+        </div>
+
+        <!-- Mobile Popup Menu -->
+        <div
+          id="mobileMenu"
+          class="fixed inset-y-0 right-0 w-full sm:w-[400px] bg-gradient-to-b from-black/95 to-gray-900/95 z-[999] flex flex-col items-center justify-center transition-transform duration-500 transform translate-x-full backdrop-blur-xl border-l border-white/10 shadow-[-10px_0_30px_rgba(0,0,0,0.5)]"
+        >
+          <button
+            onclick="toggleMenu()"
+            class="absolute top-8 right-8 text-white dark:text-gray-400 focus:outline-none hover:rotate-90 hover:scale-110 hover:text-red-400 transition-all duration-300 bg-white/10 rounded-full p-2"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <ul
+            class="flex flex-col gap-10 items-center text-center w-full px-10 mt-10"
+          >
+            <li class="w-full">
+              <a
+                class="block text-white dark:text-gray-400 text-3xl uppercase font-black tracking-[0.1em] hover:tracking-[0.2em] hover:text-[#11ad11] transition-all duration-300 border-b border-white/10 pb-4"
+                href="/src/index.html"
+                onclick="toggleMenu()"
+                >Home</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                class="block text-white dark:text-gray-400 text-3xl uppercase font-black tracking-[0.1em] hover:tracking-[0.2em] hover:text-[#11ad11] transition-all duration-300 border-b border-white/10 pb-4"
+                href=""
+                onclick="toggleMenu()"
+                >Members</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                class="block text-white dark:text-gray-400 text-3xl uppercase font-black tracking-[0.1em] hover:tracking-[0.2em] hover:text-[#11ad11] transition-all duration-300 border-b border-white/10 pb-4"
+                href=""
+                onclick="toggleMenu()"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center pt-20 md:pt-30 px-4 md:px-0">
+          <h1
+            class="text-white dark:text-gray-400 text-[50px] md:text-[95px] font-bold md:leading-normal leading-tight"
+          >
+            About Us
+          </h1>
+          <p
+            class="text-white dark:text-gray-400 text-[16px] md:text-[20px] md:mt-0 mt-4"
+          >
+            Discover the country's hidden gems and breathtaking landscapes.
+          </p>
+        </div>
+      </header>
+    </section>
+    <section class="bg-black dark:bg-gray-950 pb-8 px-4 md:px-0">
+      <div class="max-w-[1240px] mx-auto">
+        <div class="text-white dark:text-gray-400 text-center py-10">
+          <h1 class="text-[25px] md:text-[35px] mt-0 font-bold">
+            Saudi, a kingdom that inspires
+          </h1>
+          <p class="text-[16px] md:text-[20px]">
+            A uniquely Saudi experience awaits in winter
+          </p>
+        </div>
+        <div>
+          <h1
+            class="font-bold text-white dark:text-gray-400 text-[30px] md:text-[40px] px-4 md:px-0 md:pl-15 text-center md:text-left"
+          >
+            Traditions of Saudi Arabia
+          </h1>
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-15 pt-7 px-4 md:px-0"
+          >
+            <div
+              class="w-full md:w-1/2 md:pl-15 transition-transform duration-300 hover:scale-105 cursor-pointer"
+            >
+              <img
+                class="w-full h-auto md:rounded-4xl rounded-3xl overflow-hidden object-cover"
+                src="/image/about1.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-full md:w-1/2 flex flex-col justify-center text-white dark:text-gray-400 md:pr-20 pt-10 md:pt-0 text-center md:text-left"
+            >
+              <h1 class="font-bold text-[24px] md:text-[30px] mb-4">
+                Language
+              </h1>
+              <p class="text-[16px] md:text-[20px] leading-relaxed">
+                Arabic is the official language of Saudi Arabia and the primary
+                language used in all dealings and public transactions. English
+                serves as an informal second language in the Kingdom and is
+                spoken by a large section of its society. All road signs are
+                bilingual, showing information in both Arabic and English.
+              </p>
+              <div
+                class="flex justify-center md:justify-end pt-10 md:pt-15 md:pr-15 transition-transform duration-300 hover:scale-105 cursor-pointer"
+              >
+                <a href=""
+                  ><img class="w-10" src="/image/errow.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="flex flex-col-reverse md:flex-row justify-between items-center gap-10 md:gap-15 pt-15 px-4 md:px-0"
+          >
+            <div
+              class="w-full md:w-1/2 flex flex-col justify-center text-white dark:text-gray-400 md:pl-20 pt-10 md:pt-0 text-center md:text-left"
+            >
+              <h1 class="font-bold text-[24px] md:text-[30px] mb-4">Culture</h1>
+              <p class="text-[16px] md:text-[20px] leading-relaxed">
+                Saudi Arabia’s rich heritage and traditions have been shaped by
+                its position as a historic trade hub and the birthplace of
+                Islam. In recent years, the Kingdom has undergone a significant
+                cultural transformation, evolving centuy-old customs to fit the
+                contemporary world we live in today.
+              </p>
+              <div
+                class="flex justify-center md:justify-end pt-10 md:pt-15 md:pr-20 transition-transform duration-300 hover:scale-105 cursor-pointer"
+              >
+                <a href=""
+                  ><img class="w-10" src="/image/errow.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div
+              class="w-full md:w-1/2 md:pr-15 transition-transform duration-300 hover:scale-105 cursor-pointer"
+            >
+              <img
+                class="w-full h-auto md:rounded-4xl rounded-3xl overflow-hidden object-cover"
+                src="/image/about2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="max-w-[1240px] mx-auto pt-15 md:pt-25 pb-5 px-4 md:px-20">
+          <a
+            class="flex flex-col md:flex-row items-center justify-center md:justify-between bg-[#046404] hover:bg-[#12b912] dark:hover:bg-gray-700 rounded-3xl md:rounded-full p-6 md:p-10 cursor-pointer text-center md:text-left animate-bounce shadow-[inset_0_6px_15px_rgba(255,255,255,0.4),inset_0_-6px_15px_rgba(0,0,0,0.5)] gap-5 md:gap-0"
+            href=""
+          >
+            <span
+              class="text-white dark:text-gray-400 text-[18px] sm:text-[22px] md:text-[30px] font-bold leading-tight"
+              >Contact us on Whatsapp</span
+            >
+            <div
+              class="bg-white dark:bg-gray-950 text-[#11ad11] dark:text-gray-200 px-8 py-3 rounded-lg text-[14px] md:text-[15px] hover:scale-105 transition-transform"
+            >
+              Start Chat
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black dark:bg-gray-950 w-full py-10 md:py-20">
+      <div class="w-full px-4 md:px-20">
+        <div
+          class="relative w-full rounded-3xl md:rounded-4xl overflow-hidden flex items-center justify-center"
+        >
+          <!-- The image controls the natural height -->
+          <img
+            src="/image/footerabout.png"
+            class="w-full h-auto min-h-[200px] object-cover block"
+            alt="Footer Banner"
+          />
+
+          <div
+            class="absolute inset-0 z-10 w-full h-full flex flex-col md:flex-row justify-center md:justify-between px-6 md:pl-15 md:pr-30 items-center text-center md:text-left gap-4 md:gap-0"
+          >
+            <div
+              class="text-white dark:text-gray-400 text-[24px] sm:text-[32px] md:text-[50px] font-bold leading-tight drop-shadow-md"
+            >
+              <h1>Rules of Behaviour</h1>
+              <h1>KSA</h1>
+            </div>
+            <div>
+              <a class="cursor-pointer flex justify-center md:block" href="">
+                <img
+                  src="/image/errow.png"
+                  alt=""
+                  class="w-10 sm:w-14 md:w-auto"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-[#222222] dark:bg-gray-950 w-full h-auto md:h-60 pt-10 pb-16 md:py-0"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between px-6 md:px-0 md:p-15 items-center md:items-start text-left gap-10 md:gap-0 w-full"
+      >
+        <figure class="w-full md:w-auto flex justify-center md:block">
+          <img src="/image/logo.png" alt="" />
+        </figure>
+        <div
+          class="grid grid-cols-2 md:flex md:flex-row gap-8 md:gap-10 md:pr-20 text-white dark:text-gray-400 text-[15px] md:text-[16px] w-full md:w-auto"
+        >
+          <div class="w-full">
+            <ul class="space-y-3 md:space-y-0">
+              <li class="font-bold hover:text-gray-500 mb-3 md:mb-0">
+                <a href="">About</a>
+              </li>
+              <li class="hover:text-gray-500"><a href="">About us</a></li>
+              <li class="hover:text-gray-500"><a href="">Features</a></li>
+              <li class="hover:text-gray-500"><a href="">News & Blogs</a></li>
+            </ul>
+          </div>
+          <div class="w-full">
+            <ul class="space-y-3 md:space-y-0">
+              <li class="font-bold hover:text-gray-500 mb-3 md:mb-0">
+                <a href="">Contact</a>
+              </li>
+              <li class="hover:text-gray-500"><a href="">Instagram</a></li>
+              <li class="hover:text-gray-500"><a href="">Twitter</a></li>
+              <li class="hover:text-gray-500"><a href="">Facebook</a></li>
+            </ul>
+          </div>
+          <div
+            class="w-full col-span-2 sm:col-span-1 mt-2 md:mt-0 flex flex-col md:block items-center md:items-start text-center md:text-left"
+          >
+            <ul class="space-y-3 md:space-y-0">
+              <li class="font-bold hover:text-gray-500 mb-3 md:mb-0">
+                <a href="">Support</a>
+              </li>
+              <li class="hover:text-gray-500"><a href="">FAQs</a></li>
+              <li class="hover:text-gray-500"><a href="">Support Centre</a></li>
+              <li class="hover:text-gray-500"><a href="">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
