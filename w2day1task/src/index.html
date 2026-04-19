@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Notifications</title>
+</head>
+
+<body class="bg-gray-400 flex items-center justify-center py-5">
+
+    <div class="bg-white w-full max-w-md rounded-2xl shadow-lg p-5 sm:p-6">
+
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-5 sm:mb-6">
+            <h2 class="text-lg sm:text-xl font-bold text-gray-800 flex items-center gap-2">
+                Notifications
+                <span id="num-h" class="bg-[#91b709] cursor-pointer text-white text-xs sm:text-sm px-2 py-0.5 rounded-md">3</span>
+            </h2>
+            <button id="b-m"
+                class="w-20 h-8 text-white text-[10px] rounded-4xl bg-[#91b709] transition-transform duration-150 hover:scale-105  hover:bg-blue-400 cursor-pointer">
+                Mark all as read
+            </button>
+        </div>
+
+        <!-- Notifications -->
+        <div class=" space-y-3 sm:space-y-4 text-sm">
+
+            <!-- Item -->
+            <div class="noti flex gap-3 bg-blue-200 p-3 rounded-lg ">
+                <img src="/images/1.png" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full" />
+                <div>
+                    <p class="text-gray-900">
+                        <span class="font-bold">Mark Webber</span>
+                        reacted to your recent post
+                        <span class="font-bold">My first tournament today!</span>
+                        <span class=" icon w-2 h-2 bg-red-500 inline-block rounded-full ml-1"></span>
+                    </p>
+                    <p class="text-gray-400 text-xs">1m ago</p>
+                </div>
+            </div>
+            <!-- Item -->
+            <div class="noti flex gap-3 bg-blue-200 p-3 rounded-lg">
+                <img src="/images/2.png" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full" />
+                <div>
+                    <p class="text-gray-900">
+                        <span class="font-bold">Angela Gray</span>
+                        followed you
+                        <span class="icon w-2 h-2 bg-red-500 inline-block rounded-full ml-1"></span>
+                    </p>
+                    <p class="text-gray-400 text-xs">5m ago</p>
+                </div>
+            </div>
+            <!-- Item -->
+            <div class="noti flex gap-3 bg-blue-200 p-3 rounded-lg">
+                <img src="/images/3.png" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full" />
+                <div>
+                    <p class="text-gray-900">
+                        <span class="font-bold">Jacob Thompson</span>
+                        has joined your group
+                        <span class="font-bold text-blue-600">Chess Club</span>
+                        <span class="icon  w-2 h-2 bg-red-500 inline-block rounded-full ml-1"></span>
+                    </p>
+                    <p class="text-gray-400 text-xs">1 day ago</p>
+                </div>
+            </div>
+            <!-- Message -->
+            <div class=" flex bg-blue-100 gap-3 p-3 rounded-lg">
+                <img src="/images/4.png" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full" />
+                <div class="w-full">
+                    <p class="text-gray-900">
+                        <span class="font-bold">Rizky Hasanuddin</span>
+                        sent you a private message
+                    </p>
+                    <p class="text-gray-400 text-xs mb-2">5 days ago</p>
+
+                    <div class="border p-3 rounded-md text-gray-900 hover:bg-gray-100 cursor-pointer">
+                        Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm
+                        already having lots of fun.
+                    </div>
+                </div>
+            </div>
+            <!-- Image notification -->
+            <div class=" flex gap-3 p-3 rounded-lg justify-between bg-blue-100">
+                <div class="flex gap-3">
+                    <img src="/images/5.png" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full" />
+                    <div>
+                        <p class="text-gray-900">
+                            <span class="font-bold">Kimberly Smith</span>
+                            commented on your picture
+                        </p>
+                        <p class="text-gray-400 text-xs">1 week ago</p>
+                    </div>
+                </div>
+                <img src="/images/5.1.png" class="w-9 h-9 sm:w-10 sm:h-10 rounded-md" />
+            </div>
+            <!-- Item -->
+            <div class=" flex gap-3 p-3 rounded-lg bg-blue-100">
+                <img src="/images/6.png" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full" />
+                <div>
+                    <p class="text-gray-900">
+                        <span class="font-bold">Nathan Peterson</span>
+                        reacted to your recent post
+                        <span class="font-bold">5 end-game strategies to increase your win rate</span>
+                    </p>
+                    <p class="text-gray-400 text-xs">2 weeks ago</p>
+                </div>
+            </div>
+            <!-- Item -->
+            <div class=" flex gap-3 p-3 rounded-lg bg-blue-100">
+                <img src="/images/7.png" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full" />
+                <div>
+                    <p class="text-gray-900">
+                        <span class="font-bold">Anna Kim</span>
+                        left the group
+                        <span class="font-bold text-blue-600">Chess Club</span>
+                    </p>
+                    <p class="text-gray-400 text-xs">2 weeks ago</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
