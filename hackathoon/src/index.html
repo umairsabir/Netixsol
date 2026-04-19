@@ -1,0 +1,629 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <Title>Hackathon</Title>
+</head>
+
+<body class="bg-black ">
+  <section class="w-full ">
+    <header class="bg-gray-950 flex justify-between text-white  md:p-3 p-0 md:pr-0 pr-5">
+      <h1 class="font-bold font-Poppins text-[25px]  md:pl-20 pl-3">LogoHere</h1>
+      <nav id="nav1"
+        class="duration-300 md:w-auto md:h-auto h-screen md:static fixed md:p-0 p-3 left-[-100%] md:bg-transparent bg-gray-800">
+        <ul class="flex md:flex-row flex-col gap-10 pr-20 md:pl-0 pl-5 md:pt-0 pt-3 text-[20px] font-Poppins font-semibold md:items-center items-left
+         ">
+          <li class="transition-transform duration-150 hover:scale-105  hover:text-gray-400 cursor-pointer"><a
+              href="#about">About</a></li>
+          <li class="transition-transform duration-150 hover:scale-105  hover:text-gray-400 cursor-pointer"><a
+              href="#collection">Collection</a></li>
+          <li class="transition-transform duration-150 hover:scale-105  hover:text-gray-400 cursor-pointer"><a
+              href="#creator">Creator</a></li>
+          <li class="transition-transform duration-150 hover:scale-105  hover:text-gray-400 cursor-pointer"><a
+              href="#roadmap">Road map</a></li>
+          <li><button
+              class="w-40 h-12 rounded-4xl bg-[#DA8F4D] transition-transform duration-150 hover:scale-105  hover:bg-blue-400 cursor-pointer">Sign
+              in</button></li>
+        </ul>
+      </nav>
+      <button id="bar" class="md:hidden block">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <div class="bg-[url('/image/banner.png')] bg-cover bg-center">
+      <div class="flex md:justify-between  md:pl-50 pl-3 md:pr-45 pr-30 md:pt-20 pt-5 md:pb-30 pb-5">
+        <div>
+          <div class="text-white">
+            <div class="flex items-center">
+              <div class="font-bold font-Poppins md:text-[60px] text-[15px]">
+                <p>We Have High<br>Quality <span class="text-[#DA8F4D]">NFT</span><br>Collections</p>
+              </div>
+              <figure><img class="md:size-10 size-5 " src="/image/wide.png" alt=""></figure>
+            </div>
+            <div class="">
+              <p class="md:text-[13px] text-[6px] font-Poppins ">Lorem ipsum dolor sit amet consectetur. Rhoncus massa
+                suspendisse<br class="md:block hidden">
+                turpis sed viverra tempus tortor. Habitant accumsan sagittis in facilisi<br class="md:block hidden">
+                placerat ac. Laoreet scelerisque viverra viverra ornare fermentum fauci<br class="md:block hidden">
+                -bus sit purus volutpat.Egestas lectus ornare convallis ornare nullam<br class="md:block hidden"> enim
+                neque.
+              </p>
+            </div>
+          </div>
+          <div
+            class="text-white font-bold font-Poppins md:pt-5 pt-2 md:block pb-3 flex md:justify-between md:pb-8 md:pr-38  ">
+            <button
+              class="md:text-[15px] text-[8px] md:w-35 w-20 md:h-12 h-7 rounded-4xl border-2 bg-[#DA8F4D] transition-transform duration-150 hover:scale-105  hover:bg-blue-400 cursor-pointer">Get
+              Whitelist</button>
+            <button
+              class="md:text-[15px] text-[8px] md:w-35 w-20 md:h-12 h-7 rounded-3xl border-2 bg-transparent transition-transform duration-150 hover:scale-105  hover:bg-blue-400 cursor-pointer">Contact
+              Us</button>
+          </div>
+          <div class="flex justify-between items-center md:gap-25 ">
+            <div
+              class="text-white md:w-110 w-45 md:h-23 h-10 bg-[#FDD8AD]/10 flex  md:gap-20 gap-3 md:p-5 p-2 md:pl-10 pl-4 rounded-3xl">
+              <div>
+                <p class="font-bold font-Poppins md:text-[18px] text-[10px]">240k+</p>
+                <p class=" font-Poppins md:text-[15px] text-[8px]">Total Sale</p>
+              </div>
+              <div>
+                <p class="font-bold font-Poppins md:text-[18px] text-[10px]">100k+</p>
+                <p class="md:text-[15px] text-[8px] font-Poppins">Auctions</p>
+              </div>
+              <div>
+                <p class="font-bold font-Poppins md:text-[18px] text-[10px]">240k+</p>
+                <p class="md:text-[15px] text-[8px] font-Poppins">Artists</p>
+              </div>
+            </div>
+            <figure><img class="md:size-10 size-5" src="/image/thinsmooth.png" alt=""></figure>
+          </div>
+        </div>
+        <div
+          class=" md:h-[450px] h-[180px] md:w-[350px] w-[100px] md:rounded-t-[120px] rounded-t-[120px] rounded-bl-[120px] border border-white md:pl-7 pl-2 ">
+          <div
+            class="md:h-[450px] h-[180px] md:w-[350px] w-[100px] rounded-t-[120px] rounded-bl-[120px] md:pl-4 pl-1 bg-[#FDD8AD]/25">
+            <div
+              class="md:h-[450px] h-[180px] md:w-[350px] w-[100px] rounded-t-[120px] rounded-bl-[120px] md:pl-4 pl-1 ">
+              <img class="md:size-111 size-44 md:py-3 py-1 md:pr-4 pr-1" src="/image/image 3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="bg-black w-full">
+    <h1 class="md:text-[50px] text-[15px] font-bold font-Poppins text-white text-center md:pt-5 pt-2 md:pb-15 pb-3">
+      About Us</h1>
+    <div
+      class="bg-[#DA8F4D]/9 md:w-full md:px-25 px-5 md:pt-10 pt-2 md:py-15 py-6 md:flex justify-between md:gap-20 gap-2">
+      <div class="grid grid-cols-2 md:gap-15 gap-3 md:w-110 w-70 md:h-110 h-50">
+        <div class="bg-[#B2B2B2]/30 rounded-3xl transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <img class="md:size-50 size-28 md:px-4 px-0 md:pl-0 pl-5" src="/image/image 104.png" alt="">
+        </div>
+        <div class="bg-[#B2B2B2]/30 rounded-3xl transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <img class="md:size-50 size-28 md:px-4 px-0 md:pl-0 pl-5" src="/image/image 105.png" alt="">
+        </div>
+        <div class="bg-[#B2B2B2]/30  rounded-3xl transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <img class="md:size-50 size-28 md:px-4 px-0 md:pl-0 pl-5" src="/image/image 106.png" alt="">
+        </div>
+        <div class="bg-[#B2B2B2]/30 rounded-3xl transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <img class="md:size-50 size-28 md:px-4 px-0 md:pl-0 pl-5" src="/image/image 107.png" alt="">
+        </div>
+      </div>
+      <div class="text-white md:w-140 w-70 md:text-[16px] text-[10px] font-semibold md:pl-10 pl-2 md:pt-0 pt-11">
+        <p>Lorem ipsum dolor sit amet consectetur. Pharetra faucibus donec ultrices eros elit metus morbi aliquam quis.
+          Suspendisse massa ullamcorper tortor morbi nisi leo. Ultrices leo vel tincidunt nunc eget elit. Gravida et
+          duis ipsum pellentesque libero. Tellus rhoncus metus et eget mattis fringilla nec id. Amet ultrices quam
+          ridiculus tellus. Leo adipiscing tincidunt amet nisi semper adipiscing quam in est. Tempor sed dui nunc diam
+          adipiscing at.
+        </p><br>
+        <p>Tellus rhoncus metus et eget mattis fringilla nec id. Amet ultrices quam ridiculus tellus. Leo adipiscing
+          tincidunt amet nisi semper adipiscing quam in est. Tempor sed dui nunc diam adipiscing at.
+        </p>
+        <div class="md:pt-20 pt-3 md:pl-5 pl-24">
+          <button id="bar"
+            class="md:w-35 w-20 md:h-12 h-7 rounded-4xl border-2 bg-[#DA8F4D] transition-transform duration-150 hover:scale-105  hover:bg-blue-400 cursor-pointer">
+            Connect Wallet</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="collection" class="bg-black w-full">
+    <div class="text-white md:pb-10 pb-4">
+      <h1 class="font-bold font-Poppins md:text-[55px] text-[18px] text-center">Top Collections</h1>
+      <p class="md:text-[15px] text-[8px] text-center">The largest and unique Super rare NFT marketplace<br>
+        For crypto-collectibles</p>
+    </div>
+    <div class="bg-[url('/image/banner.png')]  bg-cover bg-center md:w-full mx-auto">
+      <div class="grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-4 md:auto-cols-[200px] auto-cols-[100px] md:px-30 px-4 md:pt-0 pt-3">
+        <div class="relative rounded-3xl flex flex-col justify-between 
+                p-6 text-white border border-[#E88E0E]
+                transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white">
+            <h1 class="text-[14px] font-Poppins text-[#B4C7CE]">Created by</h1>
+            <div class="flex items-center gap-2">
+              <p class="fa-solid fa-circle"></p>
+              <p class="text-[14px] font-Poppins font-bold text-[#E88E0E] ">James Watson</p>
+            </div>
+          </div>
+          <div class="">
+            <img class="size-50 pl-15 py-5 " src="/image/1.png" alt="">
+          </div>
+          <div>
+            <div class="text-white dark:text-gray-400">
+              <p class="font-bold text-[16px]">Nfts Collections</p>
+              <p class="text-[14px]">Created by <span class="text-[#E88E0E]">James Watson</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="relative rounded-3xl flex flex-col justify-between 
+                p-6 text-white border border-[#E88E0E]
+                transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white">
+            <h1 class="text-[14px] text-[#B4C7CE]">Created by</h1>
+            <div class="flex items-center gap-2">
+              <p class="fa-solid fa-circle"></p>
+              <p class="text-[14px] font-bold text-[#E88E0E] ">James Watson</p>
+            </div>
+          </div>
+          <div class="">
+            <img class="size-50 pl-15 py-5" src="/image/2.png" alt="">
+          </div>
+          <div>
+            <div class="text-white dark:text-gray-400">
+              <p class="font-bold text-[16px]">Nfts Collections</p>
+              <p class="text-[14px]">Created by <span class="text-[#E88E0E]">James Watson</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="relative rounded-3xl flex flex-col justify-between 
+                p-6 text-white border border-[#E88E0E]
+                transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white">
+            <h1 class="text-[14px] text-[#B4C7CE]">Created by</h1>
+            <div class="flex items-center gap-2">
+              <p class="fa-solid fa-circle"></p>
+              <p class="text-[14px] font-bold text-[#E88E0E] ">James Watson</p>
+            </div>
+          </div>
+          <div class="">
+            <img class="size-50 pl-15 py-5" src="/image/3.png" alt="">
+          </div>
+          <div>
+            <div class="text-white dark:text-gray-400">
+              <p class="font-bold text-[16px]">Nfts Collections</p>
+              <p class="text-[14px]">Created by <span class="text-[#E88E0E]">James Watson</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="relative rounded-3xl flex flex-col justify-between 
+                p-6 text-white border border-[#E88E0E]
+                transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white">
+            <h1 class="text-[14px] text-[#B4C7CE]">Created by</h1>
+            <div class="flex items-center gap-2">
+              <p class="fa-solid fa-circle"></p>
+              <p class="text-[14px] font-bold text-[#E88E0E] ">James Watson</p>
+            </div>
+          </div>
+          <div class="">
+            <img class="size-50 pl-15 py-5" src="/image/4.png" alt="">
+          </div>
+          <div>
+            <div class="text-white dark:text-gray-400">
+              <p class="font-bold text-[16px]">Nfts Collections</p>
+              <p class="text-[14px]">Created by <span class="text-[#E88E0E]">James Watson</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="relative rounded-3xl flex flex-col justify-between 
+                p-6 text-white border border-[#E88E0E]
+                transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white">
+            <h1 class="text-[14px] text-[#B4C7CE]">Created by</h1>
+            <div class="flex items-center gap-2">
+              <p class="fa-solid fa-circle"></p>
+              <p class="text-[14px] font-bold text-[#E88E0E] ">James Watson</p>
+            </div>
+          </div>
+          <div class="">
+            <img class="size-50 pl-15 py-5" src="/image/5.png" alt="">
+          </div>
+          <div>
+            <div class="text-white dark:text-gray-400">
+              <p class="font-bold text-[16px]">Nfts Collections</p>
+              <p class="text-[14px]">Created by <span class="text-[#E88E0E]">James Watson</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="relative rounded-3xl flex flex-col justify-between 
+                p-6 text-white border border-[#E88E0E]
+                transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white">
+            <h1 class="text-[14px] text-[#B4C7CE]">Created by</h1>
+            <div class="flex items-center gap-2">
+              <p class="fa-solid fa-circle"></p>
+              <p class="text-[14px] font-bold text-[#E88E0E] ">James Watson</p>
+            </div>
+          </div>
+          <div class="">
+            <img class="size-50 pl-15 py-5" src="/image/6.png" alt="">
+          </div>
+          <div>
+            <div class="text-white dark:text-gray-400">
+              <p class="font-bold text-[16px]">Nfts Collections</p>
+              <p class="text-[14px]">Created by <span class="text-[#E88E0E]">James Watson</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center pm:pt-20 pt-10">
+        <button
+          class=" text-white md:block text-[10px] md:w-40 w-20 md:h-12 h-8 font-Poppins  rounded-4xl bg-[#DA8F4D] transition-transform duration-150 hover:scale-105  hover:bg-blue-400 cursor-pointer">
+          Explore More
+        </button>
+      </div>
+
+    </div>
+  </section>
+  <section id="creator" class="bg-black w-full ">
+    <div class="text-white font-Poppins md:pb-10 pb-4 md:pt-10 pt-3 ">
+      <h1 class="font-bold md:text-[55px] text-[20px] text-center">Top creators</h1>
+      <p class="md:text-[15px] text-[8px] text-center">Checkout Top Rated Creators on the NFT Marketplace</p>
+    </div>
+    <div class=" bg-black  bg-cover bg-center md:w-full mx-auto md:pb-20 pb-5">
+      <div class="grid md:grid-cols-4 grid-cols-2 md:gap-6 gap-2 auto-cols-[200px] md:px-30 px-2">
+        <div
+          class="relative  bg-[#FDD8AD]/10 rounded-3xl flex flex-col justify-between p-6 text-white border border-[#E88E0E] transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white ">
+            <div class="bg-[#858584] w-5 h-5 rounded-full text-white text-center">
+              1
+            </div>
+          </div>
+          <div>
+            <img class="md:size-35 size-30 md:pl-10 pl-2 md:py-3 py-2" src="/image/c1.png" alt="">
+          </div>
+          <div>
+            <div class="text-white font-Poppins dark:text-gray-400 text-center">
+              <p class="font-bold md:text-[16px] text-[12px]">Name NFT</p>
+              <p class="md:text-[14px] text-[10px]"><span class="text-[#858584]">Total Sales : </span> 34 . 53 ETH</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative bg-[#FDD8AD]/10 rounded-3xl flex flex-col justify-between p-6 text-white border border-[#E88E0E] transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white ">
+            <div class="bg-[#858584] w-5 h-5 rounded-full text-white text-center">
+              2
+            </div>
+          </div>
+          <div>
+            <img class="md:size-35 size-30  md:pl-10 pl-2 md:py-3 py-2" src="/image/c3.png" alt="">
+          </div>
+          <div>
+            <div class="text-white font-Poppins dark:text-gray-400 text-center">
+              <p class="font-bold md:text-[16px] text-[12px]">Name NFT</p>
+              <p class="md:text-[14px] text-[10px]"><span class="text-[#858584]">Total Sales : </span> 34 . 53 ETH</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative bg-[#FDD8AD]/10 rounded-3xl flex flex-col justify-between p-6 text-white border border-[#E88E0E] transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white ">
+            <div class="bg-[#858584] w-5 h-5 rounded-full text-white text-center">
+              3
+            </div>
+          </div>
+          <div>
+            <img class="md:size-35 size-30 md:pl-10 pl-2 md:py-3 py-2" src="/image/c4.png" alt="">
+          </div>
+          <div>
+            <div class="text-white font-Poppins dark:text-gray-400 text-center">
+              <p class="font-bold md:text-[16px] text-[12px]">Name NFT</p>
+              <p class="md:text-[14px] text-[10px]"><span class="text-[#858584]">Total Sales : </span> 34 . 53 ETH</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative bg-[#FDD8AD]/10 rounded-3xl flex flex-col justify-between p-6 text-white border border-[#E88E0E] transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white ">
+            <div class="bg-[#858584] w-5 h-5 rounded-full text-white text-center">
+              4
+            </div>
+          </div>
+          <div>
+            <img class="md:size-35 size-30  md:pl-10 pl-2 md:py-3 py-2" src="/image/c5.png" alt="">
+          </div>
+          <div>
+            <div class="text-white font-Poppins dark:text-gray-400 text-center">
+              <p class="font-bold md:text-[16px] text-[12px]">Name NFT</p>
+              <p class="md:text-[14px] text-[10px]"><span class="text-[#858584]">Total Sales : </span> 34 . 53 ETH</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative bg-[#FDD8AD]/10 rounded-3xl flex flex-col justify-between p-6 text-white border border-[#E88E0E] transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white ">
+            <div class="bg-[#858584] w-5 h-5 rounded-full text-white text-center">
+              5
+            </div>
+          </div>
+          <div>
+            <img class="md:size-35 size-30  md:pl-10 pl-2 md:py-3 py-2" src="/image/c6.png" alt="">
+          </div>
+          <div>
+            <div class="text-white font-Poppins dark:text-gray-400 text-center">
+              <p class="font-bold md:text-[16px] text-[12px]">Name NFT</p>
+              <p class="md:text-[14px] text-[10px]"><span class="text-[#858584]">Total Sales : </span> 34 . 53 ETH</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative bg-[#FDD8AD]/10 rounded-3xl flex flex-col justify-between p-6 text-white border border-[#E88E0E] transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white ">
+            <div class="bg-[#858584] w-5 h-5 rounded-full text-white text-center">
+              6
+            </div>
+          </div>
+          <div>
+            <img class="md:size-35 size-30  md:pl-10 pl-2 md:py-3 py2" src="/image/c7.png" alt="">
+          </div>
+          <div>
+            <div class="text-white font-Poppins dark:text-gray-400 text-center">
+              <p class="font-bold md:text-[16px] text-[12px]">Name NFT</p>
+              <p class="md:text-[14px] text-[10px]"><span class="text-[#858584]">Total Sales : </span> 34 . 53 ETH</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative bg-[#FDD8AD]/10 rounded-3xl flex flex-col justify-between p-6 text-white border border-[#E88E0E] transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white ">
+            <div class="bg-[#858584] w-5 h-5 rounded-full text-white text-center">
+              7
+            </div>
+          </div>
+          <div>
+            <img class="md:size-35 size-30  md:pl-10 pl-2 md:py-3 py-2" src="/image/c9.png" alt="">
+          </div>
+          <div>
+            <div class="text-white font-Poppins dark:text-gray-400 text-center">
+              <p class="font-bold md:text-[16px] text-[12px]">Name NFT</p>
+              <p class="md:text-[14px] text-[10px]"><span class="text-[#858584]">Total Sales : </span> 34 . 53 ETH</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative bg-[#FDD8AD]/10 rounded-3xl flex flex-col justify-between p-6 text-white border border-[#E88E0E] transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <div class="relative z-10 text-white ">
+            <div class="bg-[#858584] w-5 h-5 rounded-full text-white text-center">
+              8
+            </div>
+          </div>
+          <div>
+            <img class="md:size-35 size-30  md:pl-10 pl-2 md:py-3 py-2" src="/image/c8.png" alt="">
+          </div>
+          <div>
+            <div class="text-white font-Poppins dark:text-gray-400 text-center">
+              <p class="font-bold md:text-[16px] text-[12px]">Name NFT</p>
+              <p class="md:text-[14px] text-[10px]"><span class="text-[#858584]">Total Sales : </span> 34 . 53 ETH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <div id="roadmap" class="bg-black md:pb-20 pb-5">
+    <h1 class="md:text-[40px] text-[30px] text-white font-bold font-Poppins text-center">Road Map</h1>
+  </div>
+  <section
+    class="relative w-full min-h-screen flex items-center justify-center bg-[url('/image/banner.png')] bg-cover bg-center">
+    <!-- Main div -->
+    <div class="relative md:w-full max-w-6xl mx-auto md:px-6 px-2">
+      <!-- center Line -->
+      <div class="absolute left-1/2 md:inset-y-[110px] inset-y-[100px] w-[2px] bg-gray-400 -translate-x-1/2"></div>
+
+      <div class=" md:py-10 py-5">
+        
+        <div class="flex justify-between items-center relative">
+          <div
+            class="relative w-[45%] bg-white/10 backdrop-blur-md border-r-3 border-blue-400 rounded-2xl md:p-6 p-3 overflow-visible">
+            <!-- Arrow connect Line -->
+            <div class="absolute md:-right-11 -right-5 top-1/2 -translate-y-1/2 flex items-center z-20">
+              <div class="md:w-8 w-2 border-t-2 border-dashed border-blue-400"></div>
+              <div
+                class="w-0 h-0 border-t-[8px] border-b-[8px] border-l-[12px] border-t-transparent border-b-transparent border-l-blue-400">
+              </div>
+            </div>
+            <p class="md:text-[20px] text-[12px] font-Poppins text-gray-300 text-center">January</p>
+            <h2 class="md:text-[20px] text-[12px] font-Poppins text-white font-bold">Brief</h2>
+            <p class="md:text-[14px] text-[10px] text-gray-300 mt-2">Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non
+              semper quis. Morbi sed aliquet donec facilisis. Senectus eget.</p>
+          </div>
+          <div class="md:w-6 w-4 md:h-6 h-4 bg-white rounded-full z-10"></div>
+          <div class="w-[45%]"></div>
+        </div>
+      
+        <div class="flex justify-between items-center relative">
+          <div class="w-[45%]"></div>
+          <div class="md:w-6 w-4 md:h-6 h-4 bg-orange-400 rounded-full z-10"></div>
+          <div
+            class="relative w-[45%] bg-white/10 backdrop-blur-md border-l-3 border-orange-300 rounded-2xl md:p-6 p-3 overflow-visible">
+            <div class="absolute md:-left-11 -left-5 top-1/2 -translate-y-1/2 flex items-center z-20">
+              <div
+                class="w-0 h-0 border-t-[8px] border-b-[8px] border-r-[12px] border-t-transparent border-b-transparent border-r-orange-300">
+              </div>
+              <div class="md:w-8 w-2 border-t-2 border-dashed border-orange-300"></div>
+            </div>
+            <p class="md:text-[20px] text-[12px] text-gray-300 text-center">February</p>
+            <h2 class="md:text-[20px] text-[12px] text-white font-bold">Research</h2>
+            <p class="md:text-[14px] text-[10px] text-gray-300 mt-2">Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non
+              semper quis. Morbi sed aliquet donec facilisis. Senectus eget.</p>
+          </div>
+        </div>
+        
+        <div class="flex justify-between items-center relative">
+          <div
+            class="relative w-[45%] bg-white/10 backdrop-blur-md border-r-3 border-yellow-300 rounded-2xl md:p-6 p-3 overflow-visible">
+            <div class="absolute md:-right-11 -right-5 top-1/2 -translate-y-1/2 flex items-center z-20">
+              <div class="md:w-8 w-2 border-t-2 border-dashed border-yellow-300"></div>
+              <div
+                class="w-0 h-0 border-t-[8px] border-b-[8px] border-l-[12px] border-t-transparent border-b-transparent border-l-yellow-300">
+              </div>
+            </div>
+            <p class="md:text-[20px] text-[12px] text-center text-gray-300">March</p>
+            <h2 class="md:text-[20px] text-[12px] text-white font-bold">Discover</h2>
+            <p class="md:text-[14px] text-[10px] text-gray-300 mt-2">Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non
+              semper quis. Morbi sed aliquet donec facilisis. Senectus eget.</p>
+          </div>
+          <div class="md:w-6 w-4 md:h-6 h-4 bg-white rounded-full z-10"></div>
+          <div class="w-[45%]"></div>
+        </div>
+       
+        <div class="flex justify-between items-center relative">
+          <div class="w-[45%]"></div>
+          <div class="md:w-6 w-4 md:h-6 h-4 bg-orange-400 rounded-full z-10"></div>
+          <div
+            class="relative w-[45%] bg-white/10 backdrop-blur-md border-l-3 border-gray-300 rounded-2xl md:p-6 p-3 overflow-visible">
+            <div class="absolute md:-left-11 -left-5 top-1/2 -translate-y-1/2 flex items-center z-20">
+              <div
+                class="w-0 h-0 border-t-[8px] border-b-[8px] border-r-[12px] border-t-transparent border-b-transparent border-r-gray-300">
+              </div>
+              <div class="md:w-8 w-2 border-t-2 border-dashed border-gray-300"></div>
+            </div>
+            <p class="md:text-[20px] text-[12px] text-center text-gray-300">April</p>
+            <h2 class="md:text-[20px] text-[12px] text-white font-bold">Design</h2>
+            <p class="md:text-[14px] text-[10px] text-gray-300 mt-2">Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non
+              semper quis. Morbi sed aliquet donec facilisis. Senectus eget.</p>
+          </div>
+        </div>
+        
+        <div class="flex justify-between items-center relative">
+          <div
+            class="relative w-[45%] bg-white/10 backdrop-blur-md border-r-3 border-green-700 rounded-2xl md:p-6 p-3 overflow-visible">
+            <div class="absolute md:-right-11 -right-5 top-1/2 -translate-y-1/2 flex items-center z-20">
+              <div class="md:w-8 w-2 border-t-2 border-dashed border-green-700"></div>
+              <div
+                class="w-0 h-0 border-t-[8px] border-b-[8px] border-l-[12px] border-t-transparent border-b-transparent border-l-green-700">
+              </div>
+            </div>
+            <p class="md:text-[20px] text-[12px] text-center text-gray-300">May</p>
+            <h2 class="md:text-[20px] text-[12px] text-white font-bold">Testing</h2>
+            <p class="md:text-[14px] text-[10px] text-gray-300 mt-2">Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non
+              semper quis. Morbi sed aliquet donec facilisis. Senectus eget.</p>
+          </div>
+          <div class="md:w-6 w-4 md:h-6 h-4 bg-white rounded-full z-10"></div>
+          <div class="w-[45%]"></div>
+        </div>
+
+        <div class="flex justify-between items-center relative">
+          <div class="w-[45%]"></div>
+          <div class="md:w-6 w-4 md:h-6 h-4 bg-orange-400 rounded-full z-10"></div>
+          <div
+            class="relative w-[45%] bg-white/10 backdrop-blur-md border-l-3 border-yellow-300 rounded-2xl Md:p-6 p-3 overflow-visible">
+            <div class="absolute md:-left-11 -left-5 top-1/2 -translate-y-1/2 flex items-center z-20">
+              <div
+                class="w-0 h-0 border-t-[8px] border-b-[8px] border-r-[12px] border-t-transparent border-b-transparent border-r-yellow-300">
+              </div>
+              <div class="md:w-8 w-2 border-t-2 border-dashed border-yellow-300"></div>
+            </div>
+            <p class="md:text-[20px] text-[12px] text-gray-300 text-center">June</p>
+            <h2 class="md:text-[20px] text-[12px] text-white font-bold">Launch & Feedback</h2>
+            <p class="md:text-[14px] text-[10px] text-gray-300 mt-2">Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non
+              semper quis. Morbi sed aliquet donec facilisis. Senectus eget.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-black w-full pb-15">
+    <div class="text-white font-Poppins dark:text-gray-400 text-center md:pt-10 pt-5 ">
+      <h1 class="md:text-[35px] text-[30px] mt-0  font-bold">how it works</h1>
+    </div>
+    <div>
+      <div class="md:flex justify-between items-center md:gap-15 gap-0">
+        <div class="md:570 w-full md:pl-15 pl-5 transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <img class="md:w-full md:h-full md:size-200 size-70 rounded-4xl overflow-hidden " src="/image/image 110.png" alt="">
+        </div>
+        <div class="text-white  font-Poppins dark:text-gray-400 pr-20 md:pt-20 pt-5 md:block pl-3">
+          <figure><img class="md:size-15 size-10 " src="/image/wide.png" alt=""></figure>
+          <h1 class="font-bold font-Poppins md:text-[40px] text-[20px]">Setup and Connect<br>your Wallet.</h1>
+          <p class="md:text-[16px] text-[10px] font-Poppins">Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque nunc ut sit a volutpat
+            elementum. Nunc elit nisi pellentesque porta elementum. Id mattis neque diam nulla. Amet et a felis
+            pellentesque sed odio.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="md:flex justify-between items-center md:gap-15 md:px-30 px-2">
+        <div class="text-white font-Poppins dark:text-gray-400 md:pt-50 pt-5">
+          <h1 class="font-bold md:text-[40px] text-[20px]">Create your Own<br>Digital NFT</h1>
+          <p class="md:text-[16px] text-[10px]">Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque nunc ut sit a volutpat
+            elementum. Nunc elit nisi pellentesque porta elementum. Id mattis neque diam nulla. Amet et a felis
+            pellentesque sed odio.
+          </p>
+          <div class="flex justify-end md:pr-30 pr-5 md:pt-25 pt-5">
+            <img class="md:size-20 size-10" src="/image/wide.png" alt="">
+          </div>
+        </div>
+        <div>
+          <div
+            class="bg-[#FDD8AD]/10 md:w-100 rounded-3xl transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <img class="md:w-full md:h-full md:size-200 size-80 rounded-4xl overflow-hidden" src="/image/image 111.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="md:flex justify-between items-center md:gap-15 gap-5 md:pt-20 pt-5">
+        <div class="md:w-570 md:pl-15 transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <img class="md:w-full md:h-full md:size-200 size-80 rounded-4xl overflow-hidden " src="/image/image 113.png" alt="">
+        </div>
+        <div class="text-white font-Poppins dark:text-gray-400 md:pr-20 pr-5 md:pt-20 pt-5 md:block pl-2">
+          <h1 class="font-bold md:text-[40px] text-[20px]">Setup and Connect<br>your Wallet.</h1>
+          <p class="md:text-[16px] text-[10px]">Lorem ipsum dolor sit amet consectetur. Donec vitae pellentesque nunc ut sit a volutpat
+            elementum. Nunc elit nisi pellentesque porta elementum. Id mattis neque diam nulla. Amet et a felis
+            pellentesque sed odio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <section class="bg-[url('/image/banner.png')] w-full  md:py-15 py-5">
+    <div>
+      <h1 class="text-white text-center  font-bold font-Poppins md:text-[50px] text-[20px]">Join Our Community</h1>
+      <p class="text-white md:text-[13px] text-[10px] text-center md:pt-5 pt-2">Lorem ipsum dolor sit amet consectetur. Donec vitae
+        pellentesque<br>nunc ut sit a volutpat elementum.Nunc elit nisi pellentesque porta elementum. Id mattis neque diam nulla.
+        Amet et a felis pellentesque<br>sed odio.
+      </p>
+      <div class="md:flex md:gap-5 justify-center Md:pt-10 pt-5 md:block pl-14">
+        <input class="bg-[#D9D9D9] font-Poppins text-black p-4 md:w-[410px]  h-10 rounded-3xl cursor-pointer placeholder:italic"
+          type="search" placeholder="Your Email" name="" id="">
+        <div class="md:block pt-3 md:block pl-17">
+          <button
+          class="text-white  md:block text-[10px] font-Poppins md:w-35 w-20 md:h-10 h-8 rounded-4xl font-semibold bg-[#DA8F4D] transition-transform duration-150 hover:scale-105  hover:bg-blue-400 cursor-pointer">Get
+          Join Now
+        </button>
+        </div>
+      </div>
+      <p class="text-center text-white font-Poppins md:pt-10 pt-5 md:text-[20px] text-[10px]">Ⓒ NFT Market. Use this template freely.</p>
+
+    </div>
+
+
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
