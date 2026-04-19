@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body class="bg-white flex items-center justify-center ">
+
+    <section class="bg-blue-50 flex justify-between flex-col">
+        <div class="text-center text-blue-400/40 text-[30px] font-bold  pr-60 align-top lg:block hidden">
+            ))
+        </div>
+        <div class="flex justify-between">
+            <span class="text-red-400/20 pt-10 text-[50px] font-bold pr-2 sm:block hidden">
+                >
+            </span>
+            <div class="bg-blue-100 sm:p-20 p-4 shadow-2xl shadow-gray-500 rounded-2xl">
+                <div class="bg-white sm:p-5 p-4 rounded-2xl rounded-br-[150px]">
+
+                    <div class="flex sm:flex-row flex-col sm:gap-2 gap-4">
+
+                        <div class="fieldclass flex flex-col ">
+                            <label class="inputlable text-[15px] text-gray-500">Day</label>
+                            <input id="day" type="number" placeholder="DD"
+                                class="inputclass border-2 rounded-2xl  p-2 border-gray-300 focus:outline-purple-500">
+                        </div>
+                        <div class="fieldclass flex flex-col">
+                            <label class="inputlable text-[15px] text-gray-500">Month</label>
+                            <input id="month" type="number" placeholder="MM"
+                                class="inputclass border-2 p-2 rounded-2xl border-gray-300 focus:outline-purple-500">
+                        </div>
+                        <div class="fieldclass flex flex-col">
+                            <label class="inputlable text-[15px] text-gray-500">Year</label>
+                            <input id="year" type="number" placeholder="YYYY"
+                                class="inputclass border-2 p-2 rounded-2xl border-gray-300 focus:outline-purple-500">
+                        </div>
+
+                    </div>
+                    <div class="flex justify-end my-6">
+                        <button id="btn"
+                            class="bg-purple-500 hover:bg-purple-600 cursor-pointer text-white w-12 h-12 rounded-full">
+                            <img class="p-3" src="/src/icon-arrow.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="sm:text-5xl text-3xl font-bold italic space-y-2">
+                        <p><span id="years" class="text-purple-500">--</span> years</p>
+                        <p><span id="months" class="text-purple-500">--</span> months</p>
+                        <p><span id="days" class="text-purple-500">--</span> days</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <span class="text-blue-400/60 pt-20 pr-5 text-[10px] lg:block hidden">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i><br>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i><br>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i><br>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i><br>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i><br>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+            </span>
+        </div>
+        <div class="text-center text-red-400/20 text-[20px] align-top font-bold pl-40 lg:block hidden">
+            /\/\/\/\/\<br>
+            /\/\/\/\/\
+
+        </div>
+
+
+    </section>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
