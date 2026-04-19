@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center py-10 md:py-0">
+    <!-- Title -->
+    <header class="mb-12 md:mb-16 tracking-[0.5em] text-dark-grayish-cyan font-bold text-2xl text-center">
+        SPLI<br>TTER
+    </header>
+
+    <!-- Main Card -->
+    <main
+        class="bg-white rounded-t-3xl md:rounded-3xl p-8 shadow-xl max-w-4xl w-full flex flex-col md:flex-row gap-8 lg:p-10 md:max-w-[850px] lg:max-w-[920px]">
+
+        <!-- Left Section (Inputs) -->
+        <section class="flex-1 space-y-10">
+
+            <!-- Bill Input -->
+            <div>
+                <label for="bill" class="block text-dark-grayish-cyan font-bold mb-2">Bill</label>
+                <div class="relative">
+                    <input type="number" id="bill"
+                        class="w-full bg-very-light-grayish-cyan text-very-dark-cyan font-bold text-2xl text-right py-2 px-4 focus:outline-none focus:ring-2 focus:ring-strong-cyan cursor-pointer hover:ring-2 hover:ring-strong-cyan transition-all rounded"
+                        placeholder="0" />
+                </div>
+            </div>
+
+            <!-- Select Tip % -->
+            <div>
+                <label class="block text-dark-grayish-cyan font-bold mb-4">Select Tip %</label>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <button
+                        class="tip-btn bg-very-dark-cyan text-white text-2xl font-bold py-2 rounded hover:bg-[#9fe8df] hover:text-very-dark-cyan transition-colors"
+                        data-val="5">5%</button>
+                    <button
+                        class="tip-btn bg-very-dark-cyan text-white text-2xl font-bold py-2 rounded hover:bg-[#9fe8df] hover:text-very-dark-cyan transition-colors"
+                        data-val="10">10%</button>
+                    <button
+                        class="tip-btn bg-very-dark-cyan text-white text-2xl font-bold py-2 rounded hover:bg-[#9fe8df] hover:text-very-dark-cyan transition-colors"
+                        data-val="15">15%</button>
+                    <button
+                        class="tip-btn bg-very-dark-cyan text-white text-2xl font-bold py-2 rounded hover:bg-[#9fe8df] hover:text-very-dark-cyan transition-colors"
+                        data-val="25">25%</button>
+                    <button
+                        class="tip-btn bg-very-dark-cyan text-white text-2xl font-bold py-2 rounded hover:bg-[#9fe8df] hover:text-very-dark-cyan transition-colors"
+                        data-val="50">50%</button>
+                    <input type="number" id="custom-tip"
+                        class="tip-custom bg-very-light-grayish-cyan text-very-dark-cyan font-bold text-2xl text-right py-2 px-4 focus:outline-none focus:ring-2 focus:ring-strong-cyan hover:ring-2 hover:ring-strong-cyan transition-all w-full rounded placeholder:text-dark-grayish-cyan placeholder:text-2xl"
+                        placeholder="Custom" />
+                </div>
+            </div>
+
+            <!-- Number of People -->
+            <div>
+                <div class="flex justify-between mb-2">
+                    <label for="people" class="block text-dark-grayish-cyan font-bold">Number of People</label>
+                    <span id="people-error" class="text-error font-bold hidden">Can't be zero</span>
+                </div>
+                <div class="relative">
+                    <input type="number" id="people"
+                        class="w-full bg-very-light-grayish-cyan text-very-dark-cyan font-bold text-2xl text-right py-2 px-4 focus:outline-none focus:ring-2 focus:ring-strong-cyan cursor-pointer hover:ring-2 hover:ring-strong-cyan transition-all rounded"
+                        placeholder="0" />
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Right Section (Totals) -->
+        <section class="flex-1 bg-very-dark-cyan rounded-[20px] p-6 md:p-10 flex flex-col justify-between">
+            <div class="space-y-8 md:space-y-12">
+                <!-- Tip Amount/Person -->
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="text-white font-bold mb-0">Tip Amount</h2>
+                        <p class="text-grayish-cyan font-bold text-[13px]">/ person</p>
+                    </div>
+                    <p class="text-strong-cyan font-bold text-4xl lg:text-5xl tracking-tighter" id="tip-amount">$0.00
+                    </p>
+                </div>
+
+                <!-- Total/Person -->
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="text-white font-bold mb-0">Total</h2>
+                        <p class="text-grayish-cyan font-bold text-[13px]">/ person</p>
+                    </div>
+                    <p class="text-strong-cyan font-bold text-4xl lg:text-5xl tracking-tighter" id="total">$0.00</p>
+                </div>
+            </div>
+
+            <button id="reset"
+                class="w-full bg-strong-cyan text-very-dark-cyan font-bold text-xl py-3 rounded uppercase mt-8 lg:mt-0 opacity-20 hover:bg-[#9fe8df] transition-all"
+                disabled>Reset</button>
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
