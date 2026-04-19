@@ -1,0 +1,249 @@
+{
+  "menu": [
+    {
+      "section": {
+        "title": "Burgers",
+        "items": [
+          {
+            "name": "Royal Cheese Burger",
+            "description": "Beef patty with cheddar cheese, lettuce, and special sauce",
+            "price": 5.99,
+            "image": "/image/Rectangle 46.png"
+          },
+          {
+            "name": "Zinger Chicken Burger",
+            "description": "Crispy fried chicken with spicy mayo and fresh lettuce",
+            "price": 4.79,
+            "image": "/image/Rectangle 46 (2).png"
+          },
+          {
+            "name": "Double Beef Burger",
+            "description": "Two juicy beef patties with cheese and BBQ sauce",
+            "price": 6.89,
+            "image": "/image/Rectangle 46 (3).png"
+          },
+          {
+            "name": "Grilled Chicken Burger",
+            "description": "Grilled chicken fillet with light mayo and veggies",
+            "price": 5.29,
+            "image": "/image/Rectangle 46 (4).png"
+          },
+          {
+            "name": "BBQ Deluxe Burger",
+            "description": "Beef patty with BBQ sauce, onion rings, and cheese",
+            "price": 6.49,
+            "image": "/image/Rectangle 46 (5).png"
+          },
+          {
+            "name": "Veggie Supreme Burger",
+            "description": "Crispy vegetable patty with fresh salad and sauce",
+            "price": 4.39,
+            "image": "/image/Rectangle 46 (6).png"
+          }
+        ]
+      }
+    },
+    {
+      "section": {
+        "title": "Fries",
+        "items": [
+          {
+            "name": "Classic French Fries",
+            "description": "Crispy golden fries lightly salted",
+            "price": 2.49,
+            "image": "/image/Rectangle 46 (1).png"
+          },
+          {
+            "name": "Cheese Loaded Fries",
+            "description": "Fries topped with melted cheese sauce",
+            "price": 3.99,
+            "image": "/image/Rectangle 46 (7).png"
+          },
+          {
+            "name": "Peri Peri Fries",
+            "description": "Spicy fries tossed in peri peri seasoning",
+            "price": 2.99,
+            "image": "/image/Rectangle 46 (8).png"
+          },
+          {
+            "name": "Curly Fries",
+            "description": "Crispy spiral fries with a seasoned coating",
+            "price": 3.49,
+            "image": "/image/Rectangle 46 (10).png"
+          },
+          {
+            "name": "Masala Fries",
+            "description": "Fries mixed with tangy and spicy masala",
+            "price": 3.19,
+            "image": "/image/Rectangle 46 (11).png"
+          },
+          {
+            "name": "Garlic Parmesan Fries",
+            "description": "Fries tossed with garlic butter and parmesan cheese",
+            "price": 4.29,
+            "image": "/image/Rectangle 46 (12).png"
+          }
+        ]
+      }
+    },
+    {
+      "section": {
+        "title": "Cold Drinks",
+        "items": [
+          {
+            "name": "Coca Cola",
+            "description": "Chilled classic Coke served in a 500ml bottle",
+            "price": 2.50,
+            "image": "/image/Rectangle 46 (9).png"
+          },
+          {
+            "name": "Pepsi",
+            "description": "Refreshing Pepsi served chilled",
+            "price": 2.40,
+            "image": "/image/Rectangle 46 (13).png"
+          },
+          {
+            "name": "Fanta Orange",
+            "description": "Sweet and tangy orange soda",
+            "price": 2.30,
+            "image": "/image/Rectangle 46 (14).png"
+          },
+          {
+            "name": "Sprite",
+            "description": "Lemon-lime flavored soda, served chilled",
+            "price": 2.20,
+            "image": "/image/Rectangle 46 (15).png"
+          },
+          {
+            "name": "Iced Tea Lemon",
+            "description": "Refreshing iced tea with lemon flavor",
+            "price": 2.60,
+            "image": "/image/Rectangle 46 (16).png"
+          },
+          {
+            "name": "Tropical Juice",
+            "description": "Mixed tropical fruit juice served cold",
+            "price": 2.80,
+            "image": "/image/Rectangle 46 (17).png"
+          }
+        ]
+      }
+    }
+  ],
+  "similarRestaurants": [
+    {
+      "name": "McDonald's London",
+      "image": "/image/Rectangle 13.png"
+    },
+    {
+      "name": "Papa Johns",
+      "image": "/image/Rectangle 13 (1).png"
+    },
+    {
+      "name": "KFC West London",
+      "image": "/image/Rectangle 13 (2).png"
+    },
+    {
+      "name": "Texas Chicken",
+      "image": "/image/Rectangle 13 (3).png"
+    },
+    {
+      "name": "Burger King",
+      "image": "/image/Rectangle 13 (4).png"
+    },
+    {
+      "name": "Shawarma 1",
+      "image": "/image/Rectangle 13 (5).png"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Ali Khan",
+      "location": "Lahore",
+      "image": "/image/3.png",
+      "rating": 4,
+      "date": "12th March, 2024",
+      "text": "Great experience overall. The food was fresh and delivery was on time. Really satisfied with the service."
+    },
+    {
+      "name": "Sara Ahmed",
+      "location": "Karachi",
+      "image": "/image/5.png",
+      "rating": 5,
+      "date": "5th January, 2024",
+      "text": "Absolutely loved it! The burger was juicy and tasty. Customer service was very polite and helpful."
+    },
+    {
+      "name": "John Smith",
+      "location": "London",
+      "image": "/image/6.png",
+      "rating": 3,
+      "date": "20th February, 2024",
+      "text": "Food was okay, but delivery took longer than expected. Still decent overall experience."
+    },
+    {
+      "name": "Emma Watson",
+      "location": "Manchester",
+      "image": "/image/7.png",
+      "rating": 5,
+      "date": "10th April, 2024",
+      "text": "Amazing taste and fast delivery. Packaging was also very neat and clean. Highly recommended!"
+    },
+    {
+      "name": "David Miller",
+      "location": "Birmingham",
+      "image": "/image/sunglasses.png",
+      "rating": 4,
+      "date": "2nd March, 2024",
+      "text": "Good quality food and reasonable prices. Will definitely order again."
+    },
+    {
+      "name": "Ayesha Malik",
+      "location": "Islamabad",
+      "image": "/image/2.png",
+      "rating": 5,
+      "date": "18th February, 2024",
+      "text": "Everything was perfect! Hot food, fast delivery and great customer service."
+    },
+    {
+      "name": "Usman Tariq",
+      "location": "Faisalabad",
+      "image": "/image/Young.png",
+      "rating": 4,
+      "date": "8th March, 2024",
+      "text": "Taste was really good and portions were generous. Delivery was slightly late but overall satisfied."
+    },
+    {
+      "name": "Fatima Noor",
+      "location": "Multan",
+      "image": "/image/Young w.png",
+      "rating": 5,
+      "date": "25th January, 2024",
+      "text": "Loved the fries and drinks. Everything was fresh and nicely packed."
+    },
+    {
+      "name": "Hassan Raza",
+      "location": "Rawalpindi",
+      "image": "/image/4.png",
+      "rating": 3,
+      "date": "14th February, 2024",
+      "text": "Food taste was fine but could improve in delivery timing."
+    },
+    {
+      "name": "Zain Ali",
+      "location": "Sialkot",
+      "image": "/image/Studio.png",
+      "rating": 4,
+      "date": "3rd April, 2024",
+      "text": "Very good experience. Will recommend to friends and family."
+    },
+    {
+      "name": "Maryam Khan",
+      "location": "Peshawar",
+      "image": "/image/5.1.png",
+      "rating": 5,
+      "date": "28th March, 2024",
+      "text": "Excellent service and delicious food. Everything was perfect!"
+    }
+  ]
+}
