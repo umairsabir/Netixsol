@@ -1,0 +1,1017 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>QuizMaster</title>
+  </head>
+
+  <body>
+    <header id="header" class="bg-white font-Manrope">
+      <div class="flex items-center justify-between px-4 md:px-10 py-4">
+        <div class="flex items-center gap-3">
+          <svg
+            id="headersvg"
+            width="14"
+            height="14"
+            viewBox="0 0 12 12"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 0H12L10 6L12 12H0L2 6L0 0Z"
+              fill="#121417"
+            />
+          </svg>
+          <h1 id="headerh1" class="text-[20px] md:text-[23px] font-bold">
+            QuizMaster
+          </h1>
+        </div>
+        <nav class="hidden md:flex ml-auto mr-10">
+          <ul
+            id="headernav"
+            class="flex items-center gap-8 text-gray-700 font-semibold text-[15px]"
+          >
+            <li><a href="index.html" class="hover:text-black">Home</a></li>
+            <li>
+              <a id="quizzeshome" href="#" class="hover:text-black">Quizzes</a>
+            </li>
+            <li>
+              <a id="Leaderboardhome" href="#" class="hover:text-black"
+                >Leaderboard</a
+              >
+            </li>
+            <li>
+              <a id="profilehome" href="#" class="hover:text-black">Profile</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Right Side -->
+        <div class="flex items-center gap-4">
+          <button
+            id="headerbell"
+            class="p-2 rounded-lg bg-gray-100 hover:bg-gray-200"
+          >
+            <i class="fa-regular fa-bell"></i>
+          </button>
+
+          <div
+            id="headerAvatar"
+            class="avatar-container w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center overflow-hidden cursor-pointer"
+          >
+            <img
+              id="headerimg"
+              src="/image/profile.png"
+              class="w-full h-full object-cover"
+            />
+            <span
+              id="headerInitials"
+              class="hidden w-full h-full flex items-center justify-center bg-blue-600 text-white font-bold text-lg"
+            ></span>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="menuBtn" class="md:hidden p-2 rounded-lg bg-gray-100">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+
+      <!-- LEFT SLIDE MENU -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 left-0 h-full w-64 bg-white z-50 -translate-x-full transition-transform duration-300 shadow-lg"
+      >
+        <!-- Header -->
+        <div class="p-5 border-b flex justify-between items-center">
+          <h2 class="font-bold text-lg">Menu</h2>
+          <button id="closeBtn" class="text-xl"></button>
+        </div>
+
+        <!-- Links -->
+        <ul class="flex flex-col gap-5 p-5 text-gray-700 font-semibold">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Quizzes</a></li>
+          <li><a href="#">Leaderboard</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="main-content" class="px-4 md:px-40 mt-6 mb-10">
+      <div class="relative rounded-xl overflow-hidden h-[350px] md:h-[500px]">
+        <!-- Background Image -->
+        <img
+          src="/image/banner.jpg"
+          alt="hero"
+          class="w-full h-full bg-center bg-cover"
+        />
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/20"></div>
+
+        <!-- Content -->
+        <div
+          class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 md:mt-50 mt-30"
+        >
+          <h1 class="text-[22px] md:text-[45px] font-bold mb-4">
+            Welcome to QuizMaster
+          </h1>
+
+          <p class="text-sm md:text-[15px] max-w-3xl mb-6">
+            Test your knowledge with our engaging quizzes. Compete with friends
+            and climb the leaderboard. Start your quiz journey today!
+          </p>
+
+          <button
+            id="get-started-btn"
+            class="cursor-pointer bg-blue-500 hover:bg-blue-700 transition md:px-8 px-3 md:ml-10 ml-3 py-3 rounded-lg font-medium"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-col mb-8 mt-18">
+        <h2
+          class="text-[#121417] text-[28px] md:text-[32px] font-bold tracking-[-1px] leading-tight mb-3"
+        >
+          Key Features
+        </h2>
+        <p class="text-black text-[16px] leading-[24px]">
+          Explore the exciting features that make QuizMaster the ultimate quiz
+          app.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        <!-- Card 1 -->
+        <div
+          class="flex flex-col p-6 rounded-xl border border-gray-300 bg-white"
+        >
+          <div class="text-[#121417] text-[22px] mb-4">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <h3 class="text-[#121417] text-[16px] font-bold leading-[24px] mb-2">
+            Timed Quizzes
+          </h3>
+          <p class="text-[#637588] text-[14px] leading-[21px]">
+            Challenge yourself with timed quizzes to test your speed and
+            accuracy.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="flex flex-col p-6 rounded-xl border border-gray-300 bg-white"
+        >
+          <div class="text-[#121417] text-[22px] mb-4">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h3 class="text-[#121417] text-[16px] font-bold leading-[24px] mb-2">
+            Leaderboard
+          </h3>
+          <p class="text-[#637588] text-[14px] leading-[21px]">
+            Compete with friends and other users to see who can achieve the
+            highest scores.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="flex flex-col p-6 rounded-xl border border-gray-300 bg-white"
+        >
+          <div class="text-[#121417] text-[22px] mb-4">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="text-[#121417] text-[16px] font-bold leading-[24px] mb-2">
+            Progress Tracking
+          </h3>
+          <p class="text-[#637588] text-[14px] leading-[21px]">
+            Track your progress and see how you improve over time with detailed
+            performance reports.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- signup page -->
+    <section
+      id="signup-section"
+      class="hidden px-4 md:px-10 mt-16 flex justify-center"
+    >
+      <div class="w-full max-w-md bg-white p-6 md:p-8 rounded-xl shadow-md">
+        <h2 class="text-2xl font-bold text-center mb-6">Create your Account</h2>
+
+        <form class="space-y-4">
+          <input
+            id="signupName"
+            type="text"
+            placeholder="Full Name"
+            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <input
+            id="signupEmail"
+            type="email"
+            placeholder="Email"
+            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <input
+            id="signupPassword"
+            type="password"
+            placeholder="Password"
+            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <input
+            id="signupconfirmPassword"
+            type="password"
+            placeholder="Confirm Password"
+            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <button
+            id="signupbtn"
+            type="button"
+            class="cursor-pointer w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Sign Up
+          </button>
+
+          <p class="text-sm text-center text-gray-500">
+            Already have an account ?
+            <button
+              id="sign-in"
+              type="button"
+              class="text-blue-600 hover:underline"
+            >
+              Sign in
+            </button>
+          </p>
+        </form>
+      </div>
+    </section>
+    <!-- login page -->
+    <section
+      id="login-section"
+      class="hidden px-4 md:px-10 mt-16 flex justify-center"
+    >
+      <div class="w-full max-w-md bg-white p-6 md:p-8 rounded-xl shadow-md">
+        <!-- Heading -->
+        <h2 class="text-2xl font-bold text-center mb-6">Welcome back</h2>
+
+        <form class="space-y-4">
+          <!-- Email -->
+          <input
+            id="loginEmail"
+            type="email"
+            placeholder="Email"
+            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+
+          <!-- Password + Eye Icon -->
+          <div class="relative">
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              class="w-full border rounded-lg px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+            <!-- Eye Icon -->
+            <span
+              id="togglePassword"
+              class="absolute right-3 top-2.5 cursor-pointer text-gray-500"
+            >
+              👁️
+            </span>
+          </div>
+
+          <!-- Remember + Forgot -->
+          <div class="flex justify-between items-center text-sm">
+            <a href="#" class="text-blue-600 hover:underline">
+              Forgot Password?
+            </a>
+          </div>
+
+          <!-- Button -->
+          <button
+            id="login-btn"
+            type="submit"
+            class="cursor-pointer w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Log in
+          </button>
+
+          <!-- Signup Link -->
+          <p class="text-sm text-center text-gray-500">
+            Don’t have an account?
+            <button
+              id="loginsignup"
+              type="button"
+              class="text-blue-600 hover:underline"
+            >
+              Sign Up
+            </button>
+          </p>
+        </form>
+      </div>
+    </section>
+    <!-- quiz select -->
+    <section id="quizselect" class="hidden min-h-screen">
+      <!-- HEADER -->
+      <header class="bg-white shadow-sm">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between"
+        >
+          <!-- Logo -->
+          <div class="flex items-center gap-5">
+            <svg
+              id="headersvg"
+              width="14"
+              height="14"
+              viewBox="0 0 12 12"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0H12L10 6L12 12H0L2 6L0 0Z"
+                fill="#121417"
+              />
+            </svg>
+            <span class="font-bold text-lg sm:text-xl">QuizMaster</span>
+            <nav class="hidden lg:flex gap-6 text-gray-800 text-sm pl-4">
+              <a id="quizhome" href="" class="hover:text-black">Home</a>
+              <a href="#" class="hover:text-black">Categories</a>
+              <a href="#" class="hover:text-black">My Quizzes</a>
+              <a id="Leaderboardquiz" href="#" class="hover:text-black"
+                >Leaderboard</a
+              >
+            </nav>
+          </div>
+          <!-- Right Side -->
+          <div class="flex items-center gap-2 sm:gap-4">
+            <div class="relative w-32 sm:w-48 hidden sm:block">
+              <!-- Icon -->
+              <i
+                class="fa-brands fa-sistrix absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+              ></i>
+
+              <!-- Input -->
+              <input
+                type="text"
+                placeholder="Search"
+                class="w-full pl-10 pr-3 py-2 text-sm border border-gray-300 rounded-full bg-gray-100 focus:outline-none"
+              />
+            </div>
+            <div
+              id="quizAvatar"
+              class="avatar-container w-8 h-8 rounded-full flex items-center justify-center overflow-hidden cursor-pointer"
+            >
+              <img
+                id="quizimg"
+                src="/image/qprofile.png"
+                class="w-full h-full object-cover"
+              />
+              <span
+                id="quizInitials"
+                class="hidden w-full h-full flex items-center justify-center bg-blue-600 text-white font-bold text-sm"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- BODY -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-40 py-8 sm:py-10">
+        <!-- Title -->
+        <h1 class="text-2xl sm:text-3xl font-bold mb-6">Select a Quiz</h1>
+
+        <!-- Categories (Responsive Scroll) -->
+        <div class="flex gap-3 mb-8 overflow-x-auto pb-2">
+          <button
+            class="category-btn px-4 py-2 bg-gray-200 rounded-lg whitespace-nowrap"
+            data-type="all"
+          >
+            All
+          </button>
+          <button
+            class="category-btn px-4 py-2 bg-gray-200 rounded-lg whitespace-nowrap"
+            data-type="Science"
+          >
+            Science
+          </button>
+          <button
+            class="category-btn px-4 py-2 bg-gray-200 rounded-lg whitespace-nowrap"
+            data-type="History"
+          >
+            History
+          </button>
+          <button
+            class="category-btn px-4 py-2 bg-gray-200 rounded-lg whitespace-nowrap"
+            data-type="Literature"
+          >
+            Literature
+          </button>
+          <button
+            class="category-btn px-4 py-2 bg-gray-200 rounded-lg whitespace-nowrap"
+            data-type="Mathematics"
+          >
+            Mathematics
+          </button>
+        </div>
+
+        <!-- Featured -->
+        <h2 class="text-lg sm:text-xl font-semibold mb-4">Featured Quizzes</h2>
+
+        <div
+          id="featuredSection"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10"
+        >
+          <div>
+            <div class="h-40 sm:h-44 bg-orange-100 rounded-xl mb-3">
+              <img class="h-full w-full" src="/image/f1.png" alt="" />
+            </div>
+            <h3 class="font-semibold">The Universe</h3>
+            <p class="text-sm text-gray-500">
+              Test your knowledge about the cosmos.
+            </p>
+          </div>
+          <div>
+            <div class="h-40 sm:h-44 bg-orange-100 rounded-xl mb-3">
+              <img class="h-full w-full" src="/image/f2.png" alt="" />
+            </div>
+            <h3 class="font-semibold">Ancient Civilizations</h3>
+            <p class="text-sm text-gray-500">
+              Explore the mysteries of ancient cultures.
+            </p>
+          </div>
+          <div>
+            <div class="h-40 sm:h-44 bg-orange-100 rounded-xl mb-3">
+              <img class="h-full w-full" src="/image/f3.png" alt="" />
+            </div>
+            <h3 class="font-semibold">Shakespearean Plays</h3>
+            <p class="text-sm text-gray-500">
+              Dive into the world of the Bard.
+            </p>
+          </div>
+        </div>
+
+        <!-- All Quizzes -->
+        <h2 class="text-lg sm:text-xl font-bold mb-6">All Quizzes</h2>
+
+        <!-- Item -->
+        <div class="space-y-8">
+          <div
+            id="quizgeneral"
+            class="flex flex-col sm:flex-row justify-between gap-4 cursor-pointer"
+          >
+            <div>
+              <h3 class="font-semibold text-base sm:text-lg">
+                General Knowledge
+              </h3>
+              <p class="text-gray-500 text-sm">
+                Test your overall knowledge with a mix of questions.
+              </p>
+            </div>
+            <div class="w-full sm:w-64 h-40 bg-orange-100 rounded-xl">
+              <img class="h-full w-full" src="/image/f4.png" alt="" />
+            </div>
+          </div>
+          <div
+            id="quizScience"
+            class="flex flex-col sm:flex-row justify-between gap-4 cursor-pointer"
+          >
+            <div>
+              <h3 class="font-semibold text-base sm:text-lg">Science</h3>
+              <p class="text-gray-500 text-sm">
+                Explore the wonders of science from biology to physics.
+              </p>
+            </div>
+            <div class="w-full sm:w-64 h-40 bg-orange-100 rounded-xl">
+              <img class="h-full w-full" src="/image/f5.png" alt="" />
+            </div>
+          </div>
+          <div
+            id="quizHistory"
+            class="flex flex-col sm:flex-row justify-between gap-4 cursor-pointer"
+          >
+            <div>
+              <h3 class="font-semibold text-base sm:text-lg">History</h3>
+              <p class="text-gray-500 text-sm">
+                Journey through time and learn about historical events.
+              </p>
+            </div>
+            <div class="w-full sm:w-64 h-40 bg-orange-100 rounded-xl">
+              <img class="h-full w-full" src="/image/f6.png" alt="" />
+            </div>
+          </div>
+          <div
+            id="quizLiterature"
+            class="flex flex-col sm:flex-row justify-between gap-4 cursor-pointer"
+          >
+            <div>
+              <h3 class="font-semibold text-base sm:text-lg">Literature</h3>
+              <p class="text-gray-500 text-sm">
+                Discover the world of books and authors.
+              </p>
+            </div>
+            <div class="w-full sm:w-64 h-40 bg-orange-100 rounded-xl">
+              <img class="h-full w-full" src="/image/f7.png" alt="" />
+            </div>
+          </div>
+          <div
+            id="quizMathematics"
+            class="flex flex-col sm:flex-row justify-between gap-4 cursor-pointer"
+          >
+            <div>
+              <h3 class="font-semibold text-base sm:text-lg">Mathematics</h3>
+              <p class="text-gray-500 text-sm">
+                Challenge your math skills with various problems.
+              </p>
+            </div>
+            <div class="w-full sm:w-64 h-40 bg-orange-100 rounded-xl">
+              <img class="h-full w-full" src="/image/f8.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- progress section -->
+    <section id="Progresssection" class="hidden min-h-screen flex flex-col">
+      <!-- HEADER -->
+      <header class="bg-white shadow-sm">
+        <div
+          class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between"
+        >
+          <h1 class="text-lg sm:text-xl font-semibold">Quiz App</h1>
+
+          <div class="flex items-center gap-8">
+            <nav class="hidden md:flex gap-6 text-gray-800 text-sm">
+              <a href="#" class="hover:text-black">Home</a>
+              <a href="#" class="hover:text-black">Quizzes</a>
+              <a href="#" class="hover:text-black">Profile</a>
+            </nav>
+            <button
+              class="w-9 h-9 flex items-center justify-center bg-gray-100 rounded-lg cursor-pointer hover:bg-gray-200 transition"
+            >
+              <i class="fa-regular fa-bell"></i>
+            </button>
+            <div
+              id="progressAvatar"
+              class="avatar-container w-9 h-9 rounded-full flex items-center justify-center overflow-hidden cursor-pointer"
+            >
+              <img
+                id="progressimg"
+                src="/image/qprofile.png"
+                class="w-full h-full object-cover"
+              />
+              <span
+                id="progressInitials"
+                class="hidden w-full h-full flex items-center justify-center bg-blue-600 text-white font-bold text-sm"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- BODY -->
+      <div class="flex-1 max-w-4xl mx-auto w-full px-4 sm:px-6 py-8 sm:py-10">
+        <!-- Progress -->
+        <div class="mb-6">
+          <p class="text-sm font-Manrope font-semibold text-gray-600 mb-2">
+            Progress
+          </p>
+          <div class="w-full h-2 bg-gray-300 rounded-full">
+            <div
+              id="quizProgressBar"
+              class="h-2 bg-blue-600 rounded-full w-0"
+            ></div>
+          </div>
+          <p id="quizProgressText" class="text-xs text-gray-500 mt-2">
+            Question 1 of 4
+          </p>
+        </div>
+
+        <!-- Timer -->
+        <div class="grid grid-cols-3 gap-3 sm:gap-6 mb-8">
+          <div>
+            <div class="bg-gray-200 rounded-lg py-4 text-center">
+              <p class="text-xl font-semibold">00</p>
+            </div>
+            <p class="text-xs text-gray-600 text-center mt-3">Hours</p>
+          </div>
+          <div>
+            <div class="bg-gray-200 rounded-lg py-4 text-center">
+              <p class="text-xl font-semibold">00</p>
+            </div>
+            <p class="text-xs text-gray-600 text-center mt-3">Minutes</p>
+          </div>
+          <div>
+            <div class="bg-gray-200 rounded-lg py-4 text-center">
+              <p class="text-xl font-semibold">30</p>
+            </div>
+            <p class="text-xs text-gray-600 text-center mt-3">Seconds</p>
+          </div>
+        </div>
+        <h2 class="text-xl sm:text-2xl font-semibold mb-6">
+          What is the capital of France?
+        </h2>
+        <div id="optiondiv" class="space-y-3 mb-8">
+          <label
+            class="flex items-center gap-3 border rounded-lg p-4 cursor-pointer bg-white"
+          >
+            <input type="radio" name="q1" checked class="accent-black" />
+            <span>London</span>
+          </label>
+          <label
+            class="flex items-center gap-3 border rounded-lg p-4 cursor-pointer bg-white"
+          >
+            <input type="radio" name="q1" class="accent-black" />
+            <span>Paris</span>
+          </label>
+          <label
+            class="flex items-center gap-3 border rounded-lg p-4 cursor-pointer bg-white"
+          >
+            <input type="radio" name="q1" class="accent-black" />
+            <span>Berlin</span>
+          </label>
+          <label
+            class="flex items-center gap-3 border rounded-lg p-4 cursor-pointer bg-white"
+          >
+            <input type="radio" name="q1" class="accent-black" />
+            <span>Rome</span>
+          </label>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex items-center justify-between">
+          <button class="px-5 py-2 bg-gray-300 rounded-lg text-sm">
+            Previous
+          </button>
+          <button class="px-6 py-2 bg-blue-600 text-white rounded-lg text-sm">
+            Next
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Score section -->
+    <section id="Scoresection" class="hidden min-h-screen flex flex-col">
+      <!-- STEP 1: HEADER -->
+      <header class="bg-white shadow-sm">
+        <div
+          class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between"
+        >
+          <!-- Logo -->
+          <h1 class="text-lg sm:text-xl font-semibold">Quiz App</h1>
+
+          <!-- Nav -->
+
+          <!-- Right Side -->
+          <div class="flex items-center gap-8">
+            <nav class="hidden md:flex gap-6 text-gray-800 text-sm">
+              <a href="#" class="hover:text-black">Home</a>
+              <a href="#" class="hover:text-black">Quizzes</a>
+              <a href="#" class="hover:text-black">Profile</a>
+            </nav>
+            <button
+              class="w-9 h-9 flex items-center justify-center bg-gray-100 rounded-lg cursor-pointer hover:bg-gray-200 transition"
+            >
+              <i class="fa-regular fa-bell"></i>
+            </button>
+            <div
+              id="scoreAvatar"
+              class="avatar-container w-9 h-9 rounded-full flex items-center justify-center overflow-hidden cursor-pointer"
+            >
+              <img
+                id="scoreimg"
+                src="/image/qprofile.png"
+                class="w-full h-full object-cover"
+              />
+              <span
+                id="scoreInitials"
+                class="hidden w-full h-full flex items-center justify-center bg-blue-600 text-white font-bold text-sm"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- STEP 2: BODY -->
+      <div
+        class="flex-1 max-w-4xl mx-auto w-full px-4 sm:px-6 py-10 text-center"
+      >
+        <!-- Title -->
+        <h2 class="text-2xl sm:text-3xl font-bold mb-8">Quiz Results</h2>
+
+        <!-- Progress -->
+        <div class="mb-8 text-left">
+          <div class="flex justify-between text-sm text-gray-800 mb-2">
+            <span>Quiz Completed</span>
+            <span>100%</span>
+          </div>
+          <div class="w-full h-2 bg-gray-300 rounded-full">
+            <div class="h-2 bg-blue-600 rounded-full w-full"></div>
+          </div>
+        </div>
+
+        <!-- Score Card -->
+        <div class="bg-gray-200 rounded-xl p-6 mb-6 text-left">
+          <p class="text-sm text-gray-600">Score</p>
+          <h3 class="text-2xl font-bold">8 / 10</h3>
+        </div>
+
+        <!-- Message -->
+        <p class="text-gray-600 text-sm sm:text-base max-w-3xl mx-auto mb-8">
+          Congratulations, Sarah! You've completed the quiz with a score of 8
+          out of 10. Your performance indicates a strong understanding of the
+          subject matter. Keep up the excellent work!
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-col items-center gap-4">
+          <button class="px-6 py-2 bg-blue-600 text-white rounded-lg text-sm">
+            Review Answers
+          </button>
+          <button class="px-6 py-2 bg-gray-300 rounded-lg text-sm">
+            Take Another Quiz
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Review section -->
+    <section id="Reviewsection" class="hidden min-h-screen flex flex-col">
+      <header
+        class="flex flex-col md:flex-row justify-between items-center px-6 py-4 bg-white shadow-sm"
+      >
+        <h1 class="text-lg font-semibold pl-5">Quiz App</h1>
+
+        <div class="flex items-center gap-8 mt-2 md:mt-0">
+          <nav
+            class="flex flex-wrap justify-center gap-4 mt-2 md:mt-0 text-sm text-gray-800"
+          >
+            <a href="#" class="hover:text-black">Home</a>
+            <a href="#" class="hover:text-black">Quizzes</a>
+            <a href="#" class="hover:text-black">Results</a>
+          </nav>
+          <button
+            class="w-8 h-8 rounded-lg bg-gray-200 flex items-center justify-center cursor-pointer"
+          >
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <div
+            id="reviewAvatar"
+            class="avatar-container w-9 h-9 rounded-full flex items-center justify-center overflow-hidden cursor-pointer"
+          >
+            <img
+              id="reviewimg"
+              src="/image/qprofile.png"
+              class="w-full h-full object-cover"
+              alt="user"
+            />
+            <span
+              id="reviewInitials"
+              class="hidden w-full h-full flex items-center justify-center bg-blue-600 text-white font-bold text-sm"
+            ></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- BODY SECTION -->
+      <section class="max-w-4xl px-4 sm:ml-30 ml-6 py-10 text-left">
+        <!-- TITLE -->
+        <h2 class="text-2xl md:text-3xl font-bold mb-8">
+          Review Incorrect Answers
+        </h2>
+
+        <!-- QUESTIONS -->
+        <div class="space-y-8">
+          <!-- Question 1 -->
+          <div>
+            <h3 class="font-semibold mb-2">Question 1</h3>
+            <p class="mb-2">What is the capital of France?</p>
+            <p class="text-gray-500 text-sm">Your answer: Berlin</p>
+            <p class="text-gray-700 text-sm">Correct answer: Paris</p>
+          </div>
+
+          <!-- Question 2 -->
+          <div>
+            <h3 class="font-semibold mb-2">Question 2</h3>
+            <p class="mb-2">Which planet is known as the Red Planet?</p>
+            <p class="text-gray-500 text-sm">Your answer: Jupiter</p>
+            <p class="text-gray-700 text-sm">Correct answer: Mars</p>
+          </div>
+
+          <!-- Question 3 -->
+          <div>
+            <h3 class="font-semibold mb-2">Question 3</h3>
+            <p class="mb-2">What is the largest ocean on Earth?</p>
+            <p class="text-gray-500 text-sm">Your answer: Indian Ocean</p>
+            <p class="text-gray-700 text-sm">Correct answer: Pacific Ocean</p>
+          </div>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="flex justify-center md:justify-end mt-10">
+          <button
+            class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-6 py-2 rounded-lg"
+          >
+            Back to Quizzes
+          </button>
+        </div>
+      </section>
+    </section>
+    <!-- PERSONAL info section -->
+    <section id="personalsection" class="hidden min-h-screen flex flex-col">
+      <header class="bg-white font-Manrope">
+        <div class="flex items-center justify-between px-4 md:px-10 py-4">
+          <div class="flex items-center gap-3">
+            <svg
+              id="headersvg"
+              width="14"
+              height="14"
+              viewBox="0 0 12 12"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0H12L10 6L12 12H0L2 6L0 0Z"
+                fill="#121417"
+              />
+            </svg>
+            <h1 id="headerh1" class="text-[20px] md:text-[20px] font-semibold">
+              QuizMaster
+            </h1>
+          </div>
+          <nav class="hidden md:flex ml-auto mr-10">
+            <ul
+              id="headernav"
+              class="flex items-center gap-8 text-gray-700 font-semibold text-[15px]"
+            >
+              <li><a href="index.html" class="hover:text-black">Home</a></li>
+              <li><a href="#" class="hover:text-black">Quizzes</a></li>
+              <li><a href="#" class="hover:text-black">Leaderboard</a></li>
+            </ul>
+          </nav>
+
+          <!-- Right Side -->
+          <div class="flex items-center gap-4">
+            <button
+              id="headerbell"
+              class="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 cursor-pointer transition"
+            >
+              <i class="fa-regular fa-bell"></i>
+            </button>
+
+            <div
+              id="headerAvatarSecondary"
+              class="avatar-container w-9 h-9 md:w-10 md:h-10 rounded-full flex items-center justify-center overflow-hidden cursor-pointer"
+            >
+              <img
+                id="headerimgSecondary"
+                src="/image/qprofile.png"
+                class="w-full h-full object-cover"
+              />
+              <span
+                id="headerInitialsSecondary"
+                class="hidden w-full h-full flex items-center justify-center bg-blue-600 text-white font-bold text-lg"
+              ></span>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden p-2 rounded-lg bg-gray-100">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+
+        <!-- LEFT SLIDE MENU -->
+        <div
+          id="mobileMenu"
+          class="fixed top-0 left-0 h-full w-64 bg-white z-50 -translate-x-full transition-transform duration-300 shadow-lg"
+        >
+          <!-- Header -->
+          <div class="p-5 border-b flex justify-between items-center">
+            <h2 class="font-bold text-lg">Menu</h2>
+            <button id="closeBtn" class="text-xl"></button>
+          </div>
+
+          <!-- Links -->
+          <ul class="flex flex-col gap-5 p-5 text-gray-700 font-semibold">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- BODY SECTION -->
+      <section class="mt-8 bg-white rounded-xl shadow-sm p-6">
+        <!-- PROFILE -->
+        <div class="text-center mb-6">
+          <div
+            id="profileAvatar"
+            class="avatar-container w-24 h-24 rounded-full mx-auto mb-3 flex items-center justify-center overflow-hidden bg-blue-600"
+          >
+            <img
+              id="profileImg"
+              src="/image/p.png"
+              class="w-full h-full object-cover"
+              alt="Profile"
+            />
+            <span
+              id="profileInitials"
+              class="hidden text-white font-bold text-3xl"
+            ></span>
+          </div>
+          <h2 id="profileName" class="text-xl font-semibold">Sophia Bennett</h2>
+          <p class="text-gray-500 text-sm">Quiz Enthusiast</p>
+          <p id="joinedYear" class="text-gray-400 text-sm">Joined 2021</p>
+        </div>
+
+        <!-- TABS -->
+        <div class="flex gap-6 text-sm mb-6 sm:px-10">
+          <span class="text-gray-400 cursor-pointer">Activity</span>
+          <span
+            class="font-semibold border-b-2 border-black pb-1 cursor-pointer"
+            >Profile</span
+          >
+        </div>
+
+        <!-- PERSONAL INFO -->
+        <div class="mb-6 sm:px-10">
+          <h3 class="text-lg font-bold mb-4">Personal Information</h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0 text-sm">
+            <div>
+              <p class="text-gray-400">Name</p>
+              <p id="profileDetailName">User Name</p>
+            </div>
+            <div>
+              <p class="text-gray-400">Email</p>
+              <p id="profileDetailEmail">user@email.com</p>
+            </div>
+          </div>
+
+          <div class="mt-4 text-sm">
+            <p class="text-gray-500">Bio</p>
+            <p class="text-gray-700">
+              Avid quiz taker and trivia lover. Always up for a challenge!
+            </p>
+          </div>
+        </div>
+
+        <!-- QUIZ HISTORY -->
+        <div class="sm:px-10">
+          <h3 class="text-lg font-bold mb-4">Quiz History</h3>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="text-left border-b">
+                  <th class="py-2">Quiz Name</th>
+                  <th class="py-2">Score</th>
+                  <th class="py-2">Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b">
+                  <td class="py-2">General Knowledge</td>
+                  <td>85/100</td>
+                  <td>2023-08-15</td>
+                </tr>
+                <tr class="border-b">
+                  <td class="py-2">Science Trivia</td>
+                  <td>70/100</td>
+                  <td>2023-08-10</td>
+                </tr>
+                <tr>
+                  <td class="py-2">History Buff</td>
+                  <td>92/100</td>
+                  <td>2023-08-05</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

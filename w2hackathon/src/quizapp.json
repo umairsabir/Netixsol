@@ -1,0 +1,1129 @@
+{
+  "categories": [
+    {
+      "name": "Science",
+      "questions": [
+        {
+          "question": "What planet is known as the Red Planet?",
+          "options": [
+            {
+              "text": "Earth",
+              "isCorrect": false
+            },
+            {
+              "text": "Mars",
+              "isCorrect": true
+            },
+            {
+              "text": "Jupiter",
+              "isCorrect": false
+            },
+            {
+              "text": "Venus",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What gas do plants absorb from the atmosphere?",
+          "options": [
+            {
+              "text": "Oxygen",
+              "isCorrect": false
+            },
+            {
+              "text": "Carbon Dioxide",
+              "isCorrect": true
+            },
+            {
+              "text": "Nitrogen",
+              "isCorrect": false
+            },
+            {
+              "text": "Hydrogen",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is H2O commonly known as?",
+          "options": [
+            {
+              "text": "Salt",
+              "isCorrect": false
+            },
+            {
+              "text": "Water",
+              "isCorrect": true
+            },
+            {
+              "text": "Oxygen",
+              "isCorrect": false
+            },
+            {
+              "text": "Hydrogen",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What force pulls objects toward Earth?",
+          "options": [
+            {
+              "text": "Magnetism",
+              "isCorrect": false
+            },
+            {
+              "text": "Gravity",
+              "isCorrect": true
+            },
+            {
+              "text": "Friction",
+              "isCorrect": false
+            },
+            {
+              "text": "Energy",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Which organ pumps blood in the human body?",
+          "options": [
+            {
+              "text": "Brain",
+              "isCorrect": false
+            },
+            {
+              "text": "Lungs",
+              "isCorrect": false
+            },
+            {
+              "text": "Heart",
+              "isCorrect": true
+            },
+            {
+              "text": "Kidney",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is the hardest natural substance on Earth?",
+          "options": [
+            {
+              "text": "Gold",
+              "isCorrect": false
+            },
+            {
+              "text": "Iron",
+              "isCorrect": false
+            },
+            {
+              "text": "Diamond",
+              "isCorrect": true
+            },
+            {
+              "text": "Silver",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Which gas is most abundant in the Earth's atmosphere?",
+          "options": [
+            {
+              "text": "Oxygen",
+              "isCorrect": false
+            },
+            {
+              "text": "Nitrogen",
+              "isCorrect": true
+            },
+            {
+              "text": "Carbon Dioxide",
+              "isCorrect": false
+            },
+            {
+              "text": "Argon",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is the center of an atom called?",
+          "options": [
+            {
+              "text": "Proton",
+              "isCorrect": false
+            },
+            {
+              "text": "Neutron",
+              "isCorrect": false
+            },
+            {
+              "text": "Nucleus",
+              "isCorrect": true
+            },
+            {
+              "text": "Electron",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "How many bones are in the adult human body?",
+          "options": [
+            {
+              "text": "206",
+              "isCorrect": true
+            },
+            {
+              "text": "205",
+              "isCorrect": false
+            },
+            {
+              "text": "210",
+              "isCorrect": false
+            },
+            {
+              "text": "195",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is the speed of light approx?",
+          "options": [
+            {
+              "text": "300,000 km/s",
+              "isCorrect": true
+            },
+            {
+              "text": "150,000 km/s",
+              "isCorrect": false
+            },
+            {
+              "text": "450,000 km/s",
+              "isCorrect": false
+            },
+            {
+              "text": "600,000 km/s",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        }
+      ]
+    },
+    {
+      "name": "History",
+      "questions": [
+        {
+          "question": "Who was the first President of the USA?",
+          "options": [
+            {
+              "text": "Abraham Lincoln",
+              "isCorrect": false
+            },
+            {
+              "text": "George Washington",
+              "isCorrect": true
+            },
+            {
+              "text": "John Adams",
+              "isCorrect": false
+            },
+            {
+              "text": "Thomas Jefferson",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "In which year did World War II end?",
+          "options": [
+            {
+              "text": "1945",
+              "isCorrect": true
+            },
+            {
+              "text": "1939",
+              "isCorrect": false
+            },
+            {
+              "text": "1918",
+              "isCorrect": false
+            },
+            {
+              "text": "1950",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Who discovered America?",
+          "options": [
+            {
+              "text": "Christopher Columbus",
+              "isCorrect": true
+            },
+            {
+              "text": "Vasco da Gama",
+              "isCorrect": false
+            },
+            {
+              "text": "Marco Polo",
+              "isCorrect": false
+            },
+            {
+              "text": "Magellan",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Which ancient civilization built the pyramids?",
+          "options": [
+            {
+              "text": "Romans",
+              "isCorrect": false
+            },
+            {
+              "text": "Greeks",
+              "isCorrect": false
+            },
+            {
+              "text": "Egyptians",
+              "isCorrect": true
+            },
+            {
+              "text": "Chinese",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Who was known as the Iron Man of India?",
+          "options": [
+            {
+              "text": "Mahatma Gandhi",
+              "isCorrect": false
+            },
+            {
+              "text": "Sardar Patel",
+              "isCorrect": true
+            },
+            {
+              "text": "Nehru",
+              "isCorrect": false
+            },
+            {
+              "text": "Subhash Chandra Bose",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What year did the Titanic sink?",
+          "options": [
+            {
+              "text": "1912",
+              "isCorrect": true
+            },
+            {
+              "text": "1910",
+              "isCorrect": false
+            },
+            {
+              "text": "1914",
+              "isCorrect": false
+            },
+            {
+              "text": "1920",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Who was the first woman to win a Nobel Prize?",
+          "options": [
+            {
+              "text": "Marie Curie",
+              "isCorrect": true
+            },
+            {
+              "text": "Mother Teresa",
+              "isCorrect": false
+            },
+            {
+              "text": "Ada Lovelace",
+              "isCorrect": false
+            },
+            {
+              "text": "Florence Nightingale",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "The Great Wall is located in which country?",
+          "options": [
+            {
+              "text": "Japan",
+              "isCorrect": false
+            },
+            {
+              "text": "China",
+              "isCorrect": true
+            },
+            {
+              "text": "India",
+              "isCorrect": false
+            },
+            {
+              "text": "Korea",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Who was the primary author of the Declaration of Independence?",
+          "options": [
+            {
+              "text": "Ben Franklin",
+              "isCorrect": false
+            },
+            {
+              "text": "Thomas Jefferson",
+              "isCorrect": true
+            },
+            {
+              "text": "John Adams",
+              "isCorrect": false
+            },
+            {
+              "text": "George Washington",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What was the capital of the Ottoman Empire?",
+          "options": [
+            {
+              "text": "Istanbul",
+              "isCorrect": true
+            },
+            {
+              "text": "Ankara",
+              "isCorrect": false
+            },
+            {
+              "text": "Cairo",
+              "isCorrect": false
+            },
+            {
+              "text": "Baghdad",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        }
+      ]
+    },
+    {
+      "name": "Literature",
+      "questions": [
+        {
+          "question": "Who wrote 'Romeo and Juliet'?",
+          "options": [
+            {
+              "text": "William Shakespeare",
+              "isCorrect": true
+            },
+            {
+              "text": "Charles Dickens",
+              "isCorrect": false
+            },
+            {
+              "text": "Jane Austen",
+              "isCorrect": false
+            },
+            {
+              "text": "Mark Twain",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Who is the author of 'Harry Potter'?",
+          "options": [
+            {
+              "text": "J.K. Rowling",
+              "isCorrect": true
+            },
+            {
+              "text": "J.R.R. Tolkien",
+              "isCorrect": false
+            },
+            {
+              "text": "George R.R. Martin",
+              "isCorrect": false
+            },
+            {
+              "text": "C.S. Lewis",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Which novel begins with 'Call me Ishmael'?",
+          "options": [
+            {
+              "text": "Moby Dick",
+              "isCorrect": true
+            },
+            {
+              "text": "Hamlet",
+              "isCorrect": false
+            },
+            {
+              "text": "Macbeth",
+              "isCorrect": false
+            },
+            {
+              "text": "Othello",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Who wrote 'Pride and Prejudice'?",
+          "options": [
+            {
+              "text": "Jane Austen",
+              "isCorrect": true
+            },
+            {
+              "text": "Emily Bronte",
+              "isCorrect": false
+            },
+            {
+              "text": "Charles Dickens",
+              "isCorrect": false
+            },
+            {
+              "text": "Leo Tolstoy",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Who wrote 'The Odyssey'?",
+          "options": [
+            {
+              "text": "Homer",
+              "isCorrect": true
+            },
+            {
+              "text": "Virgil",
+              "isCorrect": false
+            },
+            {
+              "text": "Plato",
+              "isCorrect": false
+            },
+            {
+              "text": "Aristotle",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "In which book did Sherlock Holmes first appear?",
+          "options": [
+            {
+              "text": "A Study in Scarlet",
+              "isCorrect": true
+            },
+            {
+              "text": "The Sign of Four",
+              "isCorrect": false
+            },
+            {
+              "text": "The Hobbit",
+              "isCorrect": false
+            },
+            {
+              "text": "Ulysses",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Who wrote '1984'?",
+          "options": [
+            {
+              "text": "George Orwell",
+              "isCorrect": true
+            },
+            {
+              "text": "Aldous Huxley",
+              "isCorrect": false
+            },
+            {
+              "text": "Ray Bradbury",
+              "isCorrect": false
+            },
+            {
+              "text": "Isaac Asimov",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is the name of the Hobbit in 'The Hobbit'?",
+          "options": [
+            {
+              "text": "Bilbo Baggins",
+              "isCorrect": true
+            },
+            {
+              "text": "Frodo Baggins",
+              "isCorrect": false
+            },
+            {
+              "text": "Samwise Gamgee",
+              "isCorrect": false
+            },
+            {
+              "text": "Gandalf",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Who wrote 'The Great Gatsby'?",
+          "options": [
+            {
+              "text": "F. Scott Fitzgerald",
+              "isCorrect": true
+            },
+            {
+              "text": "Ernest Hemingway",
+              "isCorrect": false
+            },
+            {
+              "text": "William Faulkner",
+              "isCorrect": false
+            },
+            {
+              "text": "John Steinbeck",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Which play features the character 'Oedipus'?",
+          "options": [
+            {
+              "text": "Oedipus Rex",
+              "isCorrect": true
+            },
+            {
+              "text": "Antigone",
+              "isCorrect": false
+            },
+            {
+              "text": "Medea",
+              "isCorrect": false
+            },
+            {
+              "text": "The Clouds",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        }
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "questions": [
+        {
+          "question": "What is 5 + 3?",
+          "options": [
+            {
+              "text": "6",
+              "isCorrect": false
+            },
+            {
+              "text": "8",
+              "isCorrect": true
+            },
+            {
+              "text": "10",
+              "isCorrect": false
+            },
+            {
+              "text": "7",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is 10 × 2?",
+          "options": [
+            {
+              "text": "20",
+              "isCorrect": true
+            },
+            {
+              "text": "10",
+              "isCorrect": false
+            },
+            {
+              "text": "15",
+              "isCorrect": false
+            },
+            {
+              "text": "25",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is the square root of 16?",
+          "options": [
+            {
+              "text": "2",
+              "isCorrect": false
+            },
+            {
+              "text": "4",
+              "isCorrect": true
+            },
+            {
+              "text": "6",
+              "isCorrect": false
+            },
+            {
+              "text": "8",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is 9 - 4?",
+          "options": [
+            {
+              "text": "3",
+              "isCorrect": false
+            },
+            {
+              "text": "5",
+              "isCorrect": true
+            },
+            {
+              "text": "6",
+              "isCorrect": false
+            },
+            {
+              "text": "4",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is 7 × 3?",
+          "options": [
+            {
+              "text": "21",
+              "isCorrect": true
+            },
+            {
+              "text": "24",
+              "isCorrect": false
+            },
+            {
+              "text": "18",
+              "isCorrect": false
+            },
+            {
+              "text": "27",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is 144 / 12?",
+          "options": [
+            {
+              "text": "12",
+              "isCorrect": true
+            },
+            {
+              "text": "10",
+              "isCorrect": false
+            },
+            {
+              "text": "14",
+              "isCorrect": false
+            },
+            {
+              "text": "16",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is 2 to the power of 5?",
+          "options": [
+            {
+              "text": "32",
+              "isCorrect": true
+            },
+            {
+              "text": "16",
+              "isCorrect": false
+            },
+            {
+              "text": "64",
+              "isCorrect": false
+            },
+            {
+              "text": "25",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is the value of Pi (to 2 decimal places)?",
+          "options": [
+            {
+              "text": "3.14",
+              "isCorrect": true
+            },
+            {
+              "text": "3.12",
+              "isCorrect": false
+            },
+            {
+              "text": "3.16",
+              "isCorrect": false
+            },
+            {
+              "text": "3.18",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "How many degrees are in a right angle?",
+          "options": [
+            {
+              "text": "90",
+              "isCorrect": true
+            },
+            {
+              "text": "180",
+              "isCorrect": false
+            },
+            {
+              "text": "45",
+              "isCorrect": false
+            },
+            {
+              "text": "360",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is 15% of 200?",
+          "options": [
+            {
+              "text": "30",
+              "isCorrect": true
+            },
+            {
+              "text": "20",
+              "isCorrect": false
+            },
+            {
+              "text": "40",
+              "isCorrect": false
+            },
+            {
+              "text": "25",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        }
+      ]
+    },
+    {
+      "name": "General Knowledge",
+      "questions": [
+        {
+          "question": "What is the capital of France?",
+          "options": [
+            {
+              "text": "Berlin",
+              "isCorrect": false
+            },
+            {
+              "text": "London",
+              "isCorrect": false
+            },
+            {
+              "text": "Paris",
+              "isCorrect": true
+            },
+            {
+              "text": "Madrid",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Which is the largest ocean on Earth?",
+          "options": [
+            {
+              "text": "Atlantic",
+              "isCorrect": false
+            },
+            {
+              "text": "Indian",
+              "isCorrect": false
+            },
+            {
+              "text": "Pacific",
+              "isCorrect": true
+            },
+            {
+              "text": "Arctic",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "In which continent is the Sahara Desert?",
+          "options": [
+            {
+              "text": "Asia",
+              "isCorrect": false
+            },
+            {
+              "text": "Africa",
+              "isCorrect": true
+            },
+            {
+              "text": "South America",
+              "isCorrect": false
+            },
+            {
+              "text": "Australia",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Which country is home to the Kangaroo?",
+          "options": [
+            {
+              "text": "Australia",
+              "isCorrect": true
+            },
+            {
+              "text": "New Zealand",
+              "isCorrect": false
+            },
+            {
+              "text": "South Africa",
+              "isCorrect": false
+            },
+            {
+              "text": "Brazil",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is the currency of Japan?",
+          "options": [
+            {
+              "text": "Yuan",
+              "isCorrect": false
+            },
+            {
+              "text": "Yen",
+              "isCorrect": true
+            },
+            {
+              "text": "Won",
+              "isCorrect": false
+            },
+            {
+              "text": "Dollar",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Which is the tallest mountain in the world?",
+          "options": [
+            {
+              "text": "K2",
+              "isCorrect": false
+            },
+            {
+              "text": "Mount Everest",
+              "isCorrect": true
+            },
+            {
+              "text": "Kangchenjunga",
+              "isCorrect": false
+            },
+            {
+              "text": "Lhotse",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Who painted the Mona Lisa?",
+          "options": [
+            {
+              "text": "Van Gogh",
+              "isCorrect": false
+            },
+            {
+              "text": "Da Vinci",
+              "isCorrect": true
+            },
+            {
+              "text": "Picasso",
+              "isCorrect": false
+            },
+            {
+              "text": "Monet",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Which language has the most native speakers?",
+          "options": [
+            {
+              "text": "English",
+              "isCorrect": false
+            },
+            {
+              "text": "Spanish",
+              "isCorrect": false
+            },
+            {
+              "text": "Mandarin Chinese",
+              "isCorrect": true
+            },
+            {
+              "text": "Hindi",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "What is the largest animal in the world?",
+          "options": [
+            {
+              "text": "African Elephant",
+              "isCorrect": false
+            },
+            {
+              "text": "Blue Whale",
+              "isCorrect": true
+            },
+            {
+              "text": "Giraffe",
+              "isCorrect": false
+            },
+            {
+              "text": "Colossal Squid",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        },
+        {
+          "question": "Which country invented tea?",
+          "options": [
+            {
+              "text": "India",
+              "isCorrect": false
+            },
+            {
+              "text": "China",
+              "isCorrect": true
+            },
+            {
+              "text": "Japan",
+              "isCorrect": false
+            },
+            {
+              "text": "England",
+              "isCorrect": false
+            }
+          ],
+          "type": "single-choice"
+        }
+      ]
+    }
+  ]
+}
