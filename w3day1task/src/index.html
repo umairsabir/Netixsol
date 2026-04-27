@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Epic Navbar</title>
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- NAVBAR -->
+    <nav class="bg-[#2a2a2a] relative">
+        <div class="max-w-7xl mx-auto pl-5">
+
+            <div class="flex justify-between items-center h-16">
+
+                <!-- LEFT -->
+                <div class="flex items-center gap-10">
+
+                    <!-- Logo -->
+                    <img src="/src/image/image 2.png" class="size-9  h-11" />
+                    <!-- MENU -->
+                    <div class="hidden md:flex items-center gap-8 text-sm text-gray-300 font-Poppins">
+
+                        <a href="#" class="text-white relative">STORE</a>
+                        <a href="#" class="hover:text-white">FAQ</a>
+                        <a href="#" class="hover:text-white">HELP</a>
+                        <a href="#" class="hover:text-white">UNREAL ENGINE</a>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="hidden md:flex items-center gap-7 text-sm text-gray-300">
+
+                    <span class="cursor-pointer hover:text-white"><img class="size-6" src="/src/image/Vector1.png"
+                            alt=""></span>
+                    <a id="signinbtn" href="#" class="flex items-center gap-2 hover:text-white font-Poppins ">
+                        <i class="fa-solid fa-user-plus"></i>
+                        SIGN IN
+                    </a>
+                    <button id="downloadbtn" class="bg-blue-600 px-10 h-16 text-white font-medium hover:bg-blue-700">
+                        DOWNLOAD
+                    </button>
+
+                </div>
+
+                <!-- MOBILE -->
+                <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+
+            </div>
+        </div>
+
+        <!-- 🔥 ACTIVE BLUE BAR (REAL FIX) -->
+        <div class="absolute bottom-0 left-[90px] w-13 h-[5px] bg-blue-500"></div>
+
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden bg-[#2a2a2a] px-4 py-4 md:hidden">
+        <a href="#" class="block py-2 text-white">STORE</a>
+        <a href="#" class="block py-2 text-gray-300">FAQ</a>
+        <a href="#" class="block py-2 text-gray-300">HELP</a>
+        <a href="#" class="block py-2 text-gray-300">UNREAL ENGINE</a>
+    </div>
+
+    <script>
+        const btn = document.getElementById("menuBtn");
+        const menu = document.getElementById("mobileMenu");
+
+        btn.onclick = () => menu.classList.toggle("hidden");
+        const downloadbtn = document.getElementById("downloadbtn");
+        downloadbtn.addEventListener("click", () => {
+            alert("This feature is under working.");
+        })
+        const signinbtn  = document.getElementById("signinbtn");
+        signinbtn.addEventListener("click", () => {
+            alert("This feature is under working.");
+        })
+
+    </script>
+
+</body>
+
+</html>
