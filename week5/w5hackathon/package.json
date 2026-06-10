@@ -1,0 +1,12 @@
+{
+  "name": "car-auction-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "concurrently \"pnpm --dir backend install\" \"pnpm --dir frontend install\"",
+    "dev": "concurrently --kill-others -n \"Backend,Frontend\" -c \"bgBlue.bold,bgGreen.bold\" \"pnpm --dir backend start:dev\" \"pnpm --dir frontend dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+:root {
+  /* LIGHT MODE (Inverted Colors for Premium Light Slate Theme) */
+  --slate-950: #f8fafc; /* Page Background */
+  --slate-900: rgba(255, 255, 255, 0.7); /* Panel/Card Background */
+  --slate-850: #f1f5f9; /* Inputs Background */
+  --slate-800: #e2e8f0; /* Borders */
+  --slate-700: #cbd5e1; /* Borders Hover */
+  --slate-650: #94a3b8;
+  --slate-600: #64748b; /* Muted Text */
+  --slate-500: #475569; /* Secondary Muted Text */
+  --slate-450: #334155;
+  --slate-400: #1e293b; /* Normal text secondary */
+  --slate-350: #0f172a;
+  --slate-300: #0f172a; /* Normal text primary */
+  --slate-250: #020617;
+  --slate-200: #020617; /* Title text */
+  --slate-155: #1e293b;
+  --slate-100: #0f172a; /* Main Foreground text */
+  --slate-50: #000000;
+  --reply-toggle-color: #000000;
+  --reply-toggle-hover: #334155;
+}
+
+.dark {
+  /* DARK MODE (Original Deep Slate Premium Theme) */
+  --slate-950: #020617;
+  --slate-900: #0f172a;
+  --slate-850: #1e293b;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --slate-650: #475569;
+  --slate-600: #475569;
+  --slate-500: #64748b;
+  --slate-450: #94a3b8;
+  --slate-400: #94a3b8;
+  --slate-350: #cbd5e1;
+  --slate-300: #cbd5e1;
+  --slate-250: #e2e8f0;
+  --slate-200: #e2e8f0;
+  --slate-155: #cbd5e1;
+  --slate-100: #f8fafc;
+  --slate-50: #ffffff;
+  --reply-toggle-color: #818cf8;
+  --reply-toggle-hover: #a5b4fc;
+}
+
+@theme {
+  --color-slate-950: var(--slate-950);
+  --color-slate-900: var(--slate-900);
+  --color-slate-850: var(--slate-850);
+  --color-slate-800: var(--slate-800);
+  --color-slate-700: var(--slate-700);
+  --color-slate-650: var(--slate-650);
+  --color-slate-600: var(--slate-600);
+  --color-slate-500: var(--slate-500);
+  --color-slate-450: var(--slate-450);
+  --color-slate-400: var(--slate-400);
+  --color-slate-350: var(--slate-350);
+  --color-slate-300: var(--slate-300);
+  --color-slate-250: var(--slate-250);
+  --color-slate-200: var(--slate-200);
+  --color-slate-155: var(--slate-155);
+  --color-slate-100: var(--slate-100);
+  --color-slate-50: var(--slate-50);
+  --color-reply-toggle: var(--reply-toggle-color);
+  --color-reply-toggle-hover: var(--reply-toggle-hover);
+}
+
+body {
+  background: var(--slate-950);
+  color: var(--slate-100);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Premium smooth hardware-accelerated transitions */
+body, header, main, footer, div, input, textarea, button, a {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Premium Custom Keyframes & Micro-Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-15px) scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.4);
+  }
+}
+
+@keyframes ringGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(129, 140, 248, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(129, 140, 248, 0.7));
+  }
+}
+
+/* Animation Utilities */
+.animate-float-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+.animate-ring-glow {
+  animation: ringGlow 2.5s ease-in-out infinite;
+}
+
+/* Glassmorphism Preset */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-interactive {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-interactive:hover {
+  background: rgba(15, 23, 42, 0.6);
+  border-color: rgba(99, 102, 241, 0.25);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7), 0 0 15px rgba(99, 102, 241, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar for modern apps */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}

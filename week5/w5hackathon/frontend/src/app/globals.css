@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2e3d83;
+  --color-primary-light: #bbd0f6;
+  --color-primary-bg: #c6d8f9;
+  --color-nav-bg: #e8edfa;
+  --color-muted: #545677;
+  --color-gray-text: #afafaf;
+  --color-border-input: #eaecf3;
+  --color-accent: #f9c146;
+
+  --font-sans: "Lato", sans-serif;
+  --font-display: "Josefin Sans", sans-serif;
+}
+
+/* Swiper Detail Gallery Styles */
+.thumbs-swiper .swiper-slide {
+  opacity: 0.6;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.thumbs-swiper .swiper-slide-thumb-active {
+  opacity: 1 !important;
+  border-color: #2E3D83 !important;
+  box-shadow: 0 4px 12px rgba(46, 61, 131, 0.15);
+}
+
+.thumbs-swiper .swiper-slide:hover {
+  opacity: 0.9;
+}

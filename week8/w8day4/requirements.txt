@@ -1,0 +1,155 @@
+Build a multi-agent AI system using the OpenAI Agents SDK that can research a real-world topic, reason over it, and produce a structured final report.
+
+This task is about agent orchestration, not just calling an LLM.
+
+---
+
+🧩 What You Will Build (Real-World Use Case)
+
+A Research Assistant that:
+
+1. Accepts a user query (example: “Compare Stripe vs Razorpay for a SaaS in Pakistan”).
+2. Delegates subtasks to specialized agents.
+3. Uses Tavily Search for factual research.
+4. Produces a final structured report with sources.
+
+This mimics how real AI research agents work in production.
+
+---
+
+🧠 Required Agents (Mandatory)
+
+1️⃣ Manager Agent (Orchestrator)
+
+Responsibilities
+
+* Understand the user query
+* Break it into subtasks
+* Decide which agent handles what
+* Never call tools directly
+
+Example Tasks
+
+* “Get pricing info”
+* “Check regional support”
+* “Summarize findings”
+
+---
+
+2️⃣ Research Agent
+
+Responsibilities
+
+* Perform factual research only
+* Use Tavily Search as a tool
+* Return structured findings + sources
+
+Rules
+
+* ✅ Can use Tavily
+* ❌ No opinions
+* ❌ No final user response
+
+---
+
+3️⃣ Writer Agent
+
+Responsibilities
+
+* Take research data
+* Normalize and reason over it
+* Produce the final answer
+
+Rules
+
+* ❌ Cannot call Tavily
+* ❌ Cannot invent facts
+
+---
+
+🔧 Tools & Tech (Mandatory)
+
+* OpenAI Agents SDK
+* OpenAI / compatible LLM (agent-level config)
+* Tavily Search (Research Agent only)
+* JS/TS
+* .env for API keys
+
+---
+
+🛠 Tavily Usage Rules (Strict)
+
+* Only the Research Agent can call Tavily
+* Max 3–5 searches per run
+* Must return:
+  * Key findings
+  * Source URLs
+* Raw Tavily output must NOT be sent to user
+
+Violations = incorrect architecture.
+
+---
+
+🔄 Expected Flow
+
+User Query
+   ↓
+Manager Agent
+   ↓
+Research Agent (Tavily)
+   ↓
+Writer Agent
+   ↓
+Final Report
+
+---
+
+📄 Output Format (Mandatory)
+
+Final response must include:
+
+* Clear headings
+* Bullet points or table
+* Comparison or analysis
+* Source links section
+
+Example sections:
+
+* Overview
+* Key Differences
+* Pros & Cons
+* Recommendation
+* Sources
+
+---
+
+✅ Deliverables
+
+1. Working multi-agent system
+2. GitHub repository
+3. README.md
+  * Setup steps
+  * API key configuration
+  * How to run
+  * Agent responsibilities
+4. Example queries & outputs
+
+---
+
+❌ Common Failures (Auto-Fail)
+
+* Single agent doing everything
+* Tavily called by wrong agent
+* No agent handoff
+* LLM answering without research
+* Hardcoded answers
+
+---
+
+🧪 Evaluation Criteria
+
+* Correct agent separation
+* Proper tool usage
+* Clear delegation logic
+* Clean, readable output
+* Real-world usefulness

@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    @apply text-[#1A1A1A] antialiased bg-white dark:bg-[#0A0A0A] dark:text-white transition-colors duration-300;
+  }
+}
+
+/* Custom styles for matching Figma exactly */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.02em;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

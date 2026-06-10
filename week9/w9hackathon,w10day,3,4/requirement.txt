@@ -1,0 +1,63 @@
+📌 Objective
+Enhance the healthcare products chatbot so that users can describe their symptoms in natural language (typed or spoken), and the AI will suggest relevant product categories or supplements.
+
+---
+
+🔑 Features to Implement
+
+1. Symptom Input
+  * User can type or speak their symptoms (using yesterday’s speech-to-text).
+  * Example: “I feel tired and weak”, “I’m losing hair”, “My bones are fragile”.
+2. AI Symptom → Product Mapping
+  * Use LangGraph/OpenAI to analyze the symptom text.
+  * Map symptoms to product categories in MongoDB (e.g., tired → iron, B-complex vitamins; hair loss → biotin, zinc).
+  * If multiple possible matches → suggest top 2–3 with a short reasoning.
+3. Result Display in Chatbot
+  * Chatbot replies with:
+    * Suggested product(s).
+    * Short explanation: “Hair fall is often linked to Biotin or Zinc deficiency. Here are some supplements you can try.”
+  * Show clickable product cards (from MongoDB) inside the chat response.
+
+---
+
+🧑‍💻 Tech Stack
+
+* Frontend (Next.js)
+  * Reuse chatbot UI from Day 1.
+  * Add a dedicated prompt: “Describe your symptoms”.
+  * If voice input used → auto-feed transcription into chatbot.
+* Backend (Nest.js)
+  * New endpoint /symptom-checker that takes symptom text → calls AI → returns mapped products.
+  * Use LangGraph/OpenAI for intent classification + reasoning.
+* Database (MongoDB)
+  * Products already exist in DB.
+  * Add a small symptom-to-category mapping JSON for better accuracy. Example:
+
+{
+  "tired": ["Vitamin B Complex", "Iron Supplements"],
+  "hair fall": ["Biotin", "Zinc", "Multivitamin"],
+  "weak bones": ["Calcium", "Vitamin D"],
+  "stress": ["Magnesium", "Ashwagandha"]
+}
+
+
+---
+
+📲 Example Flow
+
+1. User clicks 🎤 and says: “I feel tired all day and have low energy.”
+2. Speech-to-text → "I feel tired all day and have low energy."
+3. AI processes symptoms → matches "tired" + "low energy" → suggests Vitamin B Complex, Iron.
+4. Chatbot reply:
+5. “Fatigue and low energy are often linked to Vitamin B and Iron deficiencies. I recommend trying these supplements 👇”
+6. (Show product cards from MongoDB)
+
+---
+
+⭐ Bonus Challenges (Optional)
+
+* Store all symptom queries in DB for analytics (which health concerns are most common).
+* Implement confidence scores from AI → only show results above threshold.
+* Add follow-up questions if AI is unsure. Example:
+  * User: “I feel dizzy.”
+  * Bot: “Is this dizziness frequent or occasional?”

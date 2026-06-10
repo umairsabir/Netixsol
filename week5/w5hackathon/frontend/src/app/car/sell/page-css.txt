@@ -1,0 +1,1728 @@
+/* Sell your car */
+
+position: relative;
+width: 1440px;
+height: 2769px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 17550 */
+
+position: absolute;
+width: 1440px;
+height: 279px;
+left: 0px;
+top: 92px;
+
+background: #C6D8F9;
+
+
+/* Group 19051 */
+
+position: absolute;
+width: 389px;
+height: 80px;
+left: 526px;
+top: 172px;
+
+
+
+/* Sell Your Car */
+
+position: absolute;
+width: 389px;
+height: 64px;
+left: 526px;
+top: 172px;
+
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 64px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* Rectangle 17528 */
+
+position: absolute;
+width: 80px;
+height: 3px;
+left: 681px;
+top: 249px;
+
+background: #2E3D83;
+border-radius: 5px;
+
+
+/* Lorem ipsum dolor sit amet consectetur. At in pretium semper vitae eu eu mus. */
+
+position: absolute;
+width: 620px;
+height: 22px;
+left: 410px;
+top: 282px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+color: #545677;
+
+
+
+/* Group 34143 */
+
+position: absolute;
+width: 164px;
+height: 37px;
+left: 638px;
+top: 334px;
+
+
+
+/* Rectangle 17551 */
+
+position: absolute;
+width: 164px;
+height: 37px;
+left: 638px;
+top: 334px;
+
+background: #BBD0F6;
+border-radius: 3px 3px 0px 0px;
+
+
+/* Group 34142 */
+
+position: absolute;
+width: 144px;
+height: 17px;
+left: 648px;
+top: 344px;
+
+
+
+/* Home */
+
+position: absolute;
+width: 38px;
+height: 17px;
+left: 648px;
+top: 344px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #545677;
+
+
+
+/* Sell Your Car */
+
+position: absolute;
+width: 78px;
+height: 17px;
+left: 714px;
+top: 344px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* chevron-right */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 692px;
+top: 345px;
+
+border-radius: 0px 3px 0px 0px;
+
+
+/* Vector */
+
+position: absolute;
+left: 37.5%;
+right: 37.5%;
+top: 25%;
+bottom: 25%;
+
+border: 1px solid #000000;
+
+
+/* Tell us about your car */
+
+position: absolute;
+width: 452px;
+height: 58px;
+left: 322px;
+top: 421px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Please give us some basics about yourself and car you’d like to sell . We’ll also need details about the car’s title status as well as 50 photos that highlight the car’s exterior and interior condition. */
+
+position: absolute;
+width: 706px;
+height: 66px;
+left: 322px;
+top: 519px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+
+color: #535353;
+
+
+
+/* We’ll respond to your application within a business day, and we work with you to build a custom and professional listing and get the auction live. */
+
+position: absolute;
+width: 706px;
+height: 44px;
+left: 322px;
+top: 615px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+
+color: #535353;
+
+
+
+/* Group 34634 */
+
+position: absolute;
+width: 796px;
+height: 391px;
+left: 322px;
+top: 712px;
+
+
+
+/* Rectangle 17759 */
+
+position: absolute;
+width: 796px;
+height: 391px;
+left: 322px;
+top: 712px;
+
+background: #DBE8FF;
+border-radius: 5px;
+
+
+/* Group 34610 */
+
+position: absolute;
+width: 97px;
+height: 37px;
+left: 342px;
+top: 734px;
+
+
+
+/* Your Info */
+
+position: absolute;
+width: 97px;
+height: 29px;
+left: 342px;
+top: 734px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17760 */
+
+position: absolute;
+width: 97px;
+height: 5px;
+left: 342px;
+top: 766px;
+
+background: #F4C23D;
+border-radius: 6px;
+
+
+/* Dealer or Private party? */
+
+position: absolute;
+width: 209px;
+height: 24px;
+left: 342px;
+top: 791px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Frame 34611 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 9px 30px;
+gap: 10px;
+
+position: absolute;
+width: 113px;
+height: 40px;
+left: 342px;
+top: 835px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Dealer */
+
+width: 53px;
+height: 22px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 34612 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 9px 30px;
+gap: 10px;
+
+position: absolute;
+width: 162px;
+height: 40px;
+left: 475px;
+top: 835px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Private party */
+
+width: 102px;
+height: 22px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 34611 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 342px;
+top: 895px;
+
+
+
+/* First name* */
+
+position: absolute;
+width: 101px;
+height: 24px;
+left: 342px;
+top: 895px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 342px;
+top: 929px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Group 34614 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 342px;
+top: 989px;
+
+
+
+/* Email* */
+
+position: absolute;
+width: 56px;
+height: 24px;
+left: 342px;
+top: 989px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 342px;
+top: 1023px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Group 34612 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 730px;
+top: 895px;
+
+
+
+/* Last name* */
+
+position: absolute;
+width: 98px;
+height: 24px;
+left: 730px;
+top: 895px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 730px;
+top: 929px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Group 34615 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 730px;
+top: 989px;
+
+
+
+/* phone number* */
+
+position: absolute;
+width: 138px;
+height: 24px;
+left: 730px;
+top: 989px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 730px;
+top: 1023px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Vector */
+
+position: absolute;
+left: 54.7%;
+right: 44.39%;
+top: 37.25%;
+bottom: 62.46%;
+
+background: #2E3D83;
+
+
+/* PK (92) */
+
+position: absolute;
+width: 46px;
+height: 17px;
+left: 740px;
+top: 1034px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* Group 34633 */
+
+position: absolute;
+width: 796px;
+height: 1079px;
+left: 322px;
+top: 1139px;
+
+
+
+/* Rectangle 17760 */
+
+position: absolute;
+width: 796px;
+height: 1079px;
+left: 322px;
+top: 1139px;
+
+background: #DBE8FF;
+border-radius: 5px;
+
+
+/* Group 34638 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 730px;
+top: 1906px;
+
+
+
+/* Max Bid* */
+
+position: absolute;
+width: 81px;
+height: 24px;
+left: 730px;
+top: 1906px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 730px;
+top: 1940px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Group 34637 */
+
+position: absolute;
+width: 154px;
+height: 40px;
+left: 343px;
+top: 2042px;
+
+
+
+/* Frame 34617 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 9px 30px;
+gap: 10px;
+
+position: absolute;
+width: 154px;
+height: 40px;
+left: 343px;
+top: 2042px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Add Photos */
+
+width: 94px;
+height: 22px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+/* main  color */
+color: #2E3D83;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 34613 */
+
+position: absolute;
+width: 117px;
+height: 37px;
+left: 343px;
+top: 1163px;
+
+
+
+/* Car Details */
+
+position: absolute;
+width: 117px;
+height: 29px;
+left: 343px;
+top: 1163px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17760 */
+
+position: absolute;
+width: 117px;
+height: 5px;
+left: 343px;
+top: 1195px;
+
+background: #F4C23D;
+border-radius: 6px;
+
+
+/* Group 34621 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 343px;
+top: 1314px;
+
+
+
+/* Make* */
+
+position: absolute;
+width: 57px;
+height: 24px;
+left: 343px;
+top: 1314px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 343px;
+top: 1348px;
+
+background: #FFFFFF;
+border: 1px solid #6E6E6E;
+border-radius: 5px;
+
+
+/* Vector */
+
+position: absolute;
+left: 47.08%;
+right: 52.01%;
+top: 48.91%;
+bottom: 50.81%;
+
+background: #2E3D83;
+
+
+/* Group 34626 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 343px;
+top: 1314px;
+
+
+
+/* Make* */
+
+position: absolute;
+width: 57px;
+height: 24px;
+left: 343px;
+top: 1314px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 343px;
+top: 1348px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Select Make */
+
+position: absolute;
+width: 76px;
+height: 17px;
+left: 353px;
+top: 1359px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 47.08%;
+right: 52.01%;
+top: 48.91%;
+bottom: 50.81%;
+
+background: #2E3D83;
+
+
+/* Group 34625 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 731px;
+top: 1408px;
+
+
+
+/* Engine size */
+
+position: absolute;
+width: 98px;
+height: 24px;
+left: 731px;
+top: 1408px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 731px;
+top: 1442px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Vector */
+
+position: absolute;
+left: 74.03%;
+right: 25.07%;
+top: 52.28%;
+bottom: 47.44%;
+
+background: #2E3D83;
+
+
+/* Select */
+
+position: absolute;
+width: 38px;
+height: 17px;
+left: 741px;
+top: 1453px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* Group 34628 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 343px;
+top: 1502px;
+
+
+
+/* Paint* */
+
+position: absolute;
+width: 54px;
+height: 24px;
+left: 343px;
+top: 1502px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 343px;
+top: 1536px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Vector */
+
+position: absolute;
+left: 47.08%;
+right: 52.01%;
+top: 55.65%;
+bottom: 44.07%;
+
+background: #2E3D83;
+
+
+/* Select */
+
+position: absolute;
+width: 38px;
+height: 17px;
+left: 353px;
+top: 1547px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* Group 34630 */
+
+position: absolute;
+width: 756px;
+height: 184px;
+left: 343px;
+top: 1596px;
+
+
+
+/* Noteworthy options/features */
+
+position: absolute;
+width: 259px;
+height: 24px;
+left: 343px;
+top: 1596px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 756px;
+height: 150px;
+left: 343px;
+top: 1630px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Group 34629 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 731px;
+top: 1502px;
+
+
+
+/* Has GCC Specs */
+
+position: absolute;
+width: 136px;
+height: 24px;
+left: 731px;
+top: 1502px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 731px;
+top: 1536px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Select */
+
+position: absolute;
+width: 38px;
+height: 17px;
+left: 741px;
+top: 1547px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 74.03%;
+right: 25.07%;
+top: 55.65%;
+bottom: 44.07%;
+
+background: #2E3D83;
+
+
+/* Group 34631 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 343px;
+top: 1800px;
+
+
+
+/* Accident History */
+
+position: absolute;
+width: 148px;
+height: 24px;
+left: 343px;
+top: 1800px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 343px;
+top: 1834px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Vector */
+
+position: absolute;
+left: 47.08%;
+right: 52.01%;
+top: 66.33%;
+bottom: 33.38%;
+
+background: #2E3D83;
+
+
+/* Select */
+
+position: absolute;
+width: 38px;
+height: 17px;
+left: 353px;
+top: 1845px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* Group 34633 */
+
+position: absolute;
+width: 368px;
+height: 168px;
+left: 731px;
+top: 1800px;
+
+
+
+/* Full Service History */
+
+position: absolute;
+width: 171px;
+height: 24px;
+left: 731px;
+top: 1800px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 731px;
+top: 1834px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Vector */
+
+position: absolute;
+left: 74.03%;
+right: 25.07%;
+top: 66.33%;
+bottom: 33.38%;
+
+background: #2E3D83;
+
+
+/* Select */
+
+position: absolute;
+width: 38px;
+height: 17px;
+left: 741px;
+top: 1845px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* $ */
+
+position: absolute;
+width: 9px;
+height: 17px;
+left: 741px;
+top: 1951px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* Group 34623 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 343px;
+top: 1408px;
+
+
+
+/* Mileage (in miles) */
+
+position: absolute;
+width: 152px;
+height: 24px;
+left: 343px;
+top: 1408px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 343px;
+top: 1442px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Group 34616 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 343px;
+top: 1220px;
+
+
+
+/* VIN* */
+
+position: absolute;
+width: 44px;
+height: 24px;
+left: 343px;
+top: 1220px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 343px;
+top: 1254px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Group 34632 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 731px;
+top: 1220px;
+
+
+
+/* Year* */
+
+position: absolute;
+width: 47px;
+height: 24px;
+left: 731px;
+top: 1220px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 731px;
+top: 1254px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Vector */
+
+position: absolute;
+left: 74.03%;
+right: 25.07%;
+top: 45.54%;
+bottom: 54.18%;
+
+background: #2E3D83;
+
+
+/* Select Year */
+
+position: absolute;
+width: 68px;
+height: 17px;
+left: 741px;
+top: 1265px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* Group 34622 */
+
+position: absolute;
+width: 368px;
+height: 74px;
+left: 731px;
+top: 1314px;
+
+
+
+/* Model* */
+
+position: absolute;
+width: 65px;
+height: 24px;
+left: 731px;
+top: 1314px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Rectangle 17761 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 40px;
+left: 731px;
+top: 1348px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Vector */
+
+position: absolute;
+left: 74.03%;
+right: 25.07%;
+top: 48.91%;
+bottom: 50.81%;
+
+background: #2E3D83;
+
+
+/* All Models */
+
+position: absolute;
+width: 66px;
+height: 17px;
+left: 741px;
+top: 1359px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #2E3D83;
+
+
+
+/* Has the car been modified? */
+
+position: absolute;
+width: 240px;
+height: 24px;
+left: 343px;
+top: 1894px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Upload Photos */
+
+position: absolute;
+width: 130px;
+height: 24px;
+left: 343px;
+top: 1998px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Frame 34613 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 9px 30px;
+gap: 10px;
+
+position: absolute;
+width: 197px;
+height: 40px;
+left: 343px;
+top: 1938px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Completely stock */
+
+width: 137px;
+height: 22px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 34614 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 9px 30px;
+gap: 10px;
+
+position: absolute;
+width: 131px;
+height: 40px;
+left: 560px;
+top: 1938px;
+
+background: #FFFFFF;
+border: 1px solid #929292;
+border-radius: 5px;
+
+
+/* Modified */
+
+width: 71px;
+height: 22px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 34606 */
+
+position: absolute;
+left: 23.75%;
+right: 62.71%;
+top: 76.08%;
+bottom: 21.91%;
+
+
+
+/* Rectangle 17516 */
+
+position: absolute;
+left: 23.75%;
+right: 62.71%;
+top: 76.08%;
+bottom: 21.91%;
+
+/* main  color */
+background: #2E3D83;
+border-radius: 5px;
+
+
+/* Submit */
+
+position: absolute;
+left: 27.92%;
+right: 66.81%;
+top: 76.59%;
+bottom: 22.37%;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+

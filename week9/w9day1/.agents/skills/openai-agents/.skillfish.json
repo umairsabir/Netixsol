@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "openai-agents",
+  "owner": "secondsky",
+  "repo": "claude-skills",
+  "path": "plugins/openai-agents/skills/openai-agents",
+  "branch": "main",
+  "sha": "0181c954f7c9f4bb121227bc70e1d09c44e05856",
+  "source": "manual"
+}

@@ -1,0 +1,326 @@
+(OpenAI Agents SDK – JS/TS)
+
+make sure you use env for any api calling and make example env as well in both frontend and backend
+Build a real agentic AI system that can analyze PDF documents, reason about user intent, and delegate work between agents using the OpenAI Agents SDK.
+
+This is not a chatbot.
+This is not a single-agent app.
+This is a decision-driven multi-agent system.
+
+---
+
+🔄 Context (Why this task)
+
+Earlier, document analysis was implemented using:
+
+* Pipelines
+* Graph-based flows
+* Sequential logic
+
+Now, you must:
+
+* Think in agents
+* Design handoffs
+* Use tools explicitly
+* Apply guardrails
+* Control execution using Runner
+
+---
+
+🧠 What You Will Build
+
+A Smart PDF Intelligence Platform where:
+
+1. User uploads a PDF
+2. System:
+  * Understands the document type
+  * Extracts meaningful information
+  * Prepares structured knowledge
+3. User asks questions
+4. The system:
+  * Routes the request to the correct agent
+  * Uses tools if required
+  * Answers only using document content
+  * Refuses when information is missing
+
+---
+
+🧩 Mandatory Agent Architecture
+
+You must implement at least 4 agents.
+
+---
+
+1️⃣ Router Agent (Mandatory)
+
+Responsibility
+
+* Understand user intent
+* Decide which agent should handle the request
+
+Rules
+
+* ❌ Must NOT answer the user
+* ❌ Must NOT call tools
+* ✅ Only performs routing / delegation
+
+---
+
+2️⃣ Document Analysis Agent
+
+Responsibilities
+
+* Analyze uploaded PDF content
+* Identify document type:
+  * Research paper
+  * Business report
+  * Legal / policy
+  * Manual / guide
+* Extract:
+  * Sections
+  * Themes
+  * Important entities
+
+---
+
+3️⃣ Summary Agent
+
+Responsibilities
+
+* Generate:
+  * Executive summary
+  * Bullet highlights
+* Summary style must adapt to document type
+
+---
+
+4️⃣ Q&A Agent
+
+Responsibilities
+
+* Answer user questions strictly from document context
+* Must clearly respond:
+  * “This information is not present in the document” when applicable
+
+❌ No hallucination
+❌ No external knowledge
+
+---
+
+🛠 Mandatory Tools (At Least 2)
+
+Agents must use real tools, such as:
+
+* PDF text extraction tool
+* Chunk retriever / semantic search
+* Section locator
+* Token / word counter
+
+Rules
+
+* Tools must be explicitly called
+* No fake outputs
+* No hardcoded results
+
+---
+
+🔐 Guardrails (Mandatory)
+
+You must implement guardrails to ensure:
+
+* Answers are strictly document-grounded
+* Unrelated or unsafe questions are blocked
+* Agents do not fabricate information
+
+Guardrails must exist outside prompts, not just instructions.
+
+---
+
+🔁 Mandatory Handoff Flow
+
+Every request must follow:
+
+User Input
+   ↓
+Router Agent
+   ↓
+Specialized Agent
+   ↓
+(Optional Tool Calls)
+   ↓
+Final Answer
+
+Hard rules:
+
+* Router agent never answers
+* At least one handoff must occur
+
+---
+
+🧪 Runner & Tracing
+
+You must:
+
+* Use the Runner to execute agents
+* Enable or intentionally disable tracing
+* Be able to explain:
+  * Why an agent was selected
+  * Why a tool was used
+  * How execution flowed
+
+---
+
+🧰 Tech Stack (Strict)
+
+Frontend
+
+* Next.js (App Router)
+* MUI
+* RTK Query
+
+Backend
+
+* NestJS
+* MongoDB
+
+AI Layer
+
+* OpenAI Agents SDK
+* JavaScript or TypeScript
+
+❌ No LangChain
+❌ No LangGraph
+❌ No single-agent systems
+
+---
+
+📦 Deliverables
+
+1️⃣ Working Application
+
+* PDF upload
+* Agent-based analysis
+* Interactive Q&A
+
+---
+
+2️⃣ README.md (Required)
+
+Must include:
+
+* Agent architecture explanation
+* Responsibilities of each agent
+* Tools used and why
+* Guardrails explanation
+* How to run locally
+
+---
+
+3️⃣ Agent Design Notes
+
+Explain:
+
+* Why agents were separated
+* What breaks if merged into one agent
+* What you would improve in production
+
+---
+
+🚫 Hard Rules
+
+* ❌ No hallucinated answers
+* ❌ No single-agent shortcut
+* ❌ No fake tools
+* ❌ No frontend-only logic
+* ❌ No skipping Router agent
+
+---
+
+✅ Evaluation Criteria
+
+You will be evaluated on:
+
+* Correct agentic architecture
+* Clean handoffs
+* Proper tool usage
+* Guardrails correctness
+* Code clarity
+* System-level thinking
+
+UI polish is secondary.
+
+---
+
+🏗️ End-to-End Reliability Requirements
+
+1. **Environmental Integrity**:
+   - Both frontend and backend must use `.env` for configuration.
+   - `.env.example` files must be provided in both directories.
+   - Sensitive keys must NEVER be hardcoded.
+
+2. **Error Handling & Resilience**:
+   - UI must show meaningful error messages for failed uploads or agent timeouts.
+   - Backend must gracefully handle AI provider connectivity issues.
+
+3. **Data Consistency**:
+   - Document status must correctly transition: `processing` → `ready`.
+   - Analysis results must be accurately reflected in the UI.
+
+4. **Agentic Loop Validation**:
+   - The Router Agent must correctly refuse unrelated queries (Guardrail).
+   - The Q&A Agent must refuse to answer if information is not in the document.
+
+---
+
+🧪 End-to-End Test Scenarios
+
+- **Scenario A: The Full Loop**
+  - GIVEN a new PDF is uploaded
+  - WHEN the processing completes
+  - THEN the Analysis view should display document details.
+  - AND the Q&A Agent should answer related questions.
+
+- **Scenario B: Guardrail Refusal**
+  - GIVEN a document is active
+  - WHEN a user asks "What is the weather in Tokyo?"
+  - THEN the Router Agent should refuse or provide a guardrail response.
+
+---
+
+⚡ Performance & Token Management
+
+1. **Context Window Optimization**:
+   - The system must use the `chunkRetriever` tool for large documents to avoid exceeding the model's context window.
+   - Large PDF files should be processed in chunks rather than sending the entire text in every prompt.
+
+2. **Latency Visibility**:
+   - The UI should provide visual feedback while agents are "thinking" (e.g., a progress indicator or "Agent X is working...").
+   - Total analysis time should be tracked and logged for performance auditing.
+
+3. **Concurrency**:
+   - The system must handle multiple concurrent user sessions without crosstalk between document contexts.
+
+---
+
+🛡️ Deployment & Security
+
+1. **Environment Security**:
+   - Production API keys must be stored in a secure secret manager (e.g., Vercel Secrets, AWS Secrets Manager).
+   - The backend must NOT expose internal errors or stack traces in production responses.
+
+2. **File Safety**:
+   - Uploaded files must be validated for size and type (PDF only) on BOTH frontend and backend.
+   - Filenames must be sanitized to prevent directory traversal attacks.
+
+3. **Rate Limiting**:
+   - The backend should implement rate limiting to protect against API abuse and cost spikes.
+
+---
+
+🧠 Why This Hackathon Matters
+
+This task checks whether you can:
+
+Design intelligent systems, not just call models
+
+This is how real AI products are built.

@@ -1,0 +1,21 @@
+{
+  "name": "day-32-multi-agent-research-and-report-system",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "@openai/agents": "^0.8.5",
+    "@openai/agents-core": "^0.8.5",
+    "@tavily/core": "^0.7.2",
+    "dotenv": "^17.4.2",
+    "tsx": "^4.21.0",
+    "zod": "^4.3.6"
+  }
+}
