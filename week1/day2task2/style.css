@@ -1,0 +1,420 @@
+/* information div */
+
+.info {
+  text-align: center;
+}
+.icon1 i {
+  color: rgb(12, 210, 193);
+  padding: 6px;
+}
+
+/* Profile div */
+.Profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 190px;
+}
+.icon2 {
+  display: flex; /* Icon + text horizontal */
+  flex-direction: column; /* vertical alignment */ /* center horizontally */
+  gap: 5px; /* Space between icon and text */
+}
+.icon2 p {
+  margin: 0; /* Remove default paragraph margin */
+  font-size: 14px;
+}
+.icon2 i {
+  font-size: 24px;
+}
+.top-line {
+  display: flex; /* icon + username inline */
+  align-items: center;
+  gap: 8px;
+  font-weight: bold; /* spacing between icon and username */
+}
+#link {
+  color: blue;
+}
+#git {
+  color: rgb(80, 5, 150);
+}
+#so {
+  color: yellow;
+}
+
+/* summary div */
+
+.summ {
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#sh1 {
+  min-width: 110px;
+}
+#sp1 {
+  flex: 1;
+  line-height: 1.5;
+  padding-left: 30vh;
+  text-align: left;
+  margin: 0%;
+}
+
+/* Education div */
+
+.Edu {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 50px;
+  align-items: center;
+}
+.col1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 360px;
+}
+.col2 {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.col1 p,
+.col2 p {
+  margin: 0;
+  color: black;
+  font-size: 14px;
+}
+#username {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 320px) {
+  .icon1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .info {
+    font-size: 14px;
+  }
+  .Profile {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .icon2 {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    gap: 2;
+  }
+  .icon2 p {
+    margin: auto;
+    gap: 0%;
+    padding: 0%;
+  }
+  .summ {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #sh1 {
+  min-width: 0px;
+  text-align: center;
+}
+#sp1 {
+  line-height: 1.5;
+  padding-left: 0vh;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+}
+
+/* Experience div */
+.Exper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 50px;
+  align-items: center;
+}
+.Ex1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 370px;
+}
+.Ex2 {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.Ex1 p,
+.Ex2 p {
+  margin: 0;
+  color: black;
+  font-size: 14px;
+}
+#username1 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.E-content {
+  padding-left: 310px;
+}
+#E01 {
+  color: rgb(7, 193, 193);
+  font-size: 12px;
+}
+#E02 {
+  color: rgb(143, 158, 169);
+  font-size: 12px;
+}
+.EXP3 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 310px;
+  padding-right: 40px;
+  margin-top: 1%;
+  margin-bottom: 0.5%;
+}
+.EXP31 {
+  text-align: left;
+  font-size: 16px;
+}
+.EXP32 {
+  margin: 0px !important;
+  text-align: right;
+  font-size: 16px;
+}
+#EXP31,
+#EXP32 {
+  font-weight: bold;
+}
+#EXP31x,
+#EXP32x {
+  font-size: 14px;
+}
+
+/* Project div */
+
+.Proj {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 50px;
+  align-items: center;
+}
+.Pro1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 100px;
+}
+.Pro2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 290px;
+}
+.Pro1 p,
+.Pro2 p {
+  margin: 0;
+  color: black;
+  font-size: 14px;
+}
+#Proname {
+  font-weight: bold;
+}
+
+.Proj1 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 305px;
+  padding-right: 50px;
+  align-items: center;
+}
+.Pro11 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.Pro22 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 90px;
+  padding-right: 10px;
+}
+.Pro11 p,
+.Pro22 p {
+  margin: 0;
+  color: black;
+  font-size: 14px;
+}
+
+/* skill  div */
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 200px;
+  align-items: end;
+}
+.sk1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 25px;
+  padding-left: 50px;
+}
+.sk2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 50px;
+}
+.sk3 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.sk1 p,
+.sk2 p,
+.sk3 p {
+  margin: 0;
+  color: black;
+  font-size: 14px;
+}
+#langname {
+  font-weight: bold;
+}
+.skill1 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 300px;
+  padding-right: 50px;
+  align-items: start;
+}
+.sk11 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 1%;
+}
+.sk22 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 120px;
+  padding-right: 10px;
+  margin-top: 0.5%;
+}
+.sk23 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 90px;
+  padding-right: 10px;
+}
+.sk11 p,
+.sk22 p,
+.sk23 {
+  margin: 0;
+  color: black;
+  font-size: 14px;
+}
+
+/* language div */
+
+.Lang {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 50px;
+  align-items: center;
+}
+.lang1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 200px;
+}
+.lang2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 350px;
+}
+.lang1 p,
+.lang2 p {
+  margin: 0;
+  color: black;
+  font-size: 14px;
+}
+#langname {
+  font-weight: bold;
+}
+
+/* certifications div */
+
+.cer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 200px;
+  align-items: center;
+}
+.cer1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 25px;
+  padding-left: 70px;
+}
+.cer2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 50px;
+}
+.cer3 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.cer4 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.cer1 p,
+.cer2 p,
+.cer3 p,
+.cer4 p {
+  margin: 0;
+  color: black;
+  font-size: 14px;
+}
+#cername {
+  font-weight: bold;
+}
+/* reference div */
+
+.ref {
+  display: flex;
+  padding-left: 20px;
+}
+#ref1 {
+  padding-left: 200px;
+}
+
