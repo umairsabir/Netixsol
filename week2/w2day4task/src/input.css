@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-strong-cyan: hsl(172, 67%, 45%);
+  --color-very-dark-cyan: hsl(183, 100%, 15%);
+  --color-dark-grayish-cyan: hsl(186, 14%, 43%);
+  --color-grayish-cyan: hsl(184, 14%, 56%);
+  --color-light-grayish-cyan: hsl(185, 41%, 84%);
+  --color-very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-error: #E17457;
+  --font-mono: 'Space Mono', monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-light-grayish-cyan);
+    font-family: var(--font-mono);
+  }
+}
+
+/* Remove Arrows/Spinners */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Custom Selection */
+.tip-btn.active {
+  background-color: var(--color-strong-cyan);
+  color: var(--color-very-dark-cyan);
+}
