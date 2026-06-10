@@ -1,0 +1,27 @@
+{
+  "name": "Royal Ruby #1",
+  "description": "A majestic ruby gemstone adorned with a golden royal crown. This legendary artifact radiates power and prestige from the Umair Token collection.",
+  "image": "ipfs://QmRdNp8CJVQKhrL7SGntvgkijbrvxx4ux6gKb66wZYLuG3/1.svg",
+  "attributes": [
+    {
+      "trait_type": "Gem Type",
+      "value": "Ruby"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Mythic"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": "98"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Crimson Gold"
+    },
+    {
+      "trait_type": "Cut",
+      "value": "Royal Diamond"
+    }
+  ]
+}

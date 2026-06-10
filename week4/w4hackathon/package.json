@@ -1,0 +1,12 @@
+{
+  "name": "ott-platform-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "pnpm --dir backend install && pnpm --dir ott-platform-frontend install",
+    "dev": "concurrently --kill-others-on-fail \"pnpm --dir backend dev\" \"pnpm --dir ott-platform-frontend dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

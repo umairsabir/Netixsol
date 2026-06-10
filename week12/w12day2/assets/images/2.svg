@@ -1,0 +1,106 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00051a"/>
+      <stop offset="100%" stop-color="#000308"/>
+    </radialGradient>
+    <radialGradient id="sapphire" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#6699ff"/>
+      <stop offset="40%" stop-color="#0033cc"/>
+      <stop offset="100%" stop-color="#001166"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg2)"/>
+
+  <!-- Decorative gold border -->
+  <rect x="8" y="8" width="384" height="384" rx="20" fill="none" stroke="#ffd700" stroke-width="3" opacity="0.85"/>
+  <rect x="14" y="14" width="372" height="372" rx="16" fill="none" stroke="#b8860b" stroke-width="1" opacity="0.5"/>
+
+  <!-- Corner diamonds -->
+  <g fill="#ffd700" opacity="0.9">
+    <polygon points="20,20 40,20 20,40"/>
+    <polygon points="380,20 360,20 380,40"/>
+    <polygon points="20,380 40,380 20,360"/>
+    <polygon points="380,380 360,380 380,360"/>
+  </g>
+
+  <!-- Gold glow halo -->
+  <circle cx="200" cy="195" r="115" fill="url(#blueGlow)" filter="url(#glow2)"/>
+
+  <!-- Star shape sapphire gem -->
+  <g filter="url(#soft2)">
+    <!-- Hexagonal main body -->
+    <polygon points="200,85 255,118 255,182 200,215 145,182 145,118" fill="url(#sapphire)"/>
+
+    <!-- Top facets -->
+    <polygon points="200,85 255,118 200,130" fill="#4477ff" opacity="0.8"/>
+    <polygon points="200,85 145,118 200,130" fill="#001199" opacity="0.9"/>
+
+    <!-- Middle facets -->
+    <polygon points="145,118 200,130 145,182" fill="#002288" opacity="0.85"/>
+    <polygon points="255,118 200,130 255,182" fill="#3366ee" opacity="0.75"/>
+
+    <!-- Bottom facets -->
+    <polygon points="145,182 200,130 200,215" fill="#001166" opacity="0.9"/>
+    <polygon points="255,182 200,130 200,215" fill="#0022aa" opacity="0.8"/>
+
+    <!-- Star rays extending out -->
+    <polygon points="200,85 210,60 200,75 190,60" fill="#4488ff" opacity="0.7"/>
+    <polygon points="255,118 278,108 262,122 278,132" fill="#3377ee" opacity="0.7"/>
+    <polygon points="255,182 278,172 262,178 278,192" fill="#2255cc" opacity="0.7"/>
+    <polygon points="200,215 210,240 200,225 190,240" fill="#0033aa" opacity="0.7"/>
+    <polygon points="145,182 122,192 138,178 122,172" fill="#2255cc" opacity="0.7"/>
+    <polygon points="145,118 122,108 138,122 122,132" fill="#3366dd" opacity="0.7"/>
+  </g>
+
+  <!-- Shine highlights -->
+  <polygon points="170,95 190,125 165,118 158,100" fill="white" opacity="0.3"/>
+  <ellipse cx="178" cy="105" rx="7" ry="12" fill="white" opacity="0.4" transform="rotate(-15,178,105)"/>
+
+  <!-- Royal scepter base -->
+  <g fill="#ffd700">
+    <rect x="188" y="240" width="24" height="60" rx="4" filter="url(#soft2)"/>
+    <ellipse cx="200" cy="305" rx="35" ry="12" filter="url(#soft2)"/>
+    <ellipse cx="200" cy="305" rx="35" ry="12" fill="none" stroke="#b8860b" stroke-width="1.5"/>
+    <rect x="165" y="310" width="70" height="12" rx="6" filter="url(#soft2)"/>
+  </g>
+  <rect x="165" y="310" width="70" height="12" rx="6" fill="none" stroke="#b8860b" stroke-width="1.5"/>
+
+  <!-- Gold sparkles -->
+  <g fill="#ffd700" filter="url(#glow2)" opacity="0.9">
+    <polygon points="80,80 84,93 97,93 87,101 91,114 80,106 69,114 73,101 63,93 76,93"/>
+    <polygon points="320,75 323,85 333,85 325,91 328,101 320,95 312,101 315,91 307,85 317,85"/>
+    <polygon points="340,290 343,300 353,300 345,306 348,316 340,310 332,316 335,306 327,300 337,300"/>
+    <polygon points="60,295 63,305 73,305 65,311 68,321 60,315 52,321 55,311 47,305 57,305"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#ffd700" opacity="0.55">
+    <circle cx="115" cy="155" r="2.5"/>
+    <circle cx="285" cy="140" r="2"/>
+    <circle cx="95" cy="245" r="2"/>
+    <circle cx="308" cy="255" r="2.5"/>
+    <circle cx="160" cy="345" r="1.5"/>
+    <circle cx="245" cy="348" r="2"/>
+    <circle cx="345" cy="175" r="1.5"/>
+    <circle cx="55" cy="185" r="2"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="200" y="370" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#ffd700" letter-spacing="3">ROYAL SAPPHIRE</text>
+  <text x="200" y="388" text-anchor="middle" font-family="serif" font-size="11" fill="#b8860b" letter-spacing="2">UMAIR TOKEN #2</text>
+</svg>

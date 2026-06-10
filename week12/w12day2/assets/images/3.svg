@@ -1,0 +1,123 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#001a05"/>
+      <stop offset="100%" stop-color="#000a02"/>
+    </radialGradient>
+    <radialGradient id="emerald" cx="30%" cy="25%" r="65%">
+      <stop offset="0%" stop-color="#66ff99"/>
+      <stop offset="35%" stop-color="#00cc44"/>
+      <stop offset="100%" stop-color="#004d1a"/>
+    </radialGradient>
+    <radialGradient id="greenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft3">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg3)"/>
+
+  <!-- Gold border -->
+  <rect x="8" y="8" width="384" height="384" rx="20" fill="none" stroke="#ffd700" stroke-width="3" opacity="0.85"/>
+  <rect x="14" y="14" width="372" height="372" rx="16" fill="none" stroke="#b8860b" stroke-width="1" opacity="0.5"/>
+
+  <!-- Corner ornaments -->
+  <g fill="#ffd700" opacity="0.9">
+    <polygon points="20,20 40,20 20,40"/>
+    <polygon points="380,20 360,20 380,40"/>
+    <polygon points="20,380 40,380 20,360"/>
+    <polygon points="380,380 360,380 380,360"/>
+  </g>
+
+  <!-- Glow halo -->
+  <circle cx="200" cy="185" r="115" fill="url(#greenGlow)" filter="url(#glow3)"/>
+
+  <!-- Emerald Shield shape -->
+  <g filter="url(#soft3)">
+    <!-- Shield outline gold -->
+    <path d="M200,75 L270,100 L285,175 L200,280 L115,175 L130,100 Z" fill="#b8860b" />
+    <!-- Shield main emerald fill -->
+    <path d="M200,82 L264,105 L278,174 L200,272 L122,174 L136,105 Z" fill="url(#emerald)"/>
+
+    <!-- Shield facet lines -->
+    <line x1="200" y1="82" x2="200" y2="272" stroke="#004d1a" stroke-width="1.5" opacity="0.6"/>
+    <line x1="136" y1="105" x2="264" y2="105" stroke="#004d1a" stroke-width="1" opacity="0.5"/>
+    <line x1="122" y1="174" x2="278" y2="174" stroke="#004d1a" stroke-width="1" opacity="0.5"/>
+
+    <!-- Top facets -->
+    <polygon points="200,82 264,105 200,145" fill="#44ff77" opacity="0.5"/>
+    <polygon points="200,82 136,105 200,145" fill="#009933" opacity="0.6"/>
+
+    <!-- Middle facets -->
+    <polygon points="136,105 200,145 122,174" fill="#007722" opacity="0.55"/>
+    <polygon points="264,105 200,145 278,174" fill="#33cc55" opacity="0.45"/>
+
+    <!-- Bottom facets -->
+    <polygon points="122,174 200,145 200,272" fill="#005511" opacity="0.65"/>
+    <polygon points="278,174 200,145 200,272" fill="#008833" opacity="0.5"/>
+  </g>
+
+  <!-- Shield highlight -->
+  <polygon points="165,90 185,130 160,140 150,105" fill="white" opacity="0.2"/>
+  <ellipse cx="170" cy="103" rx="8" ry="13" fill="white" opacity="0.3" transform="rotate(-10,170,103)"/>
+
+  <!-- Gold crown on top of shield -->
+  <g fill="#ffd700" filter="url(#soft3)">
+    <rect x="162" y="55" width="76" height="26" rx="4"/>
+    <polygon points="162,55 175,30 188,55"/>
+    <polygon points="187,55 200,22 213,55"/>
+    <polygon points="212,55 225,30 238,55"/>
+    <!-- Crown gems -->
+    <circle cx="175" cy="43" r="5" fill="#ff4444"/>
+    <circle cx="200" cy="37" r="6" fill="#66ff99"/>
+    <circle cx="225" cy="43" r="5" fill="#4466ff"/>
+  </g>
+  <rect x="162" y="55" width="76" height="26" rx="4" fill="none" stroke="#b8860b" stroke-width="1.5"/>
+
+  <!-- Shield emblem - gold cross -->
+  <g fill="#ffd700" opacity="0.85" filter="url(#soft3)">
+    <rect x="193" y="130" width="14" height="80" rx="3"/>
+    <rect x="163" y="160" width="74" height="14" rx="3"/>
+    <circle cx="200" cy="175" r="12" fill="#ffd700"/>
+    <circle cx="200" cy="175" r="7" fill="#004d1a"/>
+  </g>
+
+  <!-- Base pedestal -->
+  <g fill="#ffd700" filter="url(#soft3)">
+    <rect x="170" y="278" width="60" height="12" rx="4"/>
+    <rect x="155" y="288" width="90" height="14" rx="5"/>
+    <rect x="145" y="300" width="110" height="10" rx="4"/>
+  </g>
+  <rect x="145" y="300" width="110" height="10" rx="4" fill="none" stroke="#b8860b" stroke-width="1.5"/>
+
+  <!-- Gold sparkles -->
+  <g fill="#ffd700" filter="url(#glow3)" opacity="0.9">
+    <polygon points="75,85 79,97 91,97 81,104 85,116 75,109 65,116 69,104 59,97 71,97"/>
+    <polygon points="325,80 328,90 338,90 330,96 333,106 325,100 317,106 320,96 312,90 322,90"/>
+    <polygon points="345,295 348,305 358,305 350,311 353,321 345,315 337,321 340,311 332,305 342,305"/>
+    <polygon points="55,300 58,310 68,310 60,316 63,326 55,320 47,326 50,316 42,310 52,310"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#ffd700" opacity="0.55">
+    <circle cx="110" cy="150" r="2.5"/>
+    <circle cx="295" cy="145" r="2"/>
+    <circle cx="90" cy="240" r="2"/>
+    <circle cx="310" cy="245" r="2.5"/>
+    <circle cx="165" cy="348" r="1.5"/>
+    <circle cx="240" cy="350" r="2"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="200" y="370" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#ffd700" letter-spacing="3">ROYAL EMERALD</text>
+  <text x="200" y="388" text-anchor="middle" font-family="serif" font-size="11" fill="#b8860b" letter-spacing="2">UMAIR TOKEN #3</text>
+</svg>

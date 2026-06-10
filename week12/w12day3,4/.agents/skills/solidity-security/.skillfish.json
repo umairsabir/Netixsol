@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "solidity-security",
+  "owner": "hermeticormus",
+  "repo": "hermetic-academy",
+  "path": "plugins/blockchain-web3/skills/solidity-security",
+  "branch": "main",
+  "sha": "fb825abe61166c26ca00a0f9ef3453f9ccbee1d1",
+  "source": "manual"
+}

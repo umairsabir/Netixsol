@@ -1,0 +1,27 @@
+{
+  "name": "Royal Sapphire #2",
+  "description": "A radiant sapphire star gem mounted on a golden royal scepter. This rare artifact holds the deep blue energy of the cosmos in the Umair Token collection.",
+  "image": "ipfs://QmRdNp8CJVQKhrL7SGntvgkijbrvxx4ux6gKb66wZYLuG3/2.svg",
+  "attributes": [
+    {
+      "trait_type": "Gem Type",
+      "value": "Sapphire"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": "92"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Royal Blue Gold"
+    },
+    {
+      "trait_type": "Cut",
+      "value": "Star Hexagon"
+    }
+  ]
+}

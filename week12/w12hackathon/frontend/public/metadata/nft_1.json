@@ -1,0 +1,9 @@
+{
+  "name": "Nebula Voyager",
+  "description": "Deep space explorer vessel floating in cosmic dust.",
+  "image": "/images/nft_1.png",
+  "attributes": [
+    { "trait_type": "Class", "value": "Cosmic" },
+    { "trait_type": "Price", "value": "100 DNFT" }
+  ]
+}

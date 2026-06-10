@@ -1,0 +1,236 @@
+/* ========================================
+   CSS Custom Properties – Design Tokens
+   (dark/light theme via [data-theme])
+   ======================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Light theme */
+  --color-bg-primary: #f0f2f5;
+  --color-bg-secondary: #ffffff;
+  --color-bg-sidebar: #ffffff;
+  --color-bg-message-self: #6c63ff;
+  --color-bg-message-other: #e8eaf0;
+  --color-bg-input: #f0f2f5;
+  --color-bg-hover: rgba(108, 99, 255, 0.08);
+  --color-bg-room-active: rgba(108, 99, 255, 0.12);
+  --color-bg-modal: rgba(0, 0, 0, 0.5);
+  --color-bg-card: #ffffff;
+  --color-bg-skeleton: #e0e0e0;
+
+  --color-text-primary: #1a1d26;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #9ca3af;
+  --color-text-on-accent: #ffffff;
+  --color-text-sidebar: #1a1d26;
+  --color-text-sidebar-muted: #6b7280;
+  --color-text-message-other: #1a1d26;
+
+  --color-accent: #6c63ff;
+  --color-accent-hover: #5a52e0;
+  --color-accent-light: rgba(108, 99, 255, 0.15);
+  --color-accent-glow: rgba(108, 99, 255, 0.3);
+
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-sidebar: rgba(0, 0, 0, 0.06);
+  --color-scrollbar: rgba(108, 99, 255, 0.3);
+
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+  --color-warning: #f59e0b;
+  --color-online: #10b981;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.18);
+  --shadow-glow: 0 0 20px rgba(108, 99, 255, 0.25);
+
+  --font-family: "Inter", system-ui, -apple-system, sans-serif;
+  --transition: all 0.2s ease;
+  --transition-slow: all 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --color-bg-primary: #0f1117;
+  --color-bg-secondary: #1a1d26;
+  --color-bg-sidebar: #12141c;
+  --color-bg-message-self: #6c63ff;
+  --color-bg-message-other: #252836;
+  --color-bg-input: #252836;
+  --color-bg-hover: rgba(108, 99, 255, 0.12);
+  --color-bg-room-active: rgba(108, 99, 255, 0.25);
+  --color-bg-modal: rgba(0, 0, 0, 0.7);
+  --color-bg-card: #1e2130;
+  --color-bg-skeleton: #252836;
+
+  --color-text-primary: #e8eaf0;
+  --color-text-secondary: #9098aa;
+  --color-text-muted: #6b7280;
+  --color-text-on-accent: #ffffff;
+  --color-text-sidebar: #e0e0e0;
+  --color-text-sidebar-muted: #9098aa;
+  --color-text-message-other: #e8eaf0;
+
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-border-sidebar: rgba(255, 255, 255, 0.07);
+  --color-scrollbar: rgba(108, 99, 255, 0.4);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* ======================================== 
+   Global Reset & Base
+   ======================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/* ======================================== 
+   Scrollbar Styling
+   ======================================== */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar);
+  border-radius: var(--radius-full);
+}
+
+/* ======================================== 
+   Utility Classes
+   ======================================== */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 8px;
+}
+
+.gap-3 {
+  gap: 12px;
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+}
+
+/* ======================================== 
+   Animations
+   ======================================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes dotBounce {
+  0%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

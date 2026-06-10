@@ -1,0 +1,15 @@
+{
+  "name": "Pixelated Potion",
+  "description": "Restores mana and opens local Web3 state.",
+  "image": "https://gateway.pinata.cloud/ipfs/bafybeihbutkaceymmlfnpkz6iy2bkwwyznx6d5tezazvkzj55mi7z4ymtq",
+  "attributes": [
+    {
+      "trait_type": "Class",
+      "value": "Alchemy"
+    },
+    {
+      "trait_type": "Price",
+      "value": "300 DNFT"
+    }
+  ]
+}

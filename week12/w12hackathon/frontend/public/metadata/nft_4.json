@@ -1,0 +1,9 @@
+{
+  "name": "Ether Shard",
+  "description": "A crystalline fragment of pure decentralized energy.",
+  "image": "/images/nft_4.png",
+  "attributes": [
+    { "trait_type": "Class", "value": "Crystalline" },
+    { "trait_type": "Price", "value": "250 DNFT" }
+  ]
+}

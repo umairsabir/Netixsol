@@ -1,0 +1,12 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix job-listings\"",
+    "build": "npm run build --prefix job-listings",
+    "start": "npm run start --prefix job-listings"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

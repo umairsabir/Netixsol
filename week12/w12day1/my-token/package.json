@@ -1,0 +1,26 @@
+{
+  "name": "day-38-40-decentralized-todo-list",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.101.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "viem": "^2.52.2",
+    "wagmi": "^3.6.16"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@wagmi/cli": "latest",
+    "typescript": "latest"
+  }
+}

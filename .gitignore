@@ -5,3 +5,8 @@ node_modules/
 *.lock
 dist/
 build/
+node_modules/
+week*/node_modules/
+dist/
+build/
+.env

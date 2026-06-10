@@ -1,0 +1,15 @@
+{
+  "name": "Holographic Skull",
+  "description": "Digital memento mori in neon cyber space.",
+  "image": "https://gateway.pinata.cloud/ipfs/bafybeickrsuxulnqnnz53sx75xp5ydtnzj2j6erfe4relvgnc2zzqc3smi",
+  "attributes": [
+    {
+      "trait_type": "Class",
+      "value": "Cybernetic"
+    },
+    {
+      "trait_type": "Price",
+      "value": "350 DNFT"
+    }
+  ]
+}

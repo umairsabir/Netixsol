@@ -1,0 +1,116 @@
+.msg-wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 2px 0;
+  will-change: transform, opacity;
+}
+
+.msg-wrapper--other {
+  animation: slideInOther 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.msg-wrapper--self {
+  animation: slideInSelf 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.msg-wrapper--self {
+  flex-direction: row-reverse;
+}
+
+.msg-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-text-on-accent);
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.msg-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-width: 68%;
+}
+
+.msg-wrapper--self .msg-content {
+  align-items: flex-end;
+}
+
+.msg-author {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  padding: 0 4px;
+}
+
+.msg-bubble {
+  padding: 10px 16px;
+  border-radius: var(--radius-lg);
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.msg-bubble--self {
+  background: linear-gradient(135deg, var(--color-bg-message-self), var(--color-accent-hover));
+  color: var(--color-text-on-accent);
+  border-bottom-right-radius: var(--radius-sm);
+  box-shadow: 0 2px 8px var(--color-accent-glow);
+}
+
+.msg-bubble--other {
+  background: var(--color-bg-message-other);
+  color: var(--color-text-message-other);
+  border-bottom-left-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+.msg-text {
+  font-size: 0.9rem;
+}
+
+.msg-time {
+  font-size: 0.67rem;
+  color: var(--color-text-muted);
+  padding: 0 4px;
+}
+
+@keyframes slideInOther {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slideInSelf {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .msg-content {
+    max-width: 85%;
+  }
+  
+  .msg-bubble {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}

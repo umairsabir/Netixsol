@@ -1,0 +1,9 @@
+{
+  "name": "Quantum Portal",
+  "description": "A gateway connecting parallel dimensions.",
+  "image": "/images/nft_2.png",
+  "attributes": [
+    { "trait_type": "Class", "value": "Quantum" },
+    { "trait_type": "Price", "value": "150 DNFT" }
+  ]
+}

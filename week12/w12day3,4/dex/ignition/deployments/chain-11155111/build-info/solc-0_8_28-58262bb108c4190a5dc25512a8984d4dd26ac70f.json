@@ -1,0 +1,49 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_28-58262bb108c4190a5dc25512a8984d4dd26ac70f",
+  "solcVersion": "0.8.28",
+  "solcLongVersion": "0.8.28+commit.7893614a",
+  "compilerType": "solc",
+  "toolVersions": {
+    "hardhat": "3.4.5"
+  },
+  "userSourceNameMap": {
+    "contracts/SimpleSwap.sol": "project/contracts/SimpleSwap.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "cancun",
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode.linkReferences",
+            "evm.bytecode.object",
+            "evm.bytecode.opcodes",
+            "evm.bytecode.sourceMap",
+            "evm.deployedBytecode.immutableReferences",
+            "evm.deployedBytecode.linkReferences",
+            "evm.deployedBytecode.object",
+            "evm.deployedBytecode.opcodes",
+            "evm.deployedBytecode.sourceMap",
+            "evm.methodIdentifiers"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/SimpleSwap.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.28;\n\ninterface IERC20 {\n    function transfer(address to, uint256 amount) external returns (bool);\n    function transferFrom(address from, address to, uint256 amount) external returns (bool);\n    function balanceOf(address account) external view returns (uint256);\n}\n\ncontract SimpleSwap {\n    // The two tokens in our pool\n    IERC20 public tokenA;\n    IERC20 public tokenB;\n    \n    // How many tokens are in the pool\n    uint256 public reserveA;\n    uint256 public reserveB;\n    \n    event LiquidityAdded(address indexed provider, uint256 amountA, uint256 amountB);\n    event Swapped(address indexed user, string direction, uint256 amountIn, uint256 amountOut);\n    \n    constructor(address _tokenA, address _tokenB) {\n        tokenA = IERC20(_tokenA);\n        tokenB = IERC20(_tokenB);\n    }\n    \n    // Add liquidity to the pool\n    function addLiquidity(uint256 amountA, uint256 amountB) external {\n        require(amountA > 0 && amountB > 0, \"Amounts must be greater than 0\");\n        \n        // Transfer tokens from user to this contract\n        tokenA.transferFrom(msg.sender, address(this), amountA);\n        tokenB.transferFrom(msg.sender, address(this), amountB);\n        \n        // Update reserves\n        reserveA += amountA;\n        reserveB += amountB;\n        \n        emit LiquidityAdded(msg.sender, amountA, amountB);\n    }\n    \n    // Swap Token A for Token B\n    function swapAforB(uint256 amountAIn) external {\n        require(amountAIn > 0, \"Amount must be greater than 0\");\n        require(reserveB > 0, \"No liquidity\");\n        \n        // Calculate how much Token B user gets\n        // Formula: amountOut = (reserveB * amountIn) / (reserveA + amountIn)\n        uint256 amountBOut = (reserveB * amountAIn) / (reserveA + amountAIn);\n        \n        require(amountBOut > 0, \"Insufficient output amount\");\n        require(amountBOut < reserveB, \"Not enough liquidity\");\n        \n        // Transfer tokens\n        tokenA.transferFrom(msg.sender, address(this), amountAIn);\n        tokenB.transfer(msg.sender, amountBOut);\n        \n        // Update reserves\n        reserveA += amountAIn;\n        reserveB -= amountBOut;\n        \n        emit Swapped(msg.sender, \"A->B\", amountAIn, amountBOut);\n    }\n    \n    // Swap Token B for Token A\n    function swapBforA(uint256 amountBIn) external {\n        require(amountBIn > 0, \"Amount must be greater than 0\");\n        require(reserveA > 0, \"No liquidity\");\n        \n        // Calculate how much Token A user gets\n        uint256 amountAOut = (reserveA * amountBIn) / (reserveB + amountBIn);\n        \n        require(amountAOut > 0, \"Insufficient output amount\");\n        require(amountAOut < reserveA, \"Not enough liquidity\");\n        \n        // Transfer tokens\n        tokenB.transferFrom(msg.sender, address(this), amountBIn);\n        tokenA.transfer(msg.sender, amountAOut);\n        \n        // Update reserves\n        reserveB += amountBIn;\n        reserveA -= amountAOut;\n        \n        emit Swapped(msg.sender, \"B->A\", amountBIn, amountAOut);\n    }\n    \n    // Preview: How much will I get if I swap?\n    function getSwapAmount(uint256 amountIn, bool isSwapAforB) external view returns (uint256) {\n        if (isSwapAforB) {\n            return (reserveB * amountIn) / (reserveA + amountIn);\n        } else {\n            return (reserveA * amountIn) / (reserveB + amountIn);\n        }\n    }\n    \n    // View current pool status\n    function getReserves() external view returns (uint256, uint256) {\n        return (reserveA, reserveB);\n    }\n}\n"
+      }
+    }
+  }
+}

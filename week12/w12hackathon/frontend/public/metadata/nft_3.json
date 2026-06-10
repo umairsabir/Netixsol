@@ -1,0 +1,9 @@
+{
+  "name": "Synthwave Sunset",
+  "description": "Classic 80s aesthetics with glowing grid sun.",
+  "image": "/images/nft_3.png",
+  "attributes": [
+    { "trait_type": "Class", "value": "Retro" },
+    { "trait_type": "Price", "value": "200 DNFT" }
+  ]
+}

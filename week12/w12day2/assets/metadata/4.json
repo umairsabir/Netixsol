@@ -1,0 +1,27 @@
+{
+  "name": "Royal Amethyst #4",
+  "description": "A mystical amethyst orb encased in a golden ring with a royal crown. This rare relic channels ancient purple magic and wisdom in the Umair Token collection.",
+  "image": "ipfs://QmRdNp8CJVQKhrL7SGntvgkijbrvxx4ux6gKb66wZYLuG3/4.svg",
+  "attributes": [
+    {
+      "trait_type": "Gem Type",
+      "value": "Amethyst"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": "81"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Mystic Purple Gold"
+    },
+    {
+      "trait_type": "Cut",
+      "value": "Royal Orb"
+    }
+  ]
+}

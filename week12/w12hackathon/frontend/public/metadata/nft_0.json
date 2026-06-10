@@ -1,0 +1,9 @@
+{
+  "name": "Neon Cyber Glitch",
+  "description": "A glitchy digital cyberpunk artifact.",
+  "image": "/images/nft_0.png",
+  "attributes": [
+    { "trait_type": "Class", "value": "Glitch" },
+    { "trait_type": "Price", "value": "50 DNFT" }
+  ]
+}

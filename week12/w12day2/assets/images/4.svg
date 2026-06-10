@@ -1,0 +1,125 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d0014"/>
+      <stop offset="100%" stop-color="#060008"/>
+    </radialGradient>
+    <radialGradient id="amethyst" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#dd88ff"/>
+      <stop offset="40%" stop-color="#9900cc"/>
+      <stop offset="100%" stop-color="#440066"/>
+    </radialGradient>
+    <radialGradient id="orbShine" cx="35%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="purpleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow4">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft4">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg4)"/>
+
+  <!-- Gold border -->
+  <rect x="8" y="8" width="384" height="384" rx="20" fill="none" stroke="#ffd700" stroke-width="3" opacity="0.85"/>
+  <rect x="14" y="14" width="372" height="372" rx="16" fill="none" stroke="#b8860b" stroke-width="1" opacity="0.5"/>
+
+  <!-- Corner ornaments -->
+  <g fill="#ffd700" opacity="0.9">
+    <polygon points="20,20 40,20 20,40"/>
+    <polygon points="380,20 360,20 380,40"/>
+    <polygon points="20,380 40,380 20,360"/>
+    <polygon points="380,380 360,380 380,360"/>
+  </g>
+
+  <!-- Gold glow aura -->
+  <circle cx="200" cy="185" r="120" fill="url(#purpleGlow)" filter="url(#glow4)"/>
+
+  <!-- Outer gold ring -->
+  <circle cx="200" cy="185" r="105" fill="none" stroke="#ffd700" stroke-width="5" opacity="0.7" filter="url(#soft4)"/>
+  <circle cx="200" cy="185" r="108" fill="none" stroke="#b8860b" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="200" cy="185" r="100" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.4"/>
+
+  <!-- Main Amethyst Orb -->
+  <circle cx="200" cy="185" r="88" fill="url(#amethyst)" filter="url(#soft4)"/>
+  <circle cx="200" cy="185" r="88" fill="url(#orbShine)"/>
+
+  <!-- Orb inner crystal facets -->
+  <g opacity="0.35">
+    <line x1="200" y1="97" x2="200" y2="273" stroke="#cc44ff" stroke-width="1"/>
+    <line x1="112" y1="185" x2="288" y2="185" stroke="#cc44ff" stroke-width="1"/>
+    <line x1="138" y1="123" x2="262" y2="247" stroke="#cc44ff" stroke-width="0.8"/>
+    <line x1="138" y1="247" x2="262" y2="123" stroke="#cc44ff" stroke-width="0.8"/>
+  </g>
+
+  <!-- Orb glow shine spots -->
+  <ellipse cx="170" cy="148" rx="22" ry="14" fill="white" opacity="0.2" transform="rotate(-30,170,148)"/>
+  <ellipse cx="160" cy="142" rx="10" ry="6" fill="white" opacity="0.35" transform="rotate(-30,160,142)"/>
+
+  <!-- Gold royal cross on orb -->
+  <g fill="#ffd700" opacity="0.9" filter="url(#soft4)">
+    <rect x="194" y="140" width="12" height="90" rx="3"/>
+    <rect x="155" y="178" width="90" height="12" rx="3"/>
+  </g>
+
+  <!-- Center gem on cross -->
+  <circle cx="200" cy="185" r="14" fill="#ffd700" filter="url(#soft4)"/>
+  <circle cx="200" cy="185" r="9" fill="#9900cc"/>
+  <circle cx="200" cy="185" r="5" fill="#dd88ff" opacity="0.8"/>
+
+  <!-- Gold crown on top of orb -->
+  <g fill="#ffd700" filter="url(#soft4)">
+    <polygon points="200,97 210,75 220,97"/>
+    <polygon points="185,97 175,70 165,97"/>
+    <polygon points="215,97 225,70 235,97"/>
+    <rect x="155" y="92" width="90" height="14" rx="5"/>
+  </g>
+  <rect x="155" y="92" width="90" height="14" rx="5" fill="none" stroke="#b8860b" stroke-width="1.5"/>
+
+  <!-- Crown gems -->
+  <circle cx="175" cy="78" r="5" fill="#ff4444" filter="url(#soft4)"/>
+  <circle cx="200" cy="71" r="6" fill="#dd88ff" filter="url(#soft4)"/>
+  <circle cx="225" cy="78" r="5" fill="#4466ff" filter="url(#soft4)"/>
+
+  <!-- Orb stand -->
+  <g fill="#ffd700" filter="url(#soft4)">
+    <path d="M160,273 Q200,295 240,273 L250,295 Q200,315 150,295 Z"/>
+    <rect x="155" y="295" width="90" height="12" rx="5"/>
+    <rect x="140" y="305" width="120" height="10" rx="4"/>
+  </g>
+  <rect x="140" y="305" width="120" height="10" rx="4" fill="none" stroke="#b8860b" stroke-width="1.5"/>
+
+  <!-- Gold sparkles -->
+  <g fill="#ffd700" filter="url(#glow4)" opacity="0.9">
+    <polygon points="72,90 76,102 88,102 78,109 82,121 72,114 62,121 66,109 56,102 68,102"/>
+    <polygon points="328,85 331,95 341,95 333,101 336,111 328,105 320,111 323,101 315,95 325,95"/>
+    <polygon points="348,290 351,300 361,300 353,306 356,316 348,310 340,316 343,306 335,300 345,300"/>
+    <polygon points="52,295 55,305 65,305 57,311 60,321 52,315 44,321 47,311 39,305 49,305"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#ffd700" opacity="0.55">
+    <circle cx="108" cy="148" r="2.5"/>
+    <circle cx="293" cy="138" r="2"/>
+    <circle cx="88" cy="235" r="2"/>
+    <circle cx="312" cy="248" r="2.5"/>
+    <circle cx="162" cy="350" r="1.5"/>
+    <circle cx="242" cy="352" r="2"/>
+    <circle cx="348" cy="168" r="1.5"/>
+    <circle cx="52" cy="178" r="2"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="200" y="370" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#ffd700" letter-spacing="3">ROYAL AMETHYST</text>
+  <text x="200" y="388" text-anchor="middle" font-family="serif" font-size="11" fill="#b8860b" letter-spacing="2">UMAIR TOKEN #4</text>
+</svg>

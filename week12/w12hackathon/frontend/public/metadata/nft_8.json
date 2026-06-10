@@ -1,0 +1,15 @@
+{
+  "name": "Crypto Kitty V2",
+  "description": "An advanced agentic kitten with laser eyes.",
+  "image": "https://gateway.pinata.cloud/ipfs/bafybeiabxkgcg52rbadzopfmoepja3b6hgnxuipusraxokg7nsvkgkyof4",
+  "attributes": [
+    {
+      "trait_type": "Class",
+      "value": "Agentic"
+    },
+    {
+      "trait_type": "Price",
+      "value": "450 DNFT"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+Objective:
+
+Build an AI-powered assignment checker where teachers can upload assignment instructions and then student submissions (PDFs). The system automatically evaluates whether students followed the instructions and generates a marks sheet.
+
+Features:
+
+Assignment Setup (Teacher Side):
+
+* Teacher enters assignment details (e.g., “Write an essay on mental health, 500 words”).
+* Teacher sets evaluation mode:
+  * Strict marking → penalizes off-topic, too short, irrelevant answers.
+  * Loose marking → more flexible, rewards effort even if not perfect.
+
+Student Submission Upload:
+
+* Teacher uploads a batch of PDFs containing student assignments.
+* Each PDF includes student name & roll number.
+
+AI Evaluation:
+
+* AI reads PDF text.
+* Checks if the submission:
+  * Matches the assignment topic/instructions.
+  * Meets minimum length/quality.
+  * Has relevance and basic structure (intro, body, conclusion for essays).
+* Assigns marks according to strict/loose mode.
+
+Marks Sheet Generation:
+
+* After processing all PDFs, the system generates a downloadable Excel/CSV marks sheet.
+* Columns: Student Name, Roll Number, Score, Remarks.

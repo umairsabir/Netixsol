@@ -1,0 +1,27 @@
+{
+  "name": "Royal Emerald #3",
+  "description": "A powerful emerald shield gem crowned with royal gold. This epic artifact carries the ancient forest energy and shields its holder in the Umair Token collection.",
+  "image": "ipfs://QmRdNp8CJVQKhrL7SGntvgkijbrvxx4ux6gKb66wZYLuG3/3.svg",
+  "attributes": [
+    {
+      "trait_type": "Gem Type",
+      "value": "Emerald"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Power Level",
+      "value": "87"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Forest Green Gold"
+    },
+    {
+      "trait_type": "Cut",
+      "value": "Royal Shield"
+    }
+  ]
+}

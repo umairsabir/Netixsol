@@ -1,0 +1,15 @@
+{
+  "name": "Golden Bitcoin",
+  "description": "A physical representation of digital gold.",
+  "image": "https://gateway.pinata.cloud/ipfs/bafybeicfp2gc7odearywjbnr6gixxd2prn7m3drmnwk4ikfbnwptumxqem",
+  "attributes": [
+    {
+      "trait_type": "Class",
+      "value": "Financial"
+    },
+    {
+      "trait_type": "Price",
+      "value": "400 DNFT"
+    }
+  ]
+}

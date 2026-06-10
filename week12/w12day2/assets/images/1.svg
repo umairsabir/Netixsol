@@ -1,0 +1,106 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a0a00"/>
+      <stop offset="100%" stop-color="#0a0500"/>
+    </radialGradient>
+    <radialGradient id="ruby" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="40%" stop-color="#cc0000"/>
+      <stop offset="100%" stop-color="#660000"/>
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#b8860b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg1)"/>
+
+  <!-- Gold border frame -->
+  <rect x="8" y="8" width="384" height="384" rx="20" fill="none" stroke="#ffd700" stroke-width="3" opacity="0.8"/>
+  <rect x="14" y="14" width="372" height="372" rx="16" fill="none" stroke="#b8860b" stroke-width="1" opacity="0.5"/>
+
+  <!-- Corner ornaments -->
+  <g fill="#ffd700" opacity="0.9">
+    <polygon points="20,20 40,20 20,40" />
+    <polygon points="380,20 360,20 380,40" />
+    <polygon points="20,380 40,380 20,360" />
+    <polygon points="380,380 360,380 380,360" />
+  </g>
+
+  <!-- Glow behind gem -->
+  <circle cx="200" cy="195" r="110" fill="url(#goldGlow)" filter="url(#glow1)"/>
+
+  <!-- Main Ruby Gem - Diamond cut shape -->
+  <g filter="url(#softglow)">
+    <!-- Top crown facets -->
+    <polygon points="200,80 240,140 200,130 160,140" fill="#ff4444" opacity="0.95"/>
+    <polygon points="200,80 260,120 240,140" fill="#ff8888" opacity="0.85"/>
+    <polygon points="200,80 140,120 160,140" fill="#cc0000" opacity="0.9"/>
+
+    <!-- Middle belt -->
+    <polygon points="160,140 200,130 240,140 260,170 200,180 140,170" fill="url(#ruby)"/>
+
+    <!-- Lower facets -->
+    <polygon points="140,170 200,180 260,170 230,240 200,260 170,240" fill="#aa0000" opacity="0.95"/>
+    <polygon points="200,180 260,170 230,240" fill="#cc2222" opacity="0.8"/>
+    <polygon points="200,180 140,170 170,240" fill="#880000" opacity="0.9"/>
+
+    <!-- Bottom point -->
+    <polygon points="170,240 200,260 230,240 200,310" fill="#660000" opacity="0.95"/>
+    <polygon points="200,260 230,240 200,310" fill="#880000" opacity="0.7"/>
+  </g>
+
+  <!-- Gem shine/highlight -->
+  <polygon points="175,95 195,125 170,145 155,115" fill="white" opacity="0.25"/>
+  <ellipse cx="182" cy="108" rx="8" ry="14" fill="white" opacity="0.35" transform="rotate(-20,182,108)"/>
+
+  <!-- Gold crown base -->
+  <g fill="#ffd700" filter="url(#softglow)">
+    <rect x="130" y="305" width="140" height="18" rx="4"/>
+    <polygon points="130,305 145,275 160,305"/>
+    <polygon points="170,305 185,265 200,305"/>
+    <polygon points="200,305 215,265 230,305"/>
+    <polygon points="240,305 255,275 270,305"/>
+  </g>
+  <rect x="130" y="305" width="140" height="18" rx="4" fill="none" stroke="#b8860b" stroke-width="1.5"/>
+
+  <!-- Small gems on crown -->
+  <circle cx="152" cy="288" r="6" fill="#ff4444" filter="url(#softglow)"/>
+  <circle cx="200" cy="278" r="7" fill="#ff6666" filter="url(#softglow)"/>
+  <circle cx="248" cy="288" r="6" fill="#ff4444" filter="url(#softglow)"/>
+
+  <!-- Sparkles around gem -->
+  <g fill="#ffd700" filter="url(#glow1)" opacity="0.9">
+    <polygon points="90,100 94,112 106,112 96,119 100,131 90,124 80,131 84,119 74,112 86,112"/>
+    <polygon points="310,90 313,99 322,99 315,104 318,113 310,108 302,113 305,104 298,99 307,99"/>
+    <polygon points="330,270 333,279 342,279 335,284 338,293 330,288 322,293 325,284 318,279 327,279"/>
+    <polygon points="70,260 73,269 82,269 75,274 78,283 70,278 62,283 65,274 58,269 67,269"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#ffd700" opacity="0.6">
+    <circle cx="120" cy="160" r="2.5"/>
+    <circle cx="290" cy="150" r="2"/>
+    <circle cx="100" cy="230" r="2"/>
+    <circle cx="305" cy="240" r="2.5"/>
+    <circle cx="155" cy="340" r="1.5"/>
+    <circle cx="250" cy="345" r="2"/>
+    <circle cx="340" cy="180" r="1.5"/>
+    <circle cx="60" cy="190" r="2"/>
+  </g>
+
+  <!-- Title text -->
+  <text x="200" y="370" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#ffd700" letter-spacing="3">ROYAL RUBY</text>
+  <text x="200" y="388" text-anchor="middle" font-family="serif" font-size="11" fill="#b8860b" letter-spacing="2">UMAIR TOKEN #1</text>
+</svg>

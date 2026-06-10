@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary: #e60000;
+  --color-bg-custom: #0f0f0f;
+  --color-bg-darker: #0c0c0c;
+  --color-bg-lighter: #141414;
+  --color-surface: #1a1a1a;
+  --color-border-custom: #1f1f1f;
+  --color-border-darker: #262626;
+  --color-text-p: #ffffff;
+  --color-text-s: #999999;
+  --color-text-xs: #bfbfbf;
+  --color-neutral-dark: #333333;
+
+  /* Fonts */
+  --font-manrope: "Manrope", sans-serif;
+
+  /* Custom Breakpoints matching requirements */
+  --breakpoint-laptop: 1440px;
+  --breakpoint-desktop: 1920px;
+}
+
+body {
+  font-family: var(--font-manrope);
+  background-color: var(--color-bg-custom);
+  color: var(--color-text-p);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+@layer utilities {
+  .animate-scroll-left {
+    animation: scrollLeft 40s linear infinite;
+  }
+  .animate-scroll-right {
+    animation: scrollRight 40s linear infinite;
+  }
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}

@@ -1,0 +1,142 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg5" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1400"/>
+      <stop offset="100%" stop-color="#080600"/>
+    </radialGradient>
+    <radialGradient id="diamond" cx="30%" cy="25%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#fff5cc"/>
+      <stop offset="60%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </radialGradient>
+    <radialGradient id="goldAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow5">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft5">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg5)"/>
+
+  <!-- Gold border double frame -->
+  <rect x="8" y="8" width="384" height="384" rx="20" fill="none" stroke="#ffd700" stroke-width="4" opacity="0.9"/>
+  <rect x="16" y="16" width="368" height="368" rx="15" fill="none" stroke="#b8860b" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Corner cross ornaments -->
+  <g fill="#ffd700" opacity="0.95">
+    <polygon points="20,20 44,20 20,44"/>
+    <polygon points="380,20 356,20 380,44"/>
+    <polygon points="20,380 44,380 20,356"/>
+    <polygon points="380,380 356,380 380,356"/>
+    <!-- Extra corner dots -->
+    <circle cx="30" cy="30" r="3"/>
+    <circle cx="370" cy="30" r="3"/>
+    <circle cx="30" cy="370" r="3"/>
+    <circle cx="370" cy="370" r="3"/>
+  </g>
+
+  <!-- Big gold aura glow -->
+  <circle cx="200" cy="190" r="130" fill="url(#goldAura)" filter="url(#glow5)"/>
+
+  <!-- Decorative gold rings -->
+  <circle cx="200" cy="190" r="118" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.3"/>
+  <circle cx="200" cy="190" r="125" fill="none" stroke="#b8860b" stroke-width="0.8" opacity="0.25"/>
+
+  <!-- Main Golden Diamond - multi-faceted -->
+  <g filter="url(#soft5)">
+    <!-- Top pavilion -->
+    <polygon points="200,70 245,115 200,108 155,115" fill="#fff5cc" opacity="0.95"/>
+    <polygon points="200,70 270,105 245,115" fill="white" opacity="0.85"/>
+    <polygon points="200,70 130,105 155,115" fill="#ffd700" opacity="0.8"/>
+    <polygon points="200,70 270,105 200,85" fill="white" opacity="0.6"/>
+
+    <!-- Upper girdle -->
+    <polygon points="155,115 200,108 245,115 270,148 200,140 130,148" fill="url(#diamond)" opacity="0.95"/>
+
+    <!-- Middle girdle belt -->
+    <polygon points="130,148 200,140 270,148 285,185 200,178 115,185" fill="#ffd700" opacity="0.9"/>
+    <polygon points="270,148 285,185 200,178" fill="#fff5cc" opacity="0.7"/>
+    <polygon points="130,148 115,185 200,178" fill="#b8860b" opacity="0.8"/>
+
+    <!-- Lower pavilion -->
+    <polygon points="115,185 200,178 285,185 255,235 200,248 145,235" fill="#e6ac00" opacity="0.9"/>
+    <polygon points="285,185 255,235 200,248 200,178" fill="#ffd700" opacity="0.75"/>
+    <polygon points="115,185 145,235 200,248 200,178" fill="#b8860b" opacity="0.85"/>
+
+    <!-- Bottom culet -->
+    <polygon points="145,235 200,248 255,235 200,310" fill="#996600" opacity="0.95"/>
+    <polygon points="200,248 255,235 200,310" fill="#cc9900" opacity="0.8"/>
+    <polygon points="200,248 145,235 200,310" fill="#7a5200" opacity="0.9"/>
+  </g>
+
+  <!-- Diamond top highlight -->
+  <polygon points="178,78 196,108 172,118 158,90" fill="white" opacity="0.45"/>
+  <ellipse cx="178" cy="90" rx="9" ry="16" fill="white" opacity="0.5" transform="rotate(-18,178,90)"/>
+  <ellipse cx="185" cy="82" rx="4" ry="7" fill="white" opacity="0.6" transform="rotate(-18,185,82)"/>
+
+  <!-- Regal crown above diamond -->
+  <g fill="#ffd700" filter="url(#soft5)">
+    <rect x="155" y="48" width="90" height="26" rx="5"/>
+    <polygon points="155,48 168,22 181,48"/>
+    <polygon points="186,48 200,16 214,48"/>
+    <polygon points="219,48 232,22 245,48"/>
+    <!-- Crown band detail -->
+    <rect x="155" y="62" width="90" height="8" rx="3" fill="#b8860b" opacity="0.6"/>
+  </g>
+  <rect x="155" y="48" width="90" height="26" rx="5" fill="none" stroke="#b8860b" stroke-width="2"/>
+
+  <!-- Crown gems -->
+  <circle cx="168" cy="35" r="6" fill="#ff3333" filter="url(#soft5)"/>
+  <circle cx="200" cy="28" r="8" fill="white" filter="url(#soft5)"/>
+  <circle cx="200" cy="28" r="5" fill="#ffd700"/>
+  <circle cx="232" cy="35" r="6" fill="#3366ff" filter="url(#soft5)"/>
+
+  <!-- Diamond base stand -->
+  <g fill="#ffd700" filter="url(#soft5)">
+    <path d="M162,310 Q200,330 238,310 L248,328 Q200,348 152,328 Z"/>
+    <rect x="150" y="328" width="100" height="13" rx="5"/>
+    <rect x="135" y="339" width="130" height="11" rx="5"/>
+  </g>
+  <rect x="135" y="339" width="130" height="11" rx="5" fill="none" stroke="#b8860b" stroke-width="2"/>
+
+  <!-- Large sparkles - premium golden -->
+  <g fill="#ffd700" filter="url(#glow5)" opacity="0.95">
+    <polygon points="68,75 73,91 89,91 76,101 81,117 68,107 55,117 60,101 47,91 63,91"/>
+    <polygon points="332,68 337,84 353,84 340,94 345,110 332,100 319,110 324,94 311,84 327,84"/>
+    <polygon points="355,305 360,321 376,321 363,331 368,347 355,337 342,347 347,331 334,321 350,321"/>
+    <polygon points="45,310 50,326 66,326 53,336 58,352 45,342 32,352 37,336 24,326 40,326"/>
+  </g>
+
+  <!-- Extra mid sparkles -->
+  <g fill="#ffd700" filter="url(#glow5)" opacity="0.7">
+    <polygon points="55,190 58,199 67,199 60,204 63,213 55,208 47,213 50,204 43,199 52,199"/>
+    <polygon points="345,195 348,204 357,204 350,209 353,218 345,213 337,218 340,209 333,204 342,204"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#ffd700" opacity="0.65">
+    <circle cx="105" cy="140" r="3"/>
+    <circle cx="298" cy="132" r="2.5"/>
+    <circle cx="82" cy="238" r="2.5"/>
+    <circle cx="318" cy="250" r="3"/>
+    <circle cx="158" cy="355" r="2"/>
+    <circle cx="245" cy="358" r="2.5"/>
+    <circle cx="352" cy="162" r="2"/>
+    <circle cx="48" cy="172" r="2.5"/>
+    <circle cx="120" cy="340" r="1.5"/>
+    <circle cx="280" cy="338" r="1.5"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="200" y="370" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#ffd700" letter-spacing="3">GOLDEN DIAMOND</text>
+  <text x="200" y="388" text-anchor="middle" font-family="serif" font-size="11" fill="#b8860b" letter-spacing="2">UMAIR TOKEN #5</text>
+</svg>
